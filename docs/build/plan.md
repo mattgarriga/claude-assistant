@@ -43,3 +43,26 @@ Template-fill engine replaces the rebuild-in-code SPEC. Builders load the templa
 |---|---|---|
 | 3a | /recap client (latest HUT status), /recap internal (HUT 10/06), /email (thread TBD), /flow (rebuild HUT 3D Flight in Claude Test folder), /review-design (HUT 3D Flight SDD) | Alongside Phase 1 |
 | 3b | /onepager, /sdd, /sow FF no pricing | After Phase 2 |
+
+## Phase 4 (revised 2026-10-07)
+Dev skills in scope: /review, /debug, /query, /test-plan, /handoff (scaffold and migration-audit removed; ethos-dev and suitescript-migrator plugins cover them). Rewrite each to cite coding-standards (ethos-dev conventions) sections and the 10.4 checklist. Tests on ../Repos/cerio and ../Repos/imi; dirty or mid-ticket checkout means stop and ask. guard_git verified in Phase 0.
+
+## Phase 5 (revised 2026-10-07)
+/raide, /tasks, /status, /devboard, /today, /inbox against real sheets, all writes preview and confirm. Create "Matt Garriga - Action Log" (RAIDE columns plus Source) with Matt's confirm, record its ID in standards/tools.md.
+
+## Phase 6 (revised 2026-10-07)
+| # | Task | Owner | Acceptance |
+|---|---|---|---|
+| 6.1 | Discovery table for 13 active clients: email domains, Read AI folder, MS RAIDE, project RAIDEs and plans, Dev Tracker client value, Lucid folder, repo path | senior | Matt confirms the table |
+| 6.2 | Parallel read-only drafts per client (90 days Read AI, Outlook, Smartsheet) | app-builder x N | Every line source-tagged; claude.ai seed lines verified or replaced; conflicts and low-confidence items listed |
+| 6.3 | Per-client review and write, core first | senior, Matt | Written only after approval; one commit per client |
+| 6.4 | Local repo CLAUDE.md for clients with a repo, excluded via .git/info/exclude | app-builder | Not in git status of the client repo |
+
+## Phase 7 (revised 2026-10-07)
+| # | Task | Acceptance |
+|---|---|---|
+| 7.1 | PostToolUse hook: lint (warn) on writes under clients/*/projects/*/outputs/ (docx via text extraction); PreToolUse warn on outlook draft tools | Warning shown, write not blocked |
+| 7.2 | Secret scan in lint_voice.py (keys, tokens, passwords); blocks on outputs, drafts, clients/** | Test strings blocked, normal text passes |
+| 7.3 | /health-check command: live connector IDs vs settings.json deny rules, fake-ID send and delete tests | Detects a mismatched ID in a test copy |
+| 7.4 | Weekly scheduled /client-update sweep proposing diffs (no auto-write) | Scheduled task listed; dry run produces proposals |
+| 7.5 | README usage section; final commit; one-paragraph summary | Matt reads it |

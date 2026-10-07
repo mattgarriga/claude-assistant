@@ -58,3 +58,6 @@
 | 2026-10-07 | RAIDE routing: project-specific RAIDE when the project has an active one (in project.md), else client MS RAIDE with Project picklist | Most clients have several RAIDEs. Matt approved | Y |
 | 2026-10-07 | Live Dev Tracker is "Ethos Development Tracker" (8603558799691652); Row ID EBS.#### is the branch ticket | Matt's call | Y |
 | 2026-10-07 | New personal sheet "Matt Garriga - Action Log" (RAIDE columns plus Source) created in Phase 5 with Matt's confirm; holds commitments, waiting-on, internal-only actions, management/team. Fed by /recap, /inbox, /today; old RAID Log archived by Matt | Old log stale; deletion is denied by design. Matt approved | Y |
+| 2026-10-07 | Bootstrap covers all 13 active clients; senior discovers domains, Read AI folders, sheet IDs and repo paths for Matt to confirm in one table; agents draft in parallel read-only; Matt approves and commits per client, core clients first | Matt approved | Y |
+| 2026-10-07 | Client repo CLAUDE.md written locally and excluded via .git/info/exclude, never committed | Matt approved | Y |
+| 2026-10-07 | Phase 7: lint hook warns (does not block); add /health-check (connector IDs vs deny rules, fake-ID send test), secret scan in linter (blocks keys/tokens in outputs, drafts, context files), weekly scheduled /client-update sweep proposing diffs | Matt approved | Y |
