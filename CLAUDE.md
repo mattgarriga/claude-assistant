@@ -54,7 +54,7 @@ This repo (`executive-assistant`) replaces the "Ethos Assistant" claude.ai Proje
 
 ## Context write-back (required)
 
-Every recap, SDD, SOW, one-pager, or design conversation ends with a context update proposal per `.claude/skills/client-context/SKILL.md`: a short diff to the client's `decisions.md`, `project.md`, or `internal.md`. Apply only after Matt approves. Stale context is the main failure mode of this repo.
+Every recap, SDD, SOW, one-pager, or design conversation produces a context update proposal per `.claude/skills/client-context/SKILL.md`: a short diff to the client's `decisions.md`, `project.md`, or `internal.md`. Proposals go to the queue `state/writeback-queue.md` (grouped by client, with source and date) instead of interrupting Matt. `/today` and `/wrap` present the queue for one approval pass; apply only what Matt approves. Ask immediately instead of queuing only when the next step depends on it: a decision on an SDD or SOW in progress, a scope or pricing change, or a fact the current task is about to rely on. Stale context is the main failure mode of this repo.
 
 ## Skills and commands
 

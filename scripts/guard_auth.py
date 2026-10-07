@@ -24,6 +24,7 @@ V = r"(?:ANTHROPIC_API_KEY|ANTHROPIC_AUTH_TOKEN)"
 BASH_SET = re.compile(r"\b" + V + r"""=(?!\s|$|;|&|\||""(?![^\s;&|])|''(?![^\s;&|]))""")
 INSTALL_PY = re.compile(r"\b(?:pip3?|uv|poetry|pipx)\b[^;&|\n]*\b(?:add|install)\b[^;&|\n]*\banthropic\b")
 INSTALL_JS = re.compile(r"\b(?:npm|pnpm|yarn|bun)\b[^;&|\n]*\b(?:add|install|i)\b[^;&|\n]*@anthropic-ai/")
+RUN_PKG = re.compile(r"\b(?:npx|pnpx|bunx|uvx|pipx\s+run)\b[^;&|\n]*(?:@anthropic-ai/|\banthropic\b)")
 SDK_USE = [
     re.compile(r"^\s*import\s+anthropic\b", re.M),
     re.compile(r"^\s*from\s+anthropic\b", re.M),
@@ -51,6 +52,8 @@ def check_bash(cmd):
         block("direct Anthropic API host in command")
     if INSTALL_PY.search(cmd) or INSTALL_JS.search(cmd):
         block("Anthropic SDK install")
+    if RUN_PKG.search(cmd):
+        block("Anthropic package run via npx/uvx")
     if BASH_SET.search(cmd):
         block("setting ANTHROPIC_API_KEY or ANTHROPIC_AUTH_TOKEN to a value")
     if HELPER_RE.search(cmd):

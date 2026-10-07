@@ -5,3 +5,4 @@ clients/*/outputs/**/*.pdf
 .claude/settings.local.json
 daily/
 *-draft.docx
+state/

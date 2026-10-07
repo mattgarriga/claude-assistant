@@ -25,7 +25,7 @@ Propose a compact diff:
 clients/hut/decisions.md  + 2026-10-06 | Warranty registrations will sync nightly, not real time | Client preference to reduce API load | Decided by: HUT ops lead | [src: ReadAI ...]
 clients/hut/projects/warranty-registration/project.md  ~ Status: UAT start moved to 10/20
 ```
-Apply only after Matt approves. If nothing durable came out of the task, say "No context updates."
+Append the diff to `state/writeback-queue.md` under the client heading with date and source, and tell Matt in one line that it was queued. Ask immediately instead only when the next step depends on it (decision on an SDD or SOW in progress, scope or pricing change, a fact the current task relies on). Apply only after Matt approves, then remove the applied entries from the queue. If nothing durable came out of the task, say "No context updates."
 
 ## /client-update <client> [source]
 Pull the given source (a Read AI meeting, an email thread, a Smartsheet sheet) or the last 14 days if none given, extract durable facts, and propose a diff using the rules above.

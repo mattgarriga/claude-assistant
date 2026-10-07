@@ -33,5 +33,8 @@ Read-only until Matt picks first passes. Nothing is written to his calendar, mai
   3. **I can take a first pass at:** 3 to 5 numbered items, each with what Claude produces (reply draft, meeting prep notes, recap of an unrecapped meeting, RAIDE update preview, one-pager draft). Only items Claude can actually do with its tools.
 - Ask which to start (AskUserQuestion, multi-select). Do them in the order picked.
 
+## 4b. Write-back queue
+If `state/writeback-queue.md` has entries, show them grouped by client after the plan and ask which to apply (multi-select).
+
 ## 5. Save the plan
 Write the plan to `daily/YYYY-MM-DD.md` (gitignored): the time blocks, every open item with its source, and the first-pass list with status (open / in progress / done). Update the status as items finish during the day. The "take off my plate" prompt after each task draws from this file.
