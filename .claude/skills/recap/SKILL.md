@@ -30,14 +30,24 @@ Send the meeting ID to `meeting-analyst`. It pulls the meeting (transcript only 
 ## 5. Build
 - Group by workstream when the meeting covered several (use the project names in `projects/`).
 - Decisions Made: only real decisions, past tense, complete.
-- Budget Metrics table: source Estimated Hours, Case Total Hours, and Case Total Hours this month from the project RAIDE (or MS RAIDE) via `scout`, and cite the sheet. Otherwise only sourced numbers. Note missing ones in a line under the table; never invent.
+- Budget Metrics: include ONLY in an external status meeting recap (the client's recurring status meeting, e.g. "Weekly Status Meeting"). Leave the whole section out for working sessions, design sessions, internal meetings, and any other recap. When in doubt about the meeting type, ask.
+  - Table is Project | Budgeted Hours | Actual Hours | Hours Remaining, one row per project or ad-hoc support line, built from the project RAIDE (or MS RAIDE) via `scout` (Estimated Hours, Case Total Hours, Case Total Hours this month); cite the sheet.
+  - Fixed-fee rows: Budgeted Hours "N/A (fixed fee)", Actual and Remaining left blank.
+  - Only sourced numbers. Note missing ones in a line under the table; never invent.
+  - In the Outlook draft, render it as an HTML table in the style Matt sent in the 10.06.2026 HUT recap (see `standards/recap-format.md`).
 - Omit Risks & Open Items if none.
 - Run `scripts/lint_voice.py` on the draft.
 - Client-facing: run `qa-gate` (client slug, type recap) and fix every FAIL before showing Matt. Internal recaps skip the gate.
 
 ## 6. Output
 - Default: paste-ready subject + body in chat.
-- Outlook draft only on request (attendees from the invite; internal recaps to Matt). Outlook drafts end with the signature block from `standards/tools.md`; chat paste-ready text does not include it.
+- Always create the Outlook draft automatically once the recap passes lint (and `qa-gate` for client-facing). Do not ask first. Draft only, never send.
+  - To: attendees from the Outlook invite (not Read AI's participant list), excluding Matt. Internal recaps go to Matt only.
+  - Subject and body exactly as shown in chat. The body ends with the signature block from `standards/tools.md`; the chat copy does not include it.
+  - The verification checklist and RAIDE proposals stay in chat. Never put the checklist in the draft body.
+  - Unresolved items (Owner TBD, inferred owners, missing budget figures) stay in the draft as written, and the checklist in chat flags them so Matt can fix them in Outlook before sending.
+  - If the invite cannot be found or has no external attendees on a client meeting, say so and skip the draft rather than guessing recipients.
+- Also show the paste-ready recap in chat, then confirm the draft was saved.
 - Dates are MM.DD.YYYY everywhere, including the subject line and the Budget Metrics "As of EOD" line.
 - No .docx. Recaps are text or Outlook drafts only.
 
@@ -45,7 +55,7 @@ Send the meeting ID to `meeting-analyst`. It pulls the meeting (transcript only 
 - Names or terms possibly mistranscribed
 - Action items where the owner or ask was inferred
 - Recipient list used
-- Budget figures without a clear source
+- Budget figures without a clear source (status meeting recaps only)
 
 ## 8. RAIDE and project log proposals (client and internal meetings)
 1. Use the meeting-analyst JSON (`raide_candidates`, `action_log_candidates`, `internal_only`). Get sheet IDs: MS RAIDE from `client.md`, project RAIDE and project plan from the relevant `project.md`. Pick the RAIDE per the raide routing rule. Missing ID: say so and skip that sheet.
