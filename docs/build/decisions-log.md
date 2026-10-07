@@ -31,3 +31,9 @@
 | 2026-10-07 | SDD filled sizes follow the 2026 template: body 11pt, tables 10pt | Template is newer than the 3D Flight example. Matt approved | Y |
 | 2026-10-07 | SDD 4.4: Filename, Folder, Script Type, Script ID lines, then Script Parameters as a navy-header Name / Type / Value table (per 3D Flight SDD); sdd-format.md updated in Phase 1 | Matt approved | Y |
 | 2026-10-07 | HUT PrintNode API key found in plaintext in a shared One-Pager; scratch copies deleted, file excluded from repo and fixtures; flagged to Matt | Credential exposure | N/A |
+| 2026-10-07 | SOW/CO follow the 2026 layout (no Document Control table, no address header); CO uses the CO template's own wording | Older SOW examples predate the 2026 templates | Y |
+| 2026-10-07 | SOW/CO dollar amounts (Total Fee, 50% split, balance) all PRICING-PROVIDE-BEFORE-SENDING | Never invent pricing | Y |
+| 2026-10-07 | T&M builders validated on template structure plus FF filled conventions; Matt reviews T&M renders closely | No T&M example available. Matt approved | Y |
+| 2026-10-07 | 5 standard assumptions default on for every SOW and CO, editable per doc; canonical wording in sow-format.md | Matt approved | Y |
+| 2026-10-07 | Process Overview is titled Lucid diagrams only (6.9in wide), no narrative | Matt approved | Y |
+| 2026-10-07 | Signature block: client signer from client.md, Ethos signer Cedric Carter; acceptance date left blank | Matt approved | Y |
