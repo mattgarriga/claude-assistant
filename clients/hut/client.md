@@ -13,6 +13,11 @@
 ## Contacts
 | Name | Role | Email | Notes |
 |---|---|---|---|
+| Jennifer Nasseripour | Director of Operations, HUT, Alto, and IA | jnasseripour@heads-up.com | [src: Matt 2026-10-07] |
+| Peyton Cheatham | System administrator, HUT, Alto, and IA | pcheatham@heads-up.com | [src: Matt 2026-10-07] |
+| David Wilson | STG (title unknown) | david.wilson@stgaerospace.com | [src: Matt 2026-10-07] |
+| Lynette | Accounting, HUT (surname unknown) | | [src: Matt 2026-10-07] |
+| Shawn | Accounting, HUT (surname unknown) | | [src: Matt 2026-10-07] |
 
 ## Tool IDs
 | Tool | ID / Name |
@@ -42,6 +47,7 @@
 ## Glossary (Read AI corrections, internal terms)
 | Heard as | Correct |
 |---|---|
+| SDG | STG (STG Aerospace) [src: Matt 2026-10-07] |
 
 ## Active projects
 | Project | Folder | Status |
@@ -50,3 +56,4 @@
 | assembly-unbuild | projects/assembly-unbuild/ | (bootstrap) |
 | warranty-registration | projects/warranty-registration/ | (bootstrap) |
 | shipping-solution | projects/shipping-solution/ | (bootstrap) |
+| os | projects/os/ | New project [src: Matt 2026-10-07] |
