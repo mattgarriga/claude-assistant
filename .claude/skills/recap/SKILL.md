@@ -14,6 +14,7 @@ Format is authoritative in `standards/recap-format.md`. This skill is the workfl
 - Finding the meeting: `scout` lists Read AI candidates (client folder when `client.md` has a folder ID, otherwise the full local day in UTC) and the Outlook invite.
 - More than one candidate: list title, time, attendees and ask. Never guess.
 - Bot never joined (no data, or `end_time_ms` null long after the slot): say so and ask for notes or a transcript.
+- **Notes mode:** when Matt pastes notes or a transcript instead, skip step 2 (no `meeting-analyst`, no Read AI pull). Take attendees and times from the Outlook invite, build from his notes only, and mark every action owner or decision not stated in the notes as "Owner TBD" or leave it out. Steps 3 to 9 still apply, and the checklist adds "Built from Matt's notes, not a recording." Never fill gaps from the invite title or past meetings.
 
 ## 2. Pull
 Send the meeting ID to `meeting-analyst`. It pulls the meeting (transcript only when needed), fixes names against the glossary, and returns structured JSON. Work from that JSON, not the raw meeting.

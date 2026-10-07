@@ -3,8 +3,9 @@ import json, os, subprocess, sys, tempfile, unittest, zipfile
 SCRIPT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "scripts", "hook_lint_outputs.py")
 KEY = "sk-ant-" + "api03-abcDEF123456"
 DASH = "bad — dash"
-SIG = ("<p>Matthew Garriga<br>972.837.5259 | matt.garriga@ethosbusinesssolutions.com<br>"
-       "<a href=\"https://bookings.cloud.microsoft/book/x\">Book time with Matthew Garriga</a></p>")
+SIG = ("<p><b>Matthew Garriga<br>972.837.5259 | <a href=\"mailto:matt.garriga@ethosbusinesssolutions.com\">"
+       "matt.garriga@ethosbusinesssolutions.com</a><br>"
+       "<a href=\"https://bookings.cloud.microsoft/book/x\">Book time with Matthew Garriga</a></b></p>")
 M365 = "mcp__d921cb44-54d6-4a58-8a0e-c34b9edb58ed__"
 
 
