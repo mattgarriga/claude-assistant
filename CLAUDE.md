@@ -16,7 +16,7 @@ This repo (`claude-assistant`) replaces the "Ethos Assistant" claude.ai Project.
 | `team/` | Ethos team roster and Matt's profile. |
 | `knowledge/` | Cross-client solution patterns and lessons. Check before proposing any design. |
 | `scripts/lint_voice.py` | Voice linter. Run on every drafted output before handing it over. |
-| `scripts/guard_git.py` | Hook that blocks protected-branch commits, push/merge, and suitecloud. |
+| `scripts/guard_git.py` | Hook that blocks protected-branch commits and pushes, force/delete pushes, merge, and suitecloud. |
 | `../Repos/<client-repo>/` | Client SDF repos (one per client). Path recorded in each `client.md`. Rules in `standards/dev-workflow.md`. |
 
 ## Before any task
@@ -34,7 +34,7 @@ This repo (`claude-assistant`) replaces the "Ethos Assistant" claude.ai Project.
 - Never send email. Draft only. Never post to Teams.
 - Generated outputs live in the repo only (`clients/<slug>/projects/<project>/outputs/`). No OneDrive or SharePoint copies.
 - Never connect to NetSuite. No NetSuite MCP, no SuiteTalk calls, no suitecloud CLI. Ask Matt what exists in the account.
-- Code: edit and commit only on feature branches in `../Repos`. Never push or merge. Show the diff and commit message before committing.
+- Code: edit and commit only on feature branches in `../Repos`. Push feature, hotfix, and bugfix branches only; never push main, master, develop, or release branches, never force-push, never merge. Show the diff and commit message before committing.
 - Smartsheet writes: show a mapped preview (sheet, row, column, old value, new value) and get explicit confirmation first.
 - `internal.md` content never appears in client-facing output. Stakeholder dynamics, budget/resourcing internals, escalations, and decisions made against Ethos advice stay internal.
 - Action items always have an owner. If ambiguous, write "Owner TBD". Never invent one.
@@ -52,9 +52,15 @@ This repo (`claude-assistant`) replaces the "Ethos Assistant" claude.ai Project.
 - Everything client-facing ends with a verification checklist: uncertain names, attribution gaps, recipient list, unresolved assumptions.
 - Paste-ready text in chat is the default for recaps and short drafts. Generate .docx only when asked, or for SDDs, SOWs, change orders, and one-pagers.
 
-## Context write-back (required)
+## Context write-back (auto-apply, confirmed by Matt 2026-10-07)
 
-Every recap, SDD, SOW, one-pager, or design conversation produces a context update proposal per `.claude/skills/client-context/SKILL.md`: a short diff to the client's `decisions.md`, `project.md`, or `internal.md`. Proposals go to the queue `state/writeback-queue.md` (grouped by client, with source and date) instead of interrupting Matt. `/today` and `/wrap` present the queue for one approval pass; apply only what Matt approves. Ask immediately instead of queuing only when the next step depends on it: a decision on an SDD or SOW in progress, a scope or pricing change, or a fact the current task is about to rely on. Stale context is the main failure mode of this repo.
+After every recap, SDD, SOW, one-pager, email, ingest, or design conversation, write durable facts straight into the client's `client.md`, `decisions.md`, `project.md`, and `internal.md`. No approval needed. Rules are in `.claude/skills/client-context/SKILL.md`. In short:
+- Every line carries a source tag. Facts only, never inference.
+- Every write is logged in `state/context-log.md` with the old and new text, so it can be undone.
+- `/eod` and `/wrap` show the day's log as a digest for after-the-fact review. Matt does not approve before a write.
+- **Ask first, never auto-write:** pricing, SOW/CO scope or budget hours, a fact that conflicts with an existing sourced line, anything inferred or from an ambiguous source, and anything that would move `internal.md` content toward a client-facing file. Credentials are never recorded, only their location.
+- Ask-first items go to `state/writeback-queue.md` for one approval pass.
+Stale context is the main failure mode of this repo.
 
 ## Usage-lean defaults
 

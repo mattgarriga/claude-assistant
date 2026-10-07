@@ -17,4 +17,4 @@ Source documents live in OneDrive (path in each `client.md`). Read them only. Ne
    - Document identity: project, version, status, location (for the `project.md` Artifacts row)
 4. Facts only. No interpretation. Conflicts with existing context files go in a separate list.
 5. Secrets: if the document holds a credential or key, omit it and name only its location.
-6. Output: write the proposals to `state/writeback-queue.md` under the client, then show a short table (file / change). Apply nothing until Matt approves. Ask immediately only when the next step depends on a fact.
+6. Output: apply auto-apply facts per the `client-context` write-back rules (source-tagged, logged in `state/context-log.md`). Put conflicts and ask-first items in `state/writeback-queue.md`. Reply with a short table (file / change) of what was written and what is queued.

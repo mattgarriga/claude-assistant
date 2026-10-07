@@ -19,13 +19,27 @@ description: Maintain per-client and per-project context files. Handles the post
 - Prefer durable phrasing over figures that go stale; dated figures live in `project.md` Status with an "as of" date.
 - `decisions.md` is append-only. Superseded decisions get a new entry referencing the old one.
 
-## Write-back (end of every task)
-Propose a compact diff:
-```
-clients/hut/decisions.md  + 2026-10-06 | Warranty registrations will sync nightly, not real time | Client preference to reduce API load | Decided by: HUT ops lead | [src: ReadAI ...]
-clients/hut/projects/warranty-registration/project.md  ~ Status: UAT start moved to 10/20
-```
-Append the diff to `state/writeback-queue.md` under the client heading with date and source, and tell Matt in one line that it was queued. Ask immediately instead only when the next step depends on it (decision on an SDD or SOW in progress, scope or pricing change, a fact the current task relies on). Apply only after Matt approves, then remove the applied entries from the queue. If nothing durable came out of the task, say "No context updates."
+## Write-back (end of every task, auto-apply)
+Apply durable facts directly to the files. Do not ask Matt. Then append one line per change to `state/context-log.md`: `YYYY-MM-DD | file | add/edit | old text or (none) | new text | source`. Reply with one line: "Context updated: N changes (see /eod)", or "No context updates."
+
+**Auto-apply (with source tag):**
+| File | What |
+|---|---|
+| `client.md` | Contacts and roles, glossary corrections, tool IDs, sheet schemas, integrations, conventions stated in a source |
+| `project.md` | Status with an as-of date, open items (owner as stated, else "Owner TBD"), artifact links, dates stated in a source |
+| `decisions.md` | Only decisions explicitly reached in the source, with who decided. Append-only; a changed decision is a new entry referencing the old |
+| `internal.md` | Facts Matt stated, or explicit resourcing, budget, or relationship facts from a source; facts only |
+
+**Ask first (queue in `state/writeback-queue.md`, or ask now if the current task depends on it):**
+- Pricing, SOW or CO scope, budgeted hours
+- A fact that conflicts with an existing sourced line (show both; never silently overwrite)
+- Anything inferred, or from an ambiguous source (unconfirmed client, mistranscribed names)
+- Roles or titles guessed from a name or email domain
+- Deleting content (replace only with the old text logged)
+
+**Never:** credentials, keys, or tokens (record the location only); `internal.md` content in any client-facing file.
+
+Undo: restore the old text from the log. `/eod` offers one commit per day for context changes (`docs: context updates YYYY-MM-DD`).
 
 ## /client-update <client> [source]
 Pull the given source (a Read AI meeting, an email thread, a Smartsheet sheet) or the last 14 days if none given, extract durable facts, and propose a diff using the rules above.
