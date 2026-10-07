@@ -1,0 +1,194 @@
+{
+ "employee": "Matthew Garriga",
+ "default_item": "Consulting Services",
+ "internal": {
+  "project": "Ethos Internal Project",
+  "task": "General Admin (Project Task)",
+  "item": "Consulting Services",
+  "note": "Ethos - General label goes here [src: Matt 2026-10-07; export]"
+ },
+ "labels": {},
+ "clients": {
+  "HUT": {
+   "customer": "564 Heads Up Technologies",
+   "support_project": "Heads Up Technologies : Heads Up Thrive",
+   "project_tasks": [
+    "Heads Up Technologies : Custom Shipping Solution Phase Zero | Consulting Services (Project Task)",
+    "Heads Up Technologies : Heads Up Thrive : Assembly Unbuild Enhancements | Consulting Services (Project Task)",
+    "Heads Up Technologies : Heads Up Thrive : Warranty Registration Solution | Consulting Services (Project Task)"
+   ],
+   "recent_cases": [
+    "Case # 583",
+    "Case # 1303",
+    "Case # 1473",
+    "Case # 1180",
+    "Case # 1806",
+    "Case # 1174",
+    "Case # 1872",
+    "Case # 1054",
+    "Case # 1334",
+    "Case # 1031"
+   ]
+  },
+  "Cala": {
+   "customer": "21 Cala Health",
+   "support_project": "Cala Health : Cala Thrive",
+   "project_tasks": [
+    "Cala Health : Financial Reporting & Rental Reversal Automation | Consulting Services (Project Task)",
+    "Cala Health : Order to Cash - Phase Three | Consulting Services (Project Task)",
+    "Cala Health : Order to Cash Phase Three - Outbound Picking CO | Consulting Services (Project Task)",
+    "Cala Health : RMA Receiving Solution | Consulting Services (Project Task)"
+   ],
+   "recent_cases": [
+    "Case # 79",
+    "Case # 78",
+    "Case # 1476",
+    "Case # 1846",
+    "Case # 1762",
+    "Case # 1354",
+    "Case # 1776",
+    "Case # 1784",
+    "Case # 1695",
+    "Case # 1479"
+   ]
+  },
+  "4P": {
+   "customer": "559 4Patriots LLC.",
+   "support_project": "4Patriots LLC. : 4Patriots Starter",
+   "project_tasks": [
+    "4Patriots LLC. : 4Patriots Starter : Chargebacks | Consulting Services (Project Task)"
+   ],
+   "recent_cases": [
+    "Case # 1249",
+    "Case # 1111",
+    "Case # 394",
+    "Case # 1491",
+    "Case # 1179",
+    "Case # 1434",
+    "Case # 1979",
+    "Case # 1442",
+    "Case # 731",
+    "Case # 1655"
+   ]
+  },
+  "CommSell": {
+   "customer": "15 CommSell inc",
+   "support_project": "CommSell inc : CommSell Growth",
+   "project_tasks": [],
+   "recent_cases": [
+    "Case # 1435",
+    "Case # 774",
+    "Case # 469",
+    "Case # 1705",
+    "Case # 1896",
+    "Case # 1861",
+    "Case # 1895",
+    "Case # 1466",
+    "Case # 1348",
+    "Case # 1642"
+   ]
+  },
+  "IMI": {
+   "customer": "547 International Materials, LLC",
+   "support_project": "International Materials, LLC : IMI Growth",
+   "project_tasks": [
+    "International Materials, LLC : Atreus Status Update Integration Support | Consulting Services (Project Task)",
+    "International Materials, LLC : Customer Weighted Average Days Paid Customization | Consulting Services (Project Task)"
+   ],
+   "recent_cases": [
+    "Case # 119",
+    "Case # 1934",
+    "Case # 1807",
+    "Case # 1217",
+    "Case # 1769",
+    "Case # 1778",
+    "Case # 1933",
+    "Case # 1271",
+    "Case # 1468",
+    "Case # 1446"
+   ]
+  },
+  "CORE": {
+   "customer": "556 Core Transformers",
+   "support_project": null,
+   "project_tasks": [
+    "Core Transformers : CORE - Phase One | Asset Image Capture Suitelet (Project Task)",
+    "Core Transformers : CORE - Phase One | Consulting Services (Project Task)",
+    "Core Transformers : CORE - Phase One | Item/Asset Unique ID Creation (Project Task)",
+    "Core Transformers : CORE - Phase One | Spark Integration Support (Project Task)"
+   ],
+   "recent_cases": []
+  },
+  "Cerio": {
+   "customer": "590 Cerio",
+   "support_project": "Cerio : Cerio - Flex Support",
+   "project_tasks": [],
+   "recent_cases": [
+    "Case # 2010",
+    "Case # 2009",
+    "Case # 2065",
+    "Case # 2032",
+    "Case # 2033",
+    "Case # 2034",
+    "Case # 2051",
+    "Case # 2025"
+   ]
+  },
+  "TSS": {
+   "customer": "575 Total Site Solutions",
+   "support_project": "Total Site Solutions : Total Site Solutions - Thrive",
+   "project_tasks": [
+    "Total Site Solutions : WIP Data Capture Component Swap Automations | Consulting Services (Project Task)"
+   ],
+   "recent_cases": [
+    "Case # 1136",
+    "Case # 1438",
+    "Case # 1786",
+    "Case # 1634",
+    "Case # 1635",
+    "Case # 1364",
+    "Case # 1189",
+    "Case # 1713",
+    "Case # 1471",
+    "Case # 1463"
+   ]
+  },
+  "B4U": {
+   "customer": "583 Boxes 4 U",
+   "support_project": "Boxes 4 U : Boxes 4 U Growth",
+   "project_tasks": [],
+   "recent_cases": [
+    "Case # 1963",
+    "Case # 1942",
+    "Case # 1811",
+    "Case # 2040",
+    "Case # 1598",
+    "Case # 1608",
+    "Case # 1768"
+   ]
+  },
+  "EVgo": {
+   "customer": "558 CrossCountry Consulting",
+   "support_project": null,
+   "project_tasks": [
+    "CrossCountry Consulting : EVgo | Consulting Services (Project Task)"
+   ],
+   "recent_cases": []
+  },
+  "LSN": {
+   "customer": "113 LightSpeed Networks, Inc.",
+   "support_project": "LightSpeed Networks, Inc. : LSN Support",
+   "project_tasks": [],
+   "recent_cases": [
+    "Case # 1281",
+    "Case # 1802"
+   ]
+  },
+  "ConcertAI": {
+   "note": "no 2026 time entries in export; ask Matt for project on first use"
+  },
+  "Hammitt": {
+   "note": "no 2026 time entries in export; ask Matt for project on first use"
+  }
+ }
+}

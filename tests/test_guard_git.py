@@ -180,6 +180,38 @@ class GuardGit(unittest.TestCase):
         self.blocked("git switch main && git commit -m x", cwd=self.feat_repo)
         self.blocked("git checkout -b feature/q && git checkout main && git commit -m x", cwd=self.feat_repo)
 
+    def test_10_push_feature_branch_allowed(self):
+        f = self.feat_repo
+        for c in ["git push", "git push origin feature/x", "git push -u origin feature/x", "git push origin HEAD",
+                  "git push origin feature/x:feature/x", "git push --set-upstream origin refs/heads/feature/x",
+                  "git -C %s push origin feature/x" % f]:
+            self.allowed(c, cwd=f if "-C" not in c else self.other)
+        self.allowed("git switch -c feature/q && git push -u origin feature/q", cwd=self.main_repo)
+
+    def test_11_push_protected_blocked(self):
+        f, m = self.feat_repo, self.main_repo
+        for c in ["git push origin main", "git push origin master", "git push origin develop", "git push origin release/1",
+                  "git push origin HEAD:main", "git push origin feature/x:main", "git push origin refs/heads/main",
+                  "git push origin main:feature/x", "git push -u origin main"]:
+            self.blocked(c, cwd=f)
+        self.blocked("git push", cwd=m)
+        self.blocked("git push origin HEAD", cwd=m)
+        self.blocked("git checkout main && git push", cwd=f)
+
+    def test_12_push_force_delete_bulk_blocked(self):
+        f = self.feat_repo
+        for c in ["git push --force origin feature/x", "git push -f origin feature/x", "git push --force-with-lease",
+                  "git push origin +feature/x", "git push origin :feature/x", "git push --delete origin feature/x",
+                  "git push --all", "git push --mirror", "git push --prune origin", "git push origin 'refs/heads/*:refs/heads/*'",
+                  "git push --receive-pack=x origin feature/x", "git push -c x", "git -c remote.origin.push=main push",
+                  "git -c url.x.insteadOf=y push origin feature/x"]:
+            self.blocked(c, cwd=f)
+
+    def test_13b_push_outside_repos_blocked(self):
+        self.blocked("git push origin feature/x", cwd=self.ws)
+        self.blocked("git push origin feature/x", cwd=self.other)
+        self.blocked("git -C %s push origin feature/x" % self.ws, cwd=self.feat_repo)
+
     def test_9_non_git(self):
         self.assertEqual(self.run_hook("ls -la"), 0)
 

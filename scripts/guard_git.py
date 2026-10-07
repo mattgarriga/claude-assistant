@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """PreToolUse hook for Bash. Exit 2 blocks the tool call and shows stderr to Claude.
 
-Global (any repo): blocks the NetSuite CLI, git push/merge/send-pack, and history
+Global (any repo): blocks the NetSuite CLI, git merge/send-pack, and history
 rewrites (reset --hard, rebase, filter-branch, branch -d/-D, and --force/-f on git
-push, checkout, branch, reset, clean). `git -c alias.X=...` is blocked when the alias
+push, checkout, branch, reset, clean). git push is blocked everywhere except as
+described under "Push" below. `git -c alias.X=...` is blocked when the alias
 value contains push/merge/rebase/filter-branch or starts with `!`.
 
 How matching works: heredoc bodies are stripped, then the command is tokenized
@@ -27,6 +28,14 @@ command, `git checkout|switch <branch>` and `checkout -b|switch -c <new>` change
 branch the later commit is judged on. Client repo branches should be feature/,
 hotfix/ or bugfix/; only the protected names above are blocked.
 
+Push: allowed only for a repo under the client repos directory, and only when every
+ref being pushed is a non-protected branch (or tag). Blocked: protected branches
+(main, master, develop, dev, release*) on either side of a refspec, a bare push while
+a protected branch is checked out, forced (+src, --force*, -f) or deleting (:dst,
+--delete) refspecs, wildcard refspecs, --all/--mirror/--prune and any other flag not
+in PUSH_FLAGS, `git -c remote.*/push.*/url.*` overrides, and any push where the target
+repo cannot be resolved (including the workspace repo itself).
+
 Known residual limits (a regex/tokenizer hook cannot cover these): variable indirection
 (`G=git; $G push`), commands launched from inside other programs (python os.system,
 node child_process, make targets, scripts run as `bash script.sh`), npm/yarn run
@@ -40,6 +49,8 @@ SHELLS = {"bash", "sh", "zsh", "dash", "ksh"}
 RUNNERS = {"npx", "pnpx", "bunx", "npm", "pnpm", "yarn", "bun", "node", "corepack"}
 GLOBAL_OPTS_WITH_ARG = {"-C", "-c", "--git-dir", "--work-tree", "--namespace", "--super-prefix", "--config-env"}
 FORCE_SUBS = {"push", "checkout", "branch", "reset", "clean"}
+PUSH_FLAGS = {"-u", "--set-upstream", "-v", "--verbose", "-q", "--quiet", "-n", "--dry-run",
+              "--no-verify", "--follow-tags", "--progress"}
 ALIAS_BAD = re.compile(r"\b(push|merge|rebase|filter-branch)\b")
 
 
@@ -282,14 +293,51 @@ def locate(opts, base):
     return top, ["-C", top]
 
 
+def push_check(opts, sargs, state):
+    """Allow a push only for non-protected branches in a repo under REPOS; else block."""
+    for kv in opts["c"]:
+        if kv.partition("=")[0].lower().startswith(("remote.", "push.", "url.", "core.sshcommand", "core.hookspath")):
+            block("git -c overrides of remote/push/url settings are not allowed on push.")
+    key, prefix = locate(opts, state["dir"])
+    if not key or not under(key, REPOS):
+        block("push is only allowed from a client repo under ../Repos, on a feature branch.")
+    words = []
+    for a in sargs:
+        if a.startswith("-") and a != "-":
+            if a not in PUSH_FLAGS:
+                block(f"git push flag '{a}' is not allowed (no force, delete, all, or mirror pushes).")
+            continue
+        words.append(a)
+    refspecs = words[1:]
+
+    def current():
+        return state["br"].get(key) or git_run(prefix, ["symbolic-ref", "--short", "HEAD"])
+
+    def side_ok(name):
+        name = current() if name == "HEAD" else re.sub(r"^refs/heads/", "", name)
+        return bool(name) and not is_protected(name)
+
+    if not refspecs:
+        if not side_ok("HEAD"):
+            block("pushing main, master, develop, dev, or release branches is not allowed. Push a feature/, hotfix/ or bugfix/ branch.")
+        return
+    for r in refspecs:
+        if r.startswith(("+", ":")) or "*" in r or r.endswith(":"):
+            block(f"refspec '{r}' is not allowed (force, delete, or wildcard).")
+        if not all(side_ok(side) for side in r.split(":")):
+            block("pushing main, master, develop, dev, or release branches is not allowed. Push a feature/, hotfix/ or bugfix/ branch.")
+
+
 def git_check(args, state):
     opts, sub, sargs = parse_git(args)
     for kv in opts["c"]:
         key, _, val = kv.partition("=")
         if key.lower().startswith("alias.") and (val.startswith("!") or ALIAS_BAD.search(val)):
             block("git aliases that run push/merge/rewrite commands are not allowed.")
-    if sub in ("push", "merge", "send-pack"):
-        block("push and merge are Matt's job.")
+    if sub in ("merge", "send-pack"):
+        block("merge is Matt's job.")
+    if sub == "push":
+        push_check(opts, sargs, state)
     if (sub in ("rebase", "filter-branch")
             or (sub == "reset" and "--hard" in sargs)
             or (sub == "branch" and any(a == "--delete" or re.match(r"^-[A-Za-z]*[dD][A-Za-z]*$", a) for a in sargs))):

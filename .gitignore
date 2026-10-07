@@ -9,3 +9,5 @@ state/
 
 lib/docx/out/
 lib/docx/node_modules/
+time/*.csv
+time/exported.json

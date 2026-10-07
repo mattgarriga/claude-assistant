@@ -96,6 +96,7 @@ Stale context is the main failure mode of this repo.
 | `/status` | Health for one client or all |
 | `/devboard` | Development Tracker triage |
 | `/today` | Lean daily plan: calendar, email, Action Log, Smartsheet for today's meeting clients; `teams` or `full` widens it |
+| `/time` | Daily time notes to a NetSuite time import CSV (project and case resolved from RAIDE) |
 | `/usage` | Check quota and context; recommend lean or full mode |
 | `/eod` | Close the day: plan status, write-backs, Action Log rows, carryover |
 | `/prep` | Prep notes for any meeting |
