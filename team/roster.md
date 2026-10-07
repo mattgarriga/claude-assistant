@@ -15,9 +15,11 @@ Email format: firstname.lastname@ethosbusinesssolutions.com (confirm in director
 | Brian Webb | Solutions Architect | |
 | Dominick Stives-Mitchell | Team Lead | |
 | Matthew (Matt) Garriga | Technical Team Lead | Workspace owner. SDD approval table: Technical Lead |
+| D'Andre Sanders | Senior Consultant | Works most clients; mainly Cerio, CommSell, HUT, Boxes 4 U [src: Matt 2026-10-07] |
+| Kimberly Maharaj | Office Manager | [src: Matt 2026-10-07] |
 | Thomas (Tommy) Garriga | Technical Consultant | Matt's brother, direct report |
 | Grayson Phillips | Technical Consultant | Direct report |
-| Gabe | (confirm role) | Hired through the intern pipeline |
+| Gabe Santee | Intern | Plan: hire full time next summer as Associate Technical Consultant. Reports to Grayson; Matt handles much of his professional development [src: Matt 2026-10-07] |
 
 ## Offshore partner: Invitra
 | Name | Notes |

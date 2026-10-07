@@ -7,7 +7,7 @@
 - HUT RAIDE log maintained in Smartsheet [src: claude.ai memory]
 - HUT Phase 2 delivered previously (Tommy involved) [src: claude.ai memory]
 - Industry / what they do:
-- Engagement type: (managed services, project, ad-hoc support)
+- Engagement type: Managed services, Thrive package (75 hours per month). Ethos's largest client. Ethos account lead: Matt Garriga. [src: Matt 2026-10-07]
 - Relationship tone notes (client-safe):
 
 ## Contacts
@@ -18,6 +18,8 @@
 | David Wilson | Director of Business Intelligence, STG Aerospace | david.wilson@stgaerospace.com | SDD refers to "David's LogBook app" connected to NetSuite [src: OS SDD v1.0 08.28.2026; Matt 2026-10-07] |
 | Lynette | Accounting, HUT (surname unknown) | | [src: Matt 2026-10-07] |
 | Shawn | Accounting, HUT (surname unknown) | | [src: Matt 2026-10-07] |
+| Bryan Shupe | CFO | | [src: Matt 2026-10-07, dictated; spelling unconfirmed] |
+| Brett Frazee | Controller | | [src: Matt 2026-10-07, dictated; spelling unconfirmed] |
 
 ## Tool IDs
 | Tool | ID / Name |

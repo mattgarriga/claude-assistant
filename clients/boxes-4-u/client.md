@@ -2,12 +2,14 @@
 
 ## Overview
 - Industry / what they do:
-- Engagement type: (managed services, project, ad-hoc support)
+- Engagement type: Managed services, 2 units of Growth (50 hours per month). Ethos account lead: CJ Carter, with Dominick Stives-Mitchell. [src: Matt 2026-10-07, dictated]
+- Industry / what they do: sell boxes. [src: Matt 2026-10-07, dictated]
 - Relationship tone notes (client-safe):
 
 ## Contacts
 | Name | Role | Email | Notes |
 |---|---|---|---|
+| Tanner Faulkner | CEO | | [src: Matt 2026-10-07, dictated] |
 
 ## Tool IDs
 | Tool | ID / Name |

@@ -2,7 +2,7 @@
 
 ## Overview
 - Industry / what they do:
-- Engagement type: (managed services, project, ad-hoc support)
+- Engagement type: sparse, mostly accounting work, subcontracted through a partner. Read `internal.md` before drafting anything client-facing. Ethos leads: Dominick Stives-Mitchell and Cheyenne Johnson; Matt is involved occasionally for scripts and has no direct client contact. [src: Matt 2026-10-07, dictated]
 - Relationship tone notes (client-safe):
 
 ## Contacts

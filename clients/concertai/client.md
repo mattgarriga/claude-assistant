@@ -2,12 +2,13 @@
 
 ## Overview
 - Industry / what they do:
-- Engagement type: (managed services, project, ad-hoc support)
+- Engagement type: Flex package. New project being spun up to remediate their Salesforce to NetSuite integration issues. No Ethos lead assigned yet; work has not started. [src: Matt 2026-10-07, dictated]
 - Relationship tone notes (client-safe):
 
 ## Contacts
 | Name | Role | Email | Notes |
 |---|---|---|---|
+| Joe Bulens | Only known contact | | Spelled as heard; [src: Matt 2026-10-07, dictated] |
 
 ## Tool IDs
 | Tool | ID / Name |

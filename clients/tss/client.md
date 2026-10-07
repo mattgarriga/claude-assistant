@@ -2,12 +2,15 @@
 
 ## Overview
 - Industry / what they do:
-- Engagement type: (managed services, project, ad-hoc support)
+- Engagement type: Managed services, Thrive package (75 hours per month). Ethos account lead: Emma Tod, with Cheyenne Johnson. [src: Matt 2026-10-07, dictated]
 - Relationship tone notes (client-safe):
 
 ## Contacts
 | Name | Role | Email | Notes |
 |---|---|---|---|
+| Todd Marrott | COO | tmarrott@tssiusa.com (invitee 10.07.2026; unconfirmed match) | [src: Matt 2026-10-07, dictated] |
+| Jimmy Sims | NetSuite admin |  | [src: Matt 2026-10-07, dictated] |
+| Brenda | IT admin | bgillespie@tssiusa.com (likely Brenda Gillespie; unconfirmed) | surname unconfirmed; [src: Matt 2026-10-07, dictated] |
 
 ## Tool IDs
 | Tool | ID / Name |

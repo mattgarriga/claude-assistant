@@ -6,12 +6,23 @@
 - Three UE scripts deprecated (serial/lot sync, RMA update to Salesforce via REST PATCH) with a migration inventory [src: claude.ai memory]
 - Recent recap topics: O2C Phase 3 SOW, Rental Reversal Automation [src: claude.ai memory]
 - Industry / what they do:
-- Engagement type: (managed services, project, ad-hoc support)
+- Engagement type: Managed services, Thrive package (Ethos's highest tier, 75 hours per month). Ethos account lead: Matt Garriga. [src: Matt 2026-10-07]
 - Relationship tone notes (client-safe):
 
 ## Contacts
 | Name | Role | Email | Notes |
 |---|---|---|---|
+| Steve Higa | VP Operations |  | [src: Matt 2026-10-07, dictated; spelling unconfirmed] |
+| Kevin Strange | CFO |  | [src: Matt 2026-10-07, dictated; spelling unconfirmed] |
+| Nitish Goel | Controller |  | [src: Matt 2026-10-07, dictated; spelling unconfirmed] |
+| Brett Newsme | Fractional Controller |  | spelling to confirm; [src: Matt 2026-10-07, dictated; spelling unconfirmed] |
+| Pablo Bornacin | Technical Systems Admin (SFDC) | pablo.bornacin@calahealth.com | [src: Matt 2026-10-07, dictated; spelling unconfirmed] |
+| Michelle B | FP&A |  | surname unknown; [src: Matt 2026-10-07, dictated; spelling unconfirmed] |
+| Brenda Lim | Former accounting lead, now a consultant for Cala | brenda@calahealth.com | [src: Matt 2026-10-07, dictated; spelling unconfirmed] |
+| Erik C | Shipping team |  | surname unknown; [src: Matt 2026-10-07, dictated; spelling unconfirmed] |
+| Chris Rufo | Receiving team |  | [src: Matt 2026-10-07, dictated; spelling unconfirmed] |
+| Trena Noy | Production manager |  | [src: Matt 2026-10-07, dictated; spelling unconfirmed] |
+| Allen Burge | Production lead |  | [src: Matt 2026-10-07, dictated; spelling unconfirmed] |
 
 ## Tool IDs
 | Tool | ID / Name |

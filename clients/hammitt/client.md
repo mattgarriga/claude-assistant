@@ -2,7 +2,7 @@
 
 ## Overview
 - Industry / what they do:
-- Engagement type: (managed services, project, ad-hoc support)
+- Engagement type: not started; O2C discovery planned. Brian Webb expected to lead (Matt's expectation, not confirmed). Contacts unknown. [src: Matt 2026-10-07]
 - Relationship tone notes (client-safe):
 
 ## Contacts

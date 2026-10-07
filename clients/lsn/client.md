@@ -2,7 +2,7 @@
 
 ## Overview
 - Industry / what they do:
-- Engagement type: (managed services, project, ad-hoc support)
+- Engagement type: Flex package (as-needed). Ethos account lead: Dominick Stives-Mitchell. Contacts not known to Matt. [src: Matt 2026-10-07]
 - Relationship tone notes (client-safe):
 
 ## Contacts
