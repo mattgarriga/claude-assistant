@@ -15,6 +15,12 @@ argument-hint: [client] [details]
    | Client-owned action | Action | blank | In Progress - At Client | "[Client owner name]:" |
    | Owner unclear | as above | blank | Not Started | "Owner TBD." |
    Never assign an owner or due date that wasn't stated.
+**Keep it concise.** Propose the fewest rows that capture the meeting, normally 1 to 3, never one row per sub-step.
+- Merge actions that share an owner and workstream into one row; put the steps in Details.
+- One row per real outcome: a decision, a risk, an issue, or a distinct owned deliverable.
+- Fold dependencies into the action that needs them ("Complete routing-definition file", not a separate Dependency row). Skip assumptions, events, and target dates unless Matt asks, or the item blocks a deadline.
+- Do not add a row for a follow-up that an existing row already covers; update that row's Details instead.
+- If more than 3 rows seem needed, show the 3 most important and list the rest in one line for Matt to pick from.
 4. Match against existing open rows (subject and details, same project). Update a matching row instead of adding a duplicate.
 5. Preview table: Sheet / Action (Add/Update) / Row / Column / Old / New. Omit unchanged columns.
 6. Write only after Matt confirms. Then propose the context write-back.
