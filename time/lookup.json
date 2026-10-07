@@ -7,7 +7,63 @@
   "item": "Consulting Services",
   "note": "Ethos - General label goes here [src: Matt 2026-10-07; export]"
  },
- "labels": {},
+ "labels": {
+  "core|": {
+   "project": "Core Transformers : CORE - Phase One",
+   "task": "Consulting Services (Project Task)",
+   "item": "Consulting Services"
+  },
+  "imi|report": {
+   "project": "International Materials, LLC : IMI Growth",
+   "task": "Case # 2148",
+   "item": "Consulting Services"
+  },
+  "cala|o2c": {
+   "project": "Cala Health : Order to Cash - Phase Three",
+   "task": "Consulting Services (Project Task)",
+   "item": "Consulting Services"
+  },
+  "hut|ic": {
+   "project": "Heads Up Technologies : Heads Up Thrive",
+   "task": "Case # 1693",
+   "item": "Consulting Services"
+  },
+  "hut|os": {
+   "project": "Heads Up Technologies : Heads Up Thrive",
+   "task": "Case # 1303",
+   "item": "Consulting Services"
+  },
+  "hut|pm": {
+   "project": "Heads Up Technologies : Heads Up Thrive",
+   "task": "Case # 583",
+   "item": "Consulting Services"
+  },
+  "hut|vrma": {
+   "project": "Heads Up Technologies : Heads Up Thrive",
+   "task": "Case # 1171",
+   "item": "Consulting Services"
+  },
+  "cerio|field": {
+   "project": "Cerio : Cerio - Flex Support",
+   "task": "Case # 2154",
+   "item": "Consulting Services"
+  },
+  "cerio|project": {
+   "project": "Cerio : Cerio - Flex Support",
+   "task": "Case # 2155",
+   "item": "Consulting Services"
+  },
+  "commsell|status": {
+   "project": "CommSell inc : CommSell Growth",
+   "task": "Case # 469",
+   "item": "Consulting Services"
+  },
+  "4p|rma": {
+   "project": "4Patriots LLC. : 4Patriots Starter",
+   "task": "Case # 1597",
+   "item": "Consulting Services"
+  }
+ },
  "clients": {
   "HUT": {
    "customer": "564 Heads Up Technologies",
