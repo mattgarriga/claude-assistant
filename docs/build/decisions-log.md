@@ -54,3 +54,7 @@
 | 2026-10-07 | /today rewritten: calendar, email needing attention, RAIDE and project plans in Ethos Clients (Matt's items plus overdue/blocked/Owner TBD on his projects), time-blocked plan, Matt picks first passes; plan saved to gitignored daily/YYYY-MM-DD.md. Manual trigger | Matt approved | Y |
 | 2026-10-07 | CLAUDE.md rule: after every task, offer 2 or 3 things to take off Matt's plate from follow-ons and today's plan | Matt's request | Y |
 | 2026-10-07 | Roster: ConcertAI and Hammitt added Active, Enovix Inactive | Matt's call | Y |
+| 2026-10-07 | RAIDE field mapping: Escalation = Issue + URGENT + "Escalation:"; client-owned = Assigned To blank, Status In Progress - At Client, client owner first in Details; Owner TBD = blank + "Owner TBD." in Details. No schema changes | RAIDE template has no Escalation type and Assigned To is Ethos-only. Matt approved | Y |
+| 2026-10-07 | RAIDE routing: project-specific RAIDE when the project has an active one (in project.md), else client MS RAIDE with Project picklist | Most clients have several RAIDEs. Matt approved | Y |
+| 2026-10-07 | Live Dev Tracker is "Ethos Development Tracker" (8603558799691652); Row ID EBS.#### is the branch ticket | Matt's call | Y |
+| 2026-10-07 | New personal sheet "Matt Garriga - Action Log" (RAIDE columns plus Source) created in Phase 5 with Matt's confirm; holds commitments, waiting-on, internal-only actions, management/team. Fed by /recap, /inbox, /today; old RAID Log archived by Matt | Old log stale; deletion is denied by design. Matt approved | Y |

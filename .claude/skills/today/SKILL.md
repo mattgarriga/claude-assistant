@@ -20,6 +20,10 @@ Read-only until Matt picks first passes. Nothing is written to his calendar, mai
 - Pull: items Matt owns that are overdue, due today, or due this week. On Matt's projects, also pull anything overdue, Blocked, or Owner TBD regardless of owner.
 - One line each: Client / Sheet / Item / Owner / Due / Status.
 
+## 3b. Action Log
+- Read Matt's Action Log (`standards/tools.md`). Pull open commitments that are due or overdue, and waiting-on items older than 3 business days (candidates for a nudge draft).
+- Scan yesterday's sent mail and meetings for new commitments or waiting-on items not yet logged, and list them as proposed Action Log adds.
+
 ## 4. Build the plan
 - Rank: overdue client commitments, then today's meeting prep, then emails blocking someone, then due-this-week items, then everything else.
 - Time-block the day: meetings fixed, a prep block before each client meeting, focus blocks in the gaps assigned to the top priorities. Leave 15 minutes of slack between back-to-back blocks.
