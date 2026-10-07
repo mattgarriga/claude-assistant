@@ -25,3 +25,9 @@
 | 2026-10-07 | Tables trimmed to content row count; empty sections get "Not applicable to this solution."; template spacer paragraphs kept | Matt approved | Y |
 | 2026-10-07 | SDD TOC entries rewritten from real headings, field flagged to update on open (Word prompts once) | Matt approved | Y |
 | 2026-10-07 | Process flows embedded as Lucid PNG export at content width; Lucid edit link in SDD Document Control; template INCLUDEPICTURE link removed | Matt approved | Y |
+| 2026-10-07 | Git guard residuals accepted: uppercase variants, variable indirection, program-launched commands, piping into a shell; settings.json deny rules are the second layer | Tester cycle 2 PASS, 0 false blocks on ~50 normal commands, ~31ms median | Y |
+| 2026-10-07 | One-Pager filled text: Calibri #262626 (prototype runs, ListParagraph style, spacing after 40/60 taken from the HUT Workbook Export One-Pager); labels and headings stay template Arial | Matt chose over the Arial #404040 hand-built examples | Y |
+| 2026-10-07 | One-Pager lists use real Word bullets/numbering; numbering.xml is the one One-Pager part allowed to differ from the template | Matt approved | Y |
+| 2026-10-07 | SDD filled sizes follow the 2026 template: body 11pt, tables 10pt | Template is newer than the 3D Flight example. Matt approved | Y |
+| 2026-10-07 | SDD 4.4: Filename, Folder, Script Type, Script ID lines, then Script Parameters as a navy-header Name / Type / Value table (per 3D Flight SDD); sdd-format.md updated in Phase 1 | Matt approved | Y |
+| 2026-10-07 | HUT PrintNode API key found in plaintext in a shared One-Pager; scratch copies deleted, file excluded from repo and fixtures; flagged to Matt | Credential exposure | N/A |
