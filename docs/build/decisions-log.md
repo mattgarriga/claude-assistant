@@ -41,3 +41,9 @@
 | 2026-10-07 | 3a examples: latest HUT client status (confirm before run), HUT Internal Status 10/06, email thread TBD (senior proposes candidates, Matt confirms), /review-design on HUT 3D Flight Cost SDD | Matt approved | Y |
 | 2026-10-07 | /flow test rebuilds HUT 3D Flight Cost flow into a "Claude Test" Lucid folder; Matt deletes after comparison | Claude cannot delete Lucid docs. Matt approved | Y |
 | 2026-10-07 | SDD, SOW, One-Pager skill text updated in Phase 1 task 1.4 alongside format files, diff shown to Matt | Matt approved | Y |
+| 2026-10-07 | Recap step 8: RAIDE/project log proposals for client and internal meetings; live-update detected from RAIDE rows modified in the meeting window; routed by type; client-facing filter on both sheets (project plan assumed client-visible, pending Matt) | Matt approved | Y |
+| 2026-10-07 | Dirty or mid-ticket client checkout: Claude stops and asks; default offered = commit WIP on its branch, checkout main, create new branch. No worktrees | Matt's call | Y |
+| 2026-10-07 | Missing client repo: Claude tells Matt, Matt supplies the clone URL, Claude clones | Matt's call | Y |
+| 2026-10-07 | Repo CLAUDE.md stays personal (points into this workspace); standards not committed to client repos | Matt's call | Y |
+| 2026-10-07 | Dev skills (review, debug, scaffold, query, migration-audit, test-plan, handoff) rewritten in Phase 4 to cite coding-standards sections, use feature/hotfix/bugfix branches, and use the 10.4 checklist as the review baseline | Skills predate the standards | Y |
+| 2026-10-07 | Coding standards 18 gaps: Matt has a finished version from another app; it replaces the draft after a diff review | Pending file | Y |
