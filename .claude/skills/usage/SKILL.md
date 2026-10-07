@@ -14,6 +14,6 @@ Recommend a mode (defaults, Matt can change them):
 |---|---|
 | Under 50 percent | Full: any skill, agents allowed where `CLAUDE.md` says so |
 | 50 to 80 percent | Lean: lean `/today`, no live-test runs, no agents except for large raw pulls |
-| Over 80 percent | Essentials only: replies, recaps for meetings that just happened, Action Log capture |
+| Over 80 percent | Essentials only: replies, recaps for meetings that just happened |
 
 If context is over 60 percent, suggest a new session before the next big task. If $ARGUMENTS names a task, say which mode it fits and its rough cost (low, medium, high). If status is `not_applicable` or `unavailable`, say so and stop.

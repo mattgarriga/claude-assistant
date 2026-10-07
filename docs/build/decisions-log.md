@@ -88,3 +88,4 @@
 | 2026-10-07 | Per-task override of defaults stays dropped; non-negotiables never bend (#20) | Matt approved | Y |
 | 2026-10-07 | Team roster additions confirmed as written, including Invitra contacts and personal notes (#22) | Matt approved | Y |
 | 2026-10-07 | /wrap skill removed; /eod covers the daily close and context review | Matt's call | Y |
+| 2026-10-07 | All Action Log logic removed (/log, /chase, auto-log in recap, inbox, today, eod, guard_actionlog hook and tests). Sheet left in Smartsheet unused | Matt keeps his to-do list in his notes | Y |

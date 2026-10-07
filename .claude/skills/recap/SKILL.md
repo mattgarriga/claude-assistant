@@ -58,14 +58,13 @@ Send the meeting ID to `meeting-analyst`. It pulls the meeting (transcript only 
 - Budget figures without a clear source (status meeting recaps only)
 
 ## 8. RAIDE and project log proposals (client and internal meetings)
-1. Use the meeting-analyst JSON (`raide_candidates`, `action_log_candidates`, `internal_only`). Get sheet IDs: MS RAIDE from `client.md`, project RAIDE and project plan from the relevant `project.md`. Pick the RAIDE per the raide routing rule. Missing ID: say so and skip that sheet.
+1. Use the meeting-analyst JSON (`raide_candidates`, `internal_only`). Get sheet IDs: MS RAIDE from `client.md`, project RAIDE and project plan from the relevant `project.md`. Pick the RAIDE per the raide routing rule. Missing ID: say so and skip that sheet.
 2. Have `scout` pull the RAIDE rows (use the cached schema in `client.md`; no `get_columns` unless missing). Rows created or modified between the meeting's start and end time mean the RAIDE was updated live. In that case, propose only items from this meeting that are still missing. If no rows changed in the window, propose every qualifying item.
 3. Route by type. Risks, Issues, Decisions, Escalations and client-facing Actions go to the RAIDE. Task-level work (build, configure, test, deploy) goes to the project plan sheet.
-4. Both sheets are client-visible. Apply the client-facing rules from step 4 to every proposal, even for internal meetings. An item that only makes sense with internal context is proposed for Matt's Action Log instead (sheet in `standards/tools.md`), and any stakeholder or budget dynamics go to the `internal.md` write-back.
+4. Both sheets are client-visible. Apply the client-facing rules from step 4 to every proposal, even for internal meetings. An item that only makes sense with internal context is left off the sheets and mentioned to Matt in chat, and any stakeholder or budget dynamics go to the `internal.md` write-back.
 5. Match against existing rows. Update a matching row rather than adding a duplicate. Keep the proposal concise: fewest rows that capture the meeting (normally 1 to 3); merge actions with the same owner and workstream into one row with steps in Details; fold dependencies into the action; skip assumptions, events, and target dates unless they block a deadline; if more than 3 seem needed, show the 3 most important and list the rest in one line.
 6. Owner TBD stays TBD. Never assign an owner or a due date that wasn't stated.
-7. Action Log (Matt's own sheet, auto-approved): write Matt's own commitments and the items he is waiting on from others, taken from `action_log_candidates`, using the `log` skill (dedupe on Source = the meeting link, concise, no invented owners or dates). No preview or confirmation. Report one line: "Logged N: AL.#### ...". This applies to client and internal meetings.
-8. Show the RAIDE and project plan preview only (client-visible sheets): Sheet / Action (Add/Update) / Row / Column / Old / New. Nothing on those sheets is written until Matt confirms. On confirm, write through the raide and tasks rules.
+7. Show the RAIDE and project plan preview only (client-visible sheets): Sheet / Action (Add/Update) / Row / Column / Old / New. Nothing on those sheets is written until Matt confirms. On confirm, write through the raide and tasks rules.
 
 ## 9. Context write-back
 Propose updates per the client-context skill: new decisions to `decisions.md`, status/budget/open items to `project.md`, sensitive dynamics to `internal.md`, new glossary corrections to `client.md`.

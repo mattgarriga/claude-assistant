@@ -44,7 +44,7 @@ Never connect. No MCP, no API, no SDF deploy from this workspace. Ask Matt what 
 | Sheet | ID | Notes |
 |---|---|---|
 | Ethos Development Tracker | 8603558799691652 | Live dev tracker. Row ID EBS.#### is the ticket in branch names. The other "Development Tracker" sheet is not used |
-| Matt Garriga - Action Log | 5639928991141764 | Matt's commitments, waiting-on items, internal-only actions, management and team items. Row ID AL.####. Matthew Garriga workspace |
+| Matt Garriga - Action Log | 5639928991141764 | Not in use. Logic removed 2026-10-07; sheet and one row (AL.0001) remain. Never read or written unless Matt asks |
 | Matt Garriga - RAID Log (old) | 1858937004445572 | Stale. Never read or written. Matt archives it |
 | Client RAIDEs and project plans | per client | MS RAIDE in each `client.md`; project RAIDE and plan in each `project.md` (seeded by bootstrap from `docs/build/phase6-discovery.md`) |
 
@@ -54,23 +54,3 @@ See `lucid-standards.md`.
 ## docx
 - Build through `lib/docx/` (template-fill engine: `node lib/docx/cli.js`, schemas in `lib/docx/README.md`), normally via the doc-producer agent. See `branding.md`.
 - Render to PDF and visually check before handoff.
-
-## Action Log schema cache
-Sheet 5639928991141764, read 2026-10-07. Column IDs for `add_rows` cells:
-| Column | Type | ID | Values |
-|---|---|---|---|
-| Row ID | Auto-number AL.#### | 1787451963903876 | |
-| Type | Picklist | 6291051591274372 | Commitment, Waiting On, Internal Action, Management |
-| Subject (primary) | Text | 4039251777589124 | |
-| Client | Picklist | 8542851404959620 | Internal, HUT, Cala Health, 4Patriots, CommSell, IMI, Core Transformers, Cerio, Boxes 4 U, EVgo, LSN, TSS, ConcertAI, Hammitt |
-| Date Identified | Date (YYYY-MM-DD) | 380077080350596 | |
-| Due Date | Date (YYYY-MM-DD) | 4883676707721092 | |
-| Assigned To | Contact list | 2631876894035844 | Matt only (matt.garriga@ethosbusinesssolutions.com). Never assign external people or other contacts: Smartsheet may notify them. Put the other party in the Subject |
-| Priority | Picklist | 7135476521406340 | Low, Medium, High, URGENT |
-| Status | Picklist | 1505976987193220 | Not Started, In Progress - At Ethos, In Progress - At Client, In Progress - At Partner, Closed, On Hold, Pending Approval, Status Meeting |
-| Done | Checkbox | 6009576614563716 | |
-| Details | Text | 3757776800878468 | |
-| Source | Text | 8261376428248964 | Meeting link or Read AI ID, or email web link |
-| Comments | Text | 943027033771908 | |
-
-**Auto-approved writes:** `add_rows` to the Action Log only, by `scripts/guard_actionlog.py` (PreToolUse hook). Every other sheet and every other Smartsheet write still asks.
