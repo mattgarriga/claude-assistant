@@ -4,16 +4,12 @@ description: Review NetSuite SuiteScript, SDF objects, or a git diff against Eth
 argument-hint: [client] [details]
 ---
 # Code Review
-Read: `standards/coding-standards.md`, `standards/dev-workflow.md`, the repo `CLAUDE.md`, `knowledge/netsuite-dev-patterns.md`.
+Reading goes to the `code-reviewer` agent; you reason over its table.
 
-Check, in order:
-1. Correctness against the requirement (SDD or ticket if referenced).
-2. Script type fit (same challenges as the SDD skill's Section 4 gate).
-3. Governance: units per entry point, searches/loads in loops, yield/reschedule needs.
-4. Idempotency and duplicate handling.
-5. Error handling: nothing swallowed, summarize iterates errors, useful log context.
-6. SuiteScript 2.1 compliance, N/query parameterization, date handling (TO_CHAR, MM/DD/YYYY for submitFields).
-7. Coding standards file items.
-8. Hard-coded IDs, credentials, environment-specific values.
+1. Resolve the client and repo path (`client.md`, Repo row). Repo missing from `../Repos`: tell Matt and ask for the clone URL; never guess.
+2. Read `standards/dev-workflow.md` and the repo `CLAUDE.md`. Note the branch and `git status` (read-only). Dirty or mid-ticket checkout: stop and ask. Default offer: commit WIP on its branch, checkout main, create the new branch.
+3. Delegate to `code-reviewer` with the repo, branch or diff range, and any SDD or ticket. Baseline is the conventions file (via `standards/coding-standards.md`) section 10.4 pre-handoff checklist. If the conventions file is missing, stop and tell Matt.
+4. Add your own pass on correctness against the requirement and script type fit (SDD Section 4 gate).
+5. Output: table Line / Severity (Blocker, Fix, Nit) / Finding / Section / Suggested change. Every finding cites a conventions section number. One-line verdict. Offer to apply fixes on a feature branch (`feature/EBS-####`, `hotfix/EBS-####`, `bugfix/<desc>`; commits `type: summary`; show diff and message before committing).
 
-Output a table: Line/Area / Severity (Blocker, Fix, Nit) / Finding / Suggested change. Then a 1-line verdict. Offer to apply fixes on a feature branch.
+Link EBS-#### to its Ethos Development Tracker row (Row ID EBS.####) when the ticket matters to the finding.

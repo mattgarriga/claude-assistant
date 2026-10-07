@@ -31,6 +31,7 @@ Push back if deliverables imply custom work where native config would do, or if 
 - Pricing never invented: Total Fee, 50% split, balance, and T&M hours are `PRICING-PROVIDE-BEFORE-SENDING`. T&M uses the template's native Estimated Hours and Fees table.
 - Signature block: client signer from `client.md`, Ethos signer Cedric Carter, acceptance date blank.
 - Write `data.json` per the `lib/docx/` README schema (kind sow|co, pricing ff|tm). The doc-producer agent fills the template, renders, and lints the filled content. Inspect the render.
+- Before showing Matt, run `qa-gate` on the `data.json` content (client slug, type SOW or CO) and fix every FAIL; re-run doc-producer after content fixes. Doc-producer reports lint and secret-scan results; resolve wording hits yourself.
 
 ## 5. Handoff
 Summary. If LOE sign-off unconfirmed: "Confirm Cheyenne has signed off on LOE before sending." Verification checklist. Context write-back (scope and pricing status to `project.md`).

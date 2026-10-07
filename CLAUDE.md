@@ -68,7 +68,7 @@ Every recap, SDD, SOW, one-pager, or design conversation produces a context upda
 | `/email` | Outlook draft |
 | `/client-update` | Update a client's context from a source |
 | `/new-client` | Scaffold a new client |
-| `/bootstrap` | One-time seed of core clients from history |
+| `/bootstrap` | One-time seed of the 13 Active clients from history |
 | `/review-design` | Native-first, anti-overengineering pass |
 | `/review` | Review a script, branch, or diff |
 | `/debug` | Root-cause an error or log |
@@ -81,6 +81,10 @@ Every recap, SDD, SOW, one-pager, or design conversation produces a context upda
 | `/devboard` | Development Tracker triage |
 | `/today` | Daily plan: calendar, email, RAIDE and project plans, time blocks, first passes |
 | `/inbox` | Inbox triage and reply drafts |
+| `/agenda` | Status meeting talk track for a client (RAIDE Status Meeting rows, overdue, blocked, new) |
+| `/invitra` | Weekly Invitra digest: Dev Tracker rows, aging, open EBS branches |
+| `/sow-review` | Read-only review of a SOW or CO someone else drafted |
+| `/wrap` | Friday wrap, update draft for Cedric and Cheyenne, write-back approval |
 | `/health-check` | Verify connector deny rules, hooks, auth, conventions file |
 
 Build and maintenance of this workspace itself: see `docs/build/senior-engineer.md` (main session as senior engineer, `app-builder` and `tester` subagents).

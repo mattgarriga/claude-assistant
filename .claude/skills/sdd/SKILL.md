@@ -59,6 +59,7 @@ Before drafting, show Matt the locked design summary (components table + open qu
 - Process flow via the flow skill. Embed the Lucid PNG export in 4.1 and record the edit link in Document Control.
 - Write the content to `data.json` per the `lib/docx/` README schema (SDD). Section list and order: `standards/sdd-format.md`.
 - Hand off to the doc-producer agent: it fills `templates/template-sdd.docx`, renders to PNG, and runs `python3 scripts/lint_voice.py --design` on the filled content. Inspect the render.
+- Before showing Matt, run `qa-gate` on the `data.json` content (client slug, type SDD) and fix every FAIL; re-run doc-producer after content fixes. Doc-producer reports lint and secret-scan results; resolve wording hits yourself.
 - Save to `clients/<slug>/projects/<project>/outputs/`. Drafts as `-draft.docx` (not committed).
 
 ## 7. Handoff

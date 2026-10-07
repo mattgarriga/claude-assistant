@@ -34,14 +34,11 @@ Pull the given source (a Read AI meeting, an email thread, a Smartsheet sheet) o
 Copy `clients/_template/`, add the roster entry with aliases, ask Matt for contacts' domain, Read AI folder, key Smartsheet sheets.
 
 ## /bootstrap (one-time)
-Seed the 7 core clients from the last 90 days: HUT, Cala Health, 4Patriots, CommSell, IMI, Core Transformers, Cerio.
+Seed all 13 Active clients in `clients/roster.md` from the last 90 days. Core clients (Core = Yes) are reviewed first. Nothing is written to `clients/` until Matt approves that client.
 
-For each client, in order:
-1. Ask Matt (all clients batched in one message up front): client email domain(s), Read AI folder name if any, key Smartsheet sheet names.
-2. Read AI: list meetings in the client folder or matching the domain over 90 days. Pull summaries, decisions, action items, topics. Transcripts only if needed.
-3. Outlook: threads with the client domain over 90 days. Subjects and bodies of substantive threads only; skip automated mail.
-4. Smartsheet: the client's RAIDE log, plan, and Ethos Development Tracker rows for that client (read only).
-5. Draft `client.md`, `decisions.md`, `internal.md`, and one `project.md` per workstream, with source tags on every line. Merge with the existing seed content (lines marked `[src: claude.ai memory]`), resolving conflicts in favor of the newer source and flagging them.
-6. Present a per-client review: proposed files, conflicts, low-confidence items, mistranscription suspects. Write only after Matt approves that client.
+1. **Discovery (senior session, one confirmation table).** For each client find: email domains (Read AI participant emails), Read AI folder, MS RAIDE and project RAIDE/plan sheet IDs (Smartsheet search under Ethos Clients > Clients), Dev Tracker client picklist value, Lucid folder, repo path in `../Repos`. Use `scout` for listings. Show ONE table (client / domains / Read AI folder / sheets / Dev Tracker value / Lucid folder / repo) with unknowns marked. Matt corrects it once; do not ask per client.
+2. **Parallel read-only drafts.** Run in an evening or overnight window. One worker per client, using `scout` for listings (Read AI, Outlook, Smartsheet RAIDE and plans, Dev Tracker rows) and `meeting-analyst` for meeting content, 90 days back. Transcripts only if a summary is thin. Skip automated mail. Each worker drafts `client.md`, `decisions.md`, `internal.md`, and one `project.md` per workstream into the scratchpad, not `clients/`. Every line carries a source tag. Merge with existing seed lines marked `[src: claude.ai memory]`: each is verified against a newer source (retag it) or replaced; unverifiable lines are listed, not kept silently. Also list conflicts, low-confidence items, and mistranscription suspects.
+3. **Per-client review, core first.** Present proposed files plus the conflict, low-confidence, and suspect lists. Write only after Matt approves that client; one commit per client (`docs: bootstrap <slug> context`), shown with diff before committing, feature-branch rules do not apply to this workspace but never push.
+4. **Repo CLAUDE.md.** For each client with a repo, write `../Repos/<repo>/CLAUDE.md` from `templates/repo-CLAUDE.md` (fill client slug, script prefix, shared libraries, quirks from the drafts; leave unknowns blank) and append `CLAUDE.md` to that repo's `.git/info/exclude`. Never commit it; confirm `git status` in the repo does not list it.
 
-Stop after each client for review. Don't batch-write all seven.
+Stop after each client for review. Don't batch-write all thirteen.

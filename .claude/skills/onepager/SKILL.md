@@ -30,5 +30,6 @@ If the request is actually larger than a one-pager (new integration, multiple sc
 
 ## 4. Build and hand off
 - Write `data.json` per the `lib/docx/` README schema (One-Pager). The doc-producer agent fills the template (helper lines removed, footer line kept), renders, and lints the filled content. Inspect the render.
+- Before showing Matt, run `qa-gate` on the `data.json` content (client slug, type one-pager) and fix every FAIL; re-run doc-producer after content fixes. Doc-producer reports lint and secret-scan results; resolve wording hits yourself.
 - Save to the project's `outputs/`.
 - Summary, verification checklist, context write-back proposal.

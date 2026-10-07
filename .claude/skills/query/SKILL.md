@@ -4,7 +4,8 @@ description: Write or fix SuiteQL queries and saved search formulas (CASE WHEN, 
 argument-hint: [client] [details]
 ---
 # Query Helper
-- Ask for the record types, fields, and expected output if not given. Never guess field IDs; ask Matt or check the client repo for references.
+- Read the query and N/query sections of the conventions file (via `standards/coding-standards.md`) and cite them when a convention applies.
+- Ask for the record types, fields, and expected output if not given. Never guess field IDs; ask Matt or check the client repo. Never run it against NetSuite.
 - Return the query or formula, then a 2 to 4 line explanation of non-obvious parts.
 - Known traps: status internal IDs vs display text, NVL on nulls before math, ABS tolerance for float comparisons, TO_CHAR for dates in SuiteQL, joins that multiply rows.
-- If the query will run inside a script, use parameterized N/query.
+- Inside a script: parameterized N/query, never string-concatenated values.

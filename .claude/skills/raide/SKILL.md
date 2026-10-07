@@ -4,9 +4,10 @@ description: Update a client's Smartsheet RAIDE log from a meeting, email, or Ma
 argument-hint: [client] [details]
 ---
 # RAIDE Sync
+0. Source is a meeting: have `meeting-analyst` extract it first and use its `raide_candidates`, `action_items`, and `internal_only` (never to a client-visible sheet). Email or notes: work directly.
 1. Pick the sheet. If the item belongs to a project with its own active RAIDE (listed in that project's `project.md`), use it. Otherwise use the client's MS RAIDE from `client.md` and set the Project picklist. Every preview row shows the target sheet.
 2. Pull columns and open rows (`get_columns`, `get_sheet_summary`). Only use existing picklist values; if a needed value is missing, say so instead of writing free text.
-3. Extract items and map them to the RAIDE template:
+3. Map items to the RAIDE template:
    | Source item | Type | Assigned To | Status | Details starts with |
    |---|---|---|---|---|
    | Risk, Issue, Decision, Action, Enhancement | same | Ethos owner if stated | as stated, else Not Started | |

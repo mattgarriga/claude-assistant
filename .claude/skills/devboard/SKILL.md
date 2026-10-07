@@ -4,7 +4,7 @@ description: Triage the Ethos Development Tracker in Smartsheet: unassigned, blo
 argument-hint: [client] [details]
 ---
 # Dev Tracker Triage
-Sheet: Ethos Development Tracker (ID in `standards/tools.md`). Row IDs are EBS.####, the same ticket number used in branch names (`feature/EBS-####`).
+Sheet: Ethos Development Tracker (ID in `standards/tools.md`). Row IDs are EBS.####, the same ticket number used in branch names (`feature/EBS-####`). `scout` fetches the rows (filtered by client if given) and returns a compact table; you apply the flags below.
 
 Flag, in this order:
 1. Status Submitted or Backlog with no Assigned To.
