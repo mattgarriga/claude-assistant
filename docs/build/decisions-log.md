@@ -70,3 +70,5 @@
 | 2026-10-07 | Audience: personal only; no team-plugin separation work | Matt's call | Y |
 | 2026-10-07 | Pacing: Phases 1 to 5 and 7 now; Phase 6 bootstrap gathering runs in an evening/overnight window, reviews next morning | Matt approved | Y |
 | 2026-10-07 | Context write-backs queue in gitignored state/writeback-queue.md, approved in batch via /today and /wrap; immediate ask only when the next step depends on it | Matt approved | Y |
+| 2026-10-07 | lib/docx: accept re-serialized One-Pager sectPr (semantically identical, whitespace only); diagram titles get bold + keepNext; SDD 4.4 omits parameter table when none; One-Pager bullets use the definition from the HUT Workbook Export example | Engine build; tester PASS | Y |
+| 2026-10-07 | Phase 3a tests deferred until Matt is present (he judges first-pass quality; saves usage) | Matt is low on weekly usage | Y |

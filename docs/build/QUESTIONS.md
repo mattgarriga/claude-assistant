@@ -9,7 +9,7 @@ Answer in chat in any order. Items marked FYI need no answer unless you disagree
 
 ## B. Render approvals
 4. Phase 1 cleaned templates: `docs/build/renders/phase1/clean-template-sdd/` (now Letter) and `clean-template-dev-request-one-pager/` (white value cells). Approve?
-5. Phase 2 outputs vs templates, all 6 types: `docs/build/renders/phase2/<type>/{template,output}/`. Renders use LibreOffice look-alike fonts; the byte-identity check passed on every type. Open one real output in Word too: `lib/docx/out/`. Approve, or list fixes.
+5. Phase 2 outputs vs templates, all 6 types: `docs/build/renders/phase2/<type>/{template,output}/`. Renders use LibreOffice look-alike fonts; the byte-identity check passed on every type. Open one real output in Word too: `lib/docx/out/`. Approve, or list fixes. Tester's visual notes (LibreOffice pagination, Word may differ): One-Pager OPEN QUESTIONS heading can strand at the bottom of page 1; SDD FR-01 table splits across pages 3 and 4; SDD page 1 has white space before the TOC (same as the template); T&M fee table placeholder wraps (see item 6). Want keep-with-next added to headings and no-split on short tables? That is formatting the engine would add beyond the template.
 
 ## C. Document engine calls
 6. T&M fee table: `PRICING-PROVIDE-BEFORE-SENDING` wraps to 2 to 4 lines in the narrow Total column. Keep it (ugly, unmissable), or use `TBD` inside that table only with the full placeholder in the paragraph above it?

@@ -9,7 +9,7 @@ If a session restarts, read this file, then `plan.md` and `decisions-log.md`, th
 | 1.1 to 1.3 Templates in repo, cleaned SDD (Letter) and One-Pager (white fills), branding.md | Built, tested; awaiting Matt render approval | c55e47d |
 | 1.4, S1 Format files, skills merged to short names | Built, tested | e056965 |
 | 1.6 Standards diff table | Built; 20 rows need Matt | dcc910a |
-| 2 lib/docx template-fill engine, 6 types, check.js, renders | Built; tester running; awaiting Matt render approval | pending |
+| 2 lib/docx template-fill engine, 6 types, check.js, renders | Built, tested (PASS); awaiting Matt render approval | see git log |
 | 4, 5 Dev and PM skills, agent routing, /agenda /invitra /sow-review /wrap | Built | 3356c6e |
 | S2 Day-to-day agents (scout, meeting-analyst, doc-producer, qa-gate, code-reviewer) | Built, tested | e056965 |
 | 6 bootstrap skill rewrite; 6.1 discovery table | Built; table awaiting Matt | 3356c6e, 4e2d566 |

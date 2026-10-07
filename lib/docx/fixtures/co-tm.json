@@ -1,0 +1,66 @@
+{
+  "kind": "co",
+  "pricing": "tm",
+  "client": "Northwind Components",
+  "project": "NetSuite Support - 4521",
+  "name": "Return Approval Threshold Change",
+  "problem": "Warehouse staff create vendor returns by hand, and approvals are tracked in email.",
+  "solution": "A return authorization form with automated approval routing and a nightly status sync.",
+  "impact": "Fewer lost returns and faster vendor credits.",
+  "assumptions": [
+    "Client will perform necessary testing to confirm the solution is working.",
+    "Any material changes to the scope estimated to exceed 8 hours of effort will require a formal change order for client approval.",
+    "Any material changes to the scope estimated at 8 hours or less of effort will be addressed under the existing ad-hoc support agreement.",
+    "Following deployment to production, the solution will be supported under this CO for 5 business days. Thereafter, ongoing support will transition to the existing ad-hoc support agreement.",
+    "Effort estimates will be determined by Ethos in good faith based on initial review.",
+    "Client will provide the approver list before development starts."
+  ],
+  "diagrams": [
+    {
+      "title": "Current Process",
+      "png": "standin-diagram.png"
+    }
+  ],
+  "scope": {
+    "configuration": [
+      {
+        "text": "Custom Record: Return Authorization with header and line fields",
+        "children": [
+          "Field: Vendor, Reason, Status",
+          "Form: Return Authorization entry form",
+          "Saved Search: Open returns by vendor"
+        ]
+      },
+      "Role: Return Approver permissions"
+    ],
+    "development": [
+      "Suitelet: Return intake form with vendor lookup",
+      {
+        "text": "User Event: Quantity validation and approval task creation",
+        "children": [
+          "Scheduled Script: Nightly vendor open-return count"
+        ]
+      }
+    ],
+    "outOfScope": [
+      "Vendor portal access",
+      "Historical return data migration"
+    ]
+  },
+  "clientSigner": "Pat Lindqvist",
+  "estimatedHours": "PRICING-PROVIDE-BEFORE-SENDING",
+  "fees": {
+    "estimatedFees": "PRICING-PROVIDE-BEFORE-SENDING",
+    "hours": {
+      "design": "PRICING-PROVIDE-BEFORE-SENDING",
+      "configuration": "PRICING-PROVIDE-BEFORE-SENDING",
+      "development": "PRICING-PROVIDE-BEFORE-SENDING",
+      "uat": "PRICING-PROVIDE-BEFORE-SENDING",
+      "training": "PRICING-PROVIDE-BEFORE-SENDING",
+      "cutover": "PRICING-PROVIDE-BEFORE-SENDING",
+      "support": "PRICING-PROVIDE-BEFORE-SENDING",
+      "oversight": "PRICING-PROVIDE-BEFORE-SENDING",
+      "total": "PRICING-PROVIDE-BEFORE-SENDING"
+    }
+  }
+}

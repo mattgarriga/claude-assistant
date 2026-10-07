@@ -1,0 +1,12 @@
+{
+  "name": "ethos-docx",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Template-fill engine for Ethos branded .docx output",
+  "main": "engine.js",
+  "bin": { "ethos-docx": "cli.js" },
+  "dependencies": {
+    "@xmldom/xmldom": "^0.8.10",
+    "jszip": "^3.10.1"
+  }
+}

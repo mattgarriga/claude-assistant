@@ -1,0 +1,27 @@
+{
+  "clientProject": "Northwind Components - NetSuite Support 4521",
+  "requestedBy": "Pat Lindqvist",
+  "requestType": "Minor Enhancement",
+  "businessContext": [
+    "Purchasing approves vendor returns over email, which delays vendor credits.",
+    "Without a routed approval, returns above the credit threshold are sometimes processed without review."
+  ],
+  "currentState": [
+    "Returns are approved by email.",
+    { "bullets": ["No audit trail in NetSuite.", "Approver is chosen by the requester."] }
+  ],
+  "desiredState": [
+    "Returns route to the approver for the vendor.",
+    { "bullets": ["Approval is recorded on the return.", "Rejections include a comment."] }
+  ],
+  "requestDetails": [
+    { "label": "Change", "text": "Add an approver field to the Return Authorization record and a user event that creates an approval task." },
+    { "bullets": ["Script: User Event on Return Authorization", "Field: Approver on the Vendor record", { "text": "Saved search: Returns pending approval", "sub": ["Columns: Vendor, Amount, Age"] }] }
+  ],
+  "inScope": ["Approver field on Vendor", "Approval task creation"],
+  "outOfScope": ["Changes to vendor credit posting", "Notifications to vendors"],
+  "openQuestions": [
+    { "question": "Which amount threshold requires finance approval?", "owner": "Owner TBD" },
+    { "question": "Who approves when the vendor has no approver set?", "owner": "Pat Lindqvist (Northwind)" }
+  ]
+}

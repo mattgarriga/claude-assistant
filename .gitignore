@@ -6,3 +6,6 @@ clients/*/outputs/**/*.pdf
 daily/
 *-draft.docx
 state/
+
+lib/docx/out/
+lib/docx/node_modules/

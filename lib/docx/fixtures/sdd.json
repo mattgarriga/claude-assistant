@@ -1,0 +1,110 @@
+{
+  "client": "Northwind Components",
+  "project": "NetSuite Support - 4521",
+  "customization": "Vendor Return Authorization Workflow",
+  "problem": "Warehouse staff create vendor returns by hand, and approvals are tracked in email.",
+  "solution": "A return authorization form with automated approval routing and a nightly status sync.",
+  "impact": "Fewer lost returns and faster vendor credits.",
+  "assumptions": [
+    "Northwind will provide the approver list before development starts.",
+    "Existing vendor records contain a valid email address."
+  ],
+  "currentState": [
+    "Warehouse staff email a spreadsheet to purchasing.",
+    "Purchasing keys the return into a vendor bill credit.",
+    "Approval status lives in email threads."
+  ],
+  "desiredState": [
+    "Warehouse staff submit returns from a single form.",
+    "Approvers receive a task and respond in NetSuite.",
+    "Return status is visible on the vendor record."
+  ],
+  "openQuestions": [
+    { "question": "Which return reasons require a second approver?", "owner": "Owner TBD" },
+    { "question": "Should returns above a dollar threshold route to finance?", "owner": "Pat Lindqvist (Northwind)" }
+  ],
+  "inScope": ["Return authorization form", "Approval routing", "Nightly status sync"],
+  "outOfScope": [],
+  "functionalRequirements": [
+    { "name": "Return Intake", "requirements": [
+      "The form requires a vendor, an item, a quantity, and a return reason.",
+      "Quantity cannot exceed the quantity received on the original purchase order.",
+      "Submitting the form creates a return record in Pending Approval status."
+    ] },
+    { "name": "Approval Routing", "requirements": [
+      "A task is created for each approver on the return record.",
+      "The return moves to Approved only when all approvers accept.",
+      "A rejection returns the record to the requester with the rejection comment."
+    ] },
+    { "name": "Status Sync", "requirements": [
+      "A nightly job updates the vendor record with the count of open returns.",
+      "Closed returns are excluded from the open count."
+    ] }
+  ],
+  "processFlow": [
+    { "png": "standin-diagram.png" }
+  ],
+  "technical": {
+    "title": "Return Authorization with Scripted Routing",
+    "details": "A custom record holds the return. A user event script validates quantity and creates approval tasks. A scheduled script syncs status nightly.",
+    "components": [
+      { "component": "Return Authorization", "type": "Custom Record", "purpose": "Holds the return header and lines." },
+      { "component": "Return Intake Form", "type": "Suitelet", "purpose": "Collects return details from the warehouse." },
+      { "component": "Return Validation", "type": "User Event", "purpose": "Validates quantity and creates tasks." }
+    ],
+    "keyLogic": [
+      "Quantity is compared with the purchase order received quantity at submit.",
+      "Approval tasks are created once per approver."
+    ]
+  },
+  "integrations": [
+    { "system": "Vendor email", "relationship": "Outbound notification", "notes": "Sent from the NetSuite email template." }
+  ],
+  "scripts": [
+    {
+      "name": "Return Validation",
+      "filename": "ebs_ue_return_validation.js",
+      "folder": "SuiteScripts/Northwind/UserEvents",
+      "scriptType": "User Event",
+      "scriptId": "customscript_ebs_ue_return_validation",
+      "parameters": [
+        { "name": "Approver Role", "type": "List/Record", "value": "TBD" },
+        { "name": "Max Quantity Variance", "type": "Integer", "value": "0" },
+        { "name": "Notify Requester", "type": "Checkbox", "value": "Yes" }
+      ],
+      "outline": [
+        { "function": "beforeSubmit(context)", "description": "Validates the quantity on each line.", "steps": ["Load the purchase order received quantity.", "Reject the save when the quantity is higher."] },
+        { "function": "afterSubmit(context)", "description": "Creates approval tasks.", "steps": ["Read the approver list from the parameter.", "Create one task per approver."] }
+      ]
+    },
+    {
+      "name": "Return Status Sync",
+      "filename": "ebs_ss_return_status_sync.js",
+      "folder": "SuiteScripts/Northwind/Scheduled",
+      "scriptType": "Scheduled",
+      "scriptId": "customscript_ebs_ss_return_status_sync",
+      "parameters": [],
+      "outline": [
+        { "function": "execute(context)", "description": "Counts open returns per vendor and writes the count.", "steps": ["Search open returns grouped by vendor.", "Update the vendor count field."] }
+      ]
+    }
+  ],
+  "customRecords": ["Return Authorization (customrecord_ebs_return_auth): one record per return with a link to the vendor and purchase order."],
+  "customFields": [
+    { "record": "Return Authorization", "fields": [
+      { "label": "Vendor", "id": "custrecord_ebs_ra_vendor", "type": "List/Record", "purpose": "Vendor receiving the return." },
+      { "label": "Reason", "id": "custrecord_ebs_ra_reason", "type": "List/Record", "purpose": "Why the item is returned." }
+    ] },
+    { "record": "Vendor", "fields": [
+      { "label": "Open Returns", "id": "custentity_ebs_open_returns", "type": "Integer Number", "purpose": "Count of open returns." }
+    ] }
+  ],
+  "approvers": [
+    { "name": "Pat Lindqvist", "organization": "Northwind Components", "role": "Purchasing Manager" }
+  ],
+  "conditions": ["Approver list is confirmed before build starts."],
+  "documentControl": [
+    { "date": "10/07/2026", "author": "Matthew Garriga", "version": "1.0", "change": "Initial Draft" }
+  ],
+  "lucidLinks": [ { "label": "Lucid edit link", "url": "https://lucid.app/lucidchart/example-northwind-return" } ]
+}
