@@ -66,3 +66,17 @@ Dev skills in scope: /review, /debug, /query, /test-plan, /handoff (scaffold and
 | 7.3 | /health-check command: live connector IDs vs settings.json deny rules, fake-ID send and delete tests | Detects a mismatched ID in a test copy |
 | 7.4 | Weekly scheduled /client-update sweep proposing diffs (no auto-write) | Scheduled task listed; dry run produces proposals |
 | 7.5 | README usage section; final commit; one-paragraph summary | Matt reads it |
+
+## Added scope (2026-10-07)
+| # | Item | Phase | Acceptance |
+|---|---|---|---|
+| S1 | Merge .claude/commands into .claude/skills, short names (recap, sdd, onepager, sow, co, flow, email, raide, tasks, status, devboard, today, inbox, review, debug, query, test-plan, handoff, client-update, new-client, bootstrap, review-design); update CLAUDE.md table | 1 | Every slash command still resolves; no commands/ folder |
+| S2 | context-gatherer subagent (read-only: Read AI, Outlook, Teams, Smartsheet; returns summaries) used by /today, /status, /client-update, bootstrap, Friday wrap | 5 | Main session receives summaries, not raw dumps |
+| S3 | Gitignore *-draft.docx in outputs; only finals committed | 1 | git status ignores drafts |
+| S4 | /agenda <client>: RAIDE rows in "Status Meeting" status plus overdue, blocked, and items new since last meeting; /today prep blocks include it | 5 | Real HUT agenda reviewed by Matt |
+| S5 | Teams chats (read-only) in /today and /inbox needs-attention lists | 5 | Unanswered asks to Matt appear; no Teams writes possible |
+| S6 | Budget burn from RAIDE Estimated Hours / Case Total Hours / Case Total Hours this month for recap Budget Metrics and /status | 5 | Numbers sourced and cited; missing values noted, never invented |
+| S7 | /invitra: weekly digest of Dev Tracker rows assigned to Invitra, aging, open branches in local repos | 5 | Read-only; matches tracker |
+| S8 | /sow-review: read-only check of a SOW/CO (standard assumptions, placeholders left, scope creep risk, template version, LOE sign-off) | 3b | Findings table on a real SOW, no edits |
+| S9 | /wrap: Friday wrap from the week's daily/ files: done, slipped, next week, sendable update for Cedric and Cheyenne (draft only) | 5 | Lint clean, not sent |
+| S10 | Move BUILD_BRIEF.md and KICKOFF.md into docs/build/ | 7 | Root holds only usage files |
