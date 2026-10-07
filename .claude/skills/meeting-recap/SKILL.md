@@ -44,5 +44,14 @@ Format is authoritative in `standards/recap-format.md`. This skill is the workfl
 - Recipient list used
 - Budget figures without a clear source
 
-## 8. Context write-back
+## 8. RAIDE and project log proposals (client and internal meetings)
+1. Get the RAIDE and project plan sheet IDs from `client.md`. Missing ID: say so and skip that sheet.
+2. Pull the RAIDE rows (`get_sheet_summary`). Rows created or modified between the meeting's start and end time mean the RAIDE was updated live. In that case, propose only items from this meeting that are still missing. If no rows changed in the window, propose every qualifying item.
+3. Route by type. Risks, Issues, Decisions, Escalations and client-facing Actions go to the RAIDE. Task-level work (build, configure, test, deploy) goes to the project plan sheet.
+4. Both sheets are client-visible. Apply the client-facing rules from step 4 to every proposal, even for internal meetings. An item that only makes sense with internal context gets listed under "Internal only, not proposed" and goes to the `internal.md` write-back instead.
+5. Match against existing rows. Update a matching row rather than adding a duplicate.
+6. Owner TBD stays TBD. Never assign an owner or a due date that wasn't stated.
+7. Show the preview: Sheet / Action (Add/Update) / Row / Column / Old / New. Nothing is written until Matt confirms. On confirm, write through the raide-sync and action-items-sync rules.
+
+## 9. Context write-back
 Propose updates per the client-context skill: new decisions to `decisions.md`, status/budget/open items to `project.md`, sensitive dynamics to `internal.md`, new glossary corrections to `client.md`.
