@@ -10,8 +10,9 @@ If a session restarts, read this file, then `plan.md` and `decisions-log.md`, th
 | Stream | Owner | Scope |
 |---|---|---|
 | A | app-builder | Phase 1.1 to 1.3: templates into repo, cleaned SDD/One-Pager copies, branding.md per-template spec, renders |
-| B | app-builder | Phase 1.4 format and skill files, S1 merge commands into skills |
-| C | app-builder | Day-to-day agents (S2), lint secret scan (7.2), output lint hook (7.1), /health-check (7.3) |
+| B | done, committed e056965 | Phase 1.4 format and skill files, S1 merge commands into skills (tester PASS) |
+| C | done, committed e056965 | Day-to-day agents (S2), secret scan (7.2), lint hooks registered (7.1), /health-check (7.3) (tester PASS) |
+| D | app-builder | Phase 4 and 5 skill text, new /agenda /invitra /sow-review /wrap, Phase 6 bootstrap rewrite |
 
 ## Next
 1. Tester pass on A, B, C. Senior review. Commit per stream.
