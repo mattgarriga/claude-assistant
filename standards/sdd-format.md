@@ -16,12 +16,12 @@ Fill `templates/template-sdd.docx` through `lib/docx/` (data.json, doc-producer 
 | 4. Solution Design | 4.1 Process Flow, 4.2 Technical Approach, 4.3 Integrations and Dependencies, 4.4 Script Outlines |
 | 5. Data Model | 5.1 New Custom Records, 5.2 Key Custom Fields (one bold record-type label and table per record: Field Label / Field ID / Type / Purpose) |
 | 6. Approval and Sign-Off | Template sign-off sentence, table Name / Organization / Role / Date / Decision, then "Conditions:" bullets. Always include Matthew Garriga, Technical Lead. |
-| 7. Document Control | Date / Author / Version / Change Reference. Include the Lucid edit link here. |
+| 7. Document Control | Date / Author / Version / Change Reference. No Lucid link here (it sits under the 4.1 diagram). |
 
 Assumptions live in the Basic Business Overview box only. No separate 2.3.
 
 ## 4.1 to 4.3
-- 4.1 Process Flow: the template intro sentence, then the Lucid PNG export embedded at content width (required). The template INCLUDEPICTURE link is removed. The Lucid edit link goes in Document Control (section 7).
+- 4.1 Process Flow: the template intro sentence, then the Lucid PNG export embedded at content width (required). The template INCLUDEPICTURE link is removed. The Lucid edit link is one line, "Edit in Lucid: <url>", directly under the 4.1 diagram image.
 - 4.2 Technical Approach: title, one short details paragraph, component table (Component / Type / Purpose), then "Key Logic Notes" bullets.
 - 4.3 Integrations and Dependencies: table System / Relationship / Notes.
 

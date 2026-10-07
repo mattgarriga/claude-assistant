@@ -11,7 +11,7 @@ Read-only; no edits. Read `standards/sow-format.md` and the file (docx via text 
 | Template version | 2026 layout: no Document Control table, no address header; CO uses CO template wording |
 | Standard assumptions | All 5 present (canonical wording in `standards/sow-format.md`); note any edited or removed |
 | Pricing | `PRICING-PROVIDE-BEFORE-SENDING` left in where pricing is not confirmed; flag any figure with no source |
-| Scope creep | Vague deliverables, unbounded verbs, missing typed deliverables ("Suitelet: ..."), Out of Scope missing or thin |
+| Scope creep | Vague deliverables, unbounded verbs, missing typed deliverables ("Suitelet: ..."), Out of Scope is optional; if absent, at most an informational note, never a defect |
 | Native-first | Custom script where saved search, workflow, form, or config would do |
 | LOE sign-off | Cheyenne's sign-off on LOE is confirmed; if not stated, flag "Confirm Cheyenne has signed off on LOE" |
 | Totals | If numbers present: 50% split and balance equal the Total Fee; T&M hours times rates sum correctly. Show the arithmetic |

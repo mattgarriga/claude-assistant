@@ -16,18 +16,18 @@ SOW vs CO, Fixed Fee vs T&M. Infer from context (a CO amends an existing SOW in 
 - Problem, solution, business impact
 - Assumptions beyond the 5 standard ones (default on, editable; wording in `standards/sow-format.md`), phrased "Client will..."
 - Configuration and development deliverables, typed ("Suitelet: ...")
-- Out of scope
+- Out of scope items, only if Matt asks for them or provides them (not included by default)
 - Whether pricing and hours are available. If not, every dollar amount and T&M hour stays `PRICING-PROVIDE-BEFORE-SENDING`
 - Whether Cheyenne has signed off on LOE
 
 Pull what's already known from `project.md`, `decisions.md`, and any SDD in `outputs/`.
 
 ## 3. Scope sanity
-Push back if deliverables imply custom work where native config would do, or if scope is vague enough to invite creep. Out of Scope is always explicit.
+Push back if deliverables imply custom work where native config would do, or if scope is vague enough to invite creep. Out of Scope is included only when Matt asks for it or provides items.
 
 ## 4. Build
 - Process Overview: titled Lucid diagrams only (flow skill), PNG 6.9in wide, no narrative.
-- Scope and Deliverables nested up to 3 levels, Out of Scope explicit.
+- Scope and Deliverables nested up to 3 levels. Out of Scope only when Matt asks for it or provides items.
 - Pricing never invented: Total Fee, 50% split, balance, and T&M hours are `PRICING-PROVIDE-BEFORE-SENDING`. T&M uses the template's native Estimated Hours and Fees table.
 - Signature block: client signer from `client.md`, Ethos signer Cedric Carter, acceptance date blank.
 - Write `data.json` per the `lib/docx/` README schema (kind sow|co, pricing ff|tm). The doc-producer agent fills the template, renders, and lints the filled content. Inspect the render.

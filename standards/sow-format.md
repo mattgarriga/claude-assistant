@@ -12,7 +12,7 @@ Four templates in `templates/`: `template-sow-fixed-fee.docx`, `template-sow-tim
 | Estimated Fees and Billing | FF: fixed fee paragraph, change-order paragraph, 50% invoice at execution, balance at start of UAT, invoices due within 15 days. T&M: estimate paragraph, the template's native Estimated Hours and Fees table (Design, Configuration, Development, UAT, Training, Cutover, Support, Project Oversight 20%, Hourly Totals, Estimated Fees), then the invoicing paragraph (15th and last calendar day, in arrears, due within 15 days). |
 | Signature block | "AGREED TO AND ACCEPTED" line with the acceptance date left blank. Client: signer from `client.md`. Ethos Business Solutions LLC: Cedric Carter. |
 
-Out of Scope is stated explicitly as a sub-list under Scope and Deliverables.
+Out of Scope is not included by default. Include it as a sub-list under Scope and Deliverables only when Matt asks for it or provides items.
 
 ## Standard assumptions
 Default on for every SOW and CO, editable per document. Client-specific assumptions are added after them ("Client will..." phrasing).
