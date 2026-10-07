@@ -37,3 +37,7 @@
 | 2026-10-07 | 5 standard assumptions default on for every SOW and CO, editable per doc; canonical wording in sow-format.md | Matt approved | Y |
 | 2026-10-07 | Process Overview is titled Lucid diagrams only (6.9in wide), no narrative | Matt approved | Y |
 | 2026-10-07 | Signature block: client signer from client.md, Ethos signer Cedric Carter; acceptance date left blank | Matt approved | Y |
+| 2026-10-07 | Phase 3 split: 3a (recap client + internal, email, flow, review-design) runs alongside Phase 1; 3b (one-pager, SDD, SOW) after Phase 2 | Daily skills sooner; 3a has no docx dependency. Matt approved | Y |
+| 2026-10-07 | 3a examples: latest HUT client status (confirm before run), HUT Internal Status 10/06, email thread TBD (senior proposes candidates, Matt confirms), /review-design on HUT 3D Flight Cost SDD | Matt approved | Y |
+| 2026-10-07 | /flow test rebuilds HUT 3D Flight Cost flow into a "Claude Test" Lucid folder; Matt deletes after comparison | Claude cannot delete Lucid docs. Matt approved | Y |
+| 2026-10-07 | SDD, SOW, One-Pager skill text updated in Phase 1 task 1.4 alongside format files, diff shown to Matt | Matt approved | Y |
