@@ -75,3 +75,4 @@
 | 2026-10-07 | scout moved from Haiku to Sonnet 5.5; IDs still verified before writes | Haiku dropped and mistyped IDs in discovery. Matt approved | Y |
 | 2026-10-07 | T&M table cells show TBD with full PRICING marker in the paragraph above; Out of Scope only when provided; SDD Lucid link under the 4.1 diagram; engine adds keepNext/cantSplit for headings and short tables | Matt approved | Y |
 | 2026-10-07 | Bootstrap: closed project sheets skipped per Matt; EVgo context-only; missing domains from Outlook; gathering runs immediately into gitignored state/bootstrap/<slug>/, per-client review before any write to clients/ | Matt's answers | Y |
+| 2026-10-07 | Weekly client-context sweep scheduled Fri 3pm (scheduled task weekly-client-context-sweep), proposals to queue only | Matt approved | Y |
