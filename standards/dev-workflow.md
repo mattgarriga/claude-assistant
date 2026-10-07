@@ -16,9 +16,11 @@
 Matt pushes and merges. Matt or Invitra deploys.
 
 ## Conventions (confirmed by Matt 2026-10-06)
-- Branch: `feature/<short-slug>` or `fix/<short-slug>`; include the Smartsheet ticket ID when one exists.
+- Branch: `feature/EBS-####` for new work, `hotfix/EBS-####`, `bugfix/<short-desc>` (coding standards decision 12). `INV-####` and `feature/cleanup` are legacy.
 - Commit: `<type>: <summary>` (types: feat, fix, refactor, docs, test, chore). No emojis, no em dashes.
 - Before any commit: show Matt the diff summary and proposed message.
+- Checkout mid-ticket or dirty: stop and ask. Offer as the default: commit the work in progress on its branch, check out `main`, create the new branch.
+- Client repo not in `../Repos`: tell Matt and ask for the clone URL, then clone it. Never guess a URL.
 
 ## Every code task
 1. Read `standards/coding-standards.md`, the repo's `CLAUDE.md`, the client's `client.md`, and relevant `knowledge/`.

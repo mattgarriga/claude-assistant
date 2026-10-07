@@ -3,3 +3,4 @@ node_modules/
 *.tmp
 clients/*/outputs/**/*.pdf
 .claude/settings.local.json
+daily/

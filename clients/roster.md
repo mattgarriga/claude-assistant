@@ -1,6 +1,6 @@
 # Client Roster
 
-Core clients (seeded by /bootstrap) are marked. Slug = folder name under `clients/`. Status confirmed by Matt 2026-10-06: Active = the 7 core clients plus Boxes 4 U, EVgo, Total Site Solutions, and Light Speed Networks. Everyone else is Inactive.
+Core clients (seeded by /bootstrap) are marked. Slug = folder name under `clients/`. Status confirmed by Matt 2026-10-06: Active = the 7 core clients plus Boxes 4 U, EVgo, Total Site Solutions, Light Speed Networks, ConcertAI, and Hammitt. Everyone else is Inactive.
 
 | Client | Aliases | Slug | Core | Status |
 |---|---|---|---|---|
@@ -39,5 +39,8 @@ Core clients (seeded by /bootstrap) are marked. Slug = folder name under `client
 | Vero Fiber |  | vero-fiber |  | Inactive |
 | William Murray Gold |  | william-murray-gold |  | Inactive |
 | Wright One |  | wright-one |  | Inactive |
+| ConcertAI |  | concertai |  | Active |
+| Enovix |  | enovix |  | Inactive |
+| Hammitt |  | hammitt |  | Active |
 
 Non-core clients get a folder on first use via `/new-client`.

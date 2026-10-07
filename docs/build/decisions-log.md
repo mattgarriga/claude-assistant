@@ -47,3 +47,10 @@
 | 2026-10-07 | Repo CLAUDE.md stays personal (points into this workspace); standards not committed to client repos | Matt's call | Y |
 | 2026-10-07 | Dev skills (review, debug, scaffold, query, migration-audit, test-plan, handoff) rewritten in Phase 4 to cite coding-standards sections, use feature/hotfix/bugfix branches, and use the 10.4 checklist as the review baseline | Skills predate the standards | Y |
 | 2026-10-07 | Coding standards 18 gaps: Matt has a finished version from another app; it replaces the draft after a diff review | Pending file | Y |
+| 2026-10-07 | /migration-audit removed; replaced by Matt's suitescript-migrator plugin (Matt installs the zip via the Code tab) | Matt's call | Y |
+| 2026-10-07 | Coding standards: single source is the installed ethos-dev conventions file; standards/coding-standards.md points to it and lists workspace overrides | Avoids drift between copies | Y |
+| 2026-10-07 | Commit format stays `type: summary` (overrides ethos-dev decision 12); branch names follow decision 12 | Matt's call | Y |
+| 2026-10-07 | /scaffold removed; build work routes to /ethos-dev:start. /test-plan and /handoff kept only for work outside ethos-dev | Matt approved | Y |
+| 2026-10-07 | /today rewritten: calendar, email needing attention, RAIDE and project plans in Ethos Clients (Matt's items plus overdue/blocked/Owner TBD on his projects), time-blocked plan, Matt picks first passes; plan saved to gitignored daily/YYYY-MM-DD.md. Manual trigger | Matt approved | Y |
+| 2026-10-07 | CLAUDE.md rule: after every task, offer 2 or 3 things to take off Matt's plate from follow-ons and today's plan | Matt's request | Y |
+| 2026-10-07 | Roster: ConcertAI and Hammitt added Active, Enovix Inactive | Matt's call | Y |

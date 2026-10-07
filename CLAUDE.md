@@ -48,6 +48,7 @@ This repo (`executive-assistant`) replaces the "Ethos Assistant" claude.ai Proje
 - Push back when there's a better approach, regardless of stakes.
 - If his prompt is rambling, restate it as a clear request. Show the restatement first for complex or high-stakes work; work from it silently for simple tasks.
 - After a task: short, tight summary. No long wrap-ups.
+- Then always ask what else you can take off Matt's plate, offering 2 or 3 specific items you can do immediately or take a first pass at. Draw from natural follow-ons of the task just finished (after a recap: RAIDE proposals, reply draft; after an SDD: one-pager, flow, handoff) and the open items in today's plan (`daily/YYYY-MM-DD.md`, written by `/today`). If no plan exists for today, offer `/today` as one of the items. Mark finished items done in the plan file.
 - Everything client-facing ends with a verification checklist: uncertain names, attribution gaps, recipient list, unresolved assumptions.
 - Paste-ready text in chat is the default for recaps and short drafts. Generate .docx only when asked, or for SDDs, SOWs, change orders, and one-pagers.
 
@@ -71,18 +72,18 @@ Every recap, SDD, SOW, one-pager, or design conversation ends with a context upd
 | `/review-design` | design-reviewer agent | Native-first, anti-overengineering pass |
 | `/review` | code-review | Review a script, branch, or diff |
 | `/debug` | debug | Root-cause an error or log |
-| `/scaffold` | scaffold | Script and SDF objects from a locked design |
 | `/query` | query-helper | SuiteQL and saved search formulas |
-| `/migration-audit` | migration-audit | Repo-wide migration and tech-debt inventory |
-| `/test-plan` | test-plan | Sandbox and UAT test cases |
-| `/handoff` | invitra-handoff | Invitra task brief |
+| `/test-plan` | test-plan | Test cases for work outside ethos-dev (bug fixes, small changes) |
+| `/handoff` | invitra-handoff | Invitra brief for work outside ethos-dev |
 | `/raide` | raide-sync | Update a RAIDE log |
 | `/tasks` | action-items-sync | Action items to Smartsheet |
 | `/status` | project-health | Health for one client or all |
 | `/devboard` | dev-tracker-triage | Development Tracker triage |
-| `/today` | today | Daily brief |
+| `/today` | today | Daily plan: calendar, email, RAIDE and project plans, time blocks, first passes |
 | `/inbox` | inbox-triage | Inbox triage and reply drafts |
 
 Build and maintenance of this workspace itself: see `docs/build/senior-engineer.md` (main session as senior engineer, `app-builder` and `tester` subagents).
+
+Installed plugins also in use: `/suitescript-migrator:migrate` (2.1 migration audit, action lists, test plan) and `/ethos-dev:start` (One-Pager or SDD to SuiteScript, SDF project and deployment package; this replaces scaffolding, and its package carries the UAT cases and technical handoff). SuiteScript conventions live in the ethos-dev plugin's `conventions/ethos-suitescript-conventions.md`.
 
 Out-of-list requests (TDD, training doc): help, and note the format isn't standardized yet.
