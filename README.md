@@ -33,7 +33,7 @@ Matt's Claude Code assistant for Ethos delivery work: recaps, SDDs, SOWs, change
 | `/suitescript-migrator:migrate` | Plugin: migration audit and conversion |
 
 ## Write-back
-Recaps, SDDs, and design talks propose a short diff to a client's `decisions.md`, `project.md`, or `internal.md`. Proposals queue in `state/writeback-queue.md`. Nothing applies until you approve, in batch, during `/today` or `/wrap`. Exception: an immediate ask when the next step depends on it.
+Recaps, SDDs, and design talks write durable facts straight into a client's `decisions.md`, `project.md`, `client.md`, or `internal.md`, each with a source tag and a line in `state/context-log.md` so any change can be undone. You review the day's changes in `/eod`. Pricing, scope or budget changes, conflicts with existing facts, and anything inferred are queued in `state/writeback-queue.md` for approval instead.
 
 ## Add a client
 Run `/new-client`. It scaffolds `clients/<slug>/` and adds the roster row. Check `clients/roster.md` first for aliases.
