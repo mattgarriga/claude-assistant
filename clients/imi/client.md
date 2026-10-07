@@ -13,11 +13,12 @@
 ## Tool IDs
 | Tool | ID / Name |
 |---|---|
-| Email domain(s) | |
+| Email domain(s) | imigroup.com |
 | Repo | ../Repos/ |
-| Read AI folder | |
-| Smartsheet: RAIDE | |
-| Smartsheet: project plan | |
+| Read AI folder | International Materials |
+| Smartsheet: RAIDE | Ethos + International Materials RAIDE (2541135286194052) |
+| Smartsheet: project plan | none |
+| Dev Tracker value | IMI |
 | Lucid folder | Process Flows / [Client] |
 
 ## NetSuite footprint

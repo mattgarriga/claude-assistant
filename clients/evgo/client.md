@@ -1,9 +1,6 @@
-# 4Patriots
+# EVgo
 
 ## Overview
-> SEED from claude.ai memory. /bootstrap verifies and replaces.
-- Workstreams: chargebacks, Emagia AR integration, installments [src: claude.ai memory]
-- Glossary: Read AI hears Emagia as 'Imagia' [src: claude.ai memory]
 - Industry / what they do:
 - Engagement type: (managed services, project, ad-hoc support)
 - Relationship tone notes (client-safe):
@@ -15,12 +12,12 @@
 ## Tool IDs
 | Tool | ID / Name |
 |---|---|
-| Email domain(s) | 4patriots.com |
+| Email domain(s) | not found, find in Outlook |
 | Repo | ../Repos/ |
-| Read AI folder | 4P |
-| Smartsheet: RAIDE | 4Patriots MS - RAIDE (3047468116692868) |
+| Read AI folder | not found |
+| Smartsheet: RAIDE | none (no RAIDE; skip RAIDE proposals) |
 | Smartsheet: project plan | none |
-| Dev Tracker value | 4P |
+| Dev Tracker value | EVgo |
 | Lucid folder | Process Flows / [Client] |
 
 ## NetSuite footprint
@@ -44,5 +41,3 @@
 ## Active projects
 | Project | Folder | Status |
 |---|---|---|
-| chargebacks | projects/chargebacks/ | (bootstrap) |
-| emagia-ar-integration | projects/emagia-ar-integration/ | (bootstrap) |

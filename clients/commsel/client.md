@@ -15,11 +15,12 @@
 ## Tool IDs
 | Tool | ID / Name |
 |---|---|
-| Email domain(s) | |
+| Email domain(s) | not found, find in Outlook |
 | Repo | ../Repos/ |
-| Read AI folder | |
-| Smartsheet: RAIDE | |
-| Smartsheet: project plan | |
+| Read AI folder | not found |
+| Smartsheet: RAIDE | CommSell MS - RAIDE (2484028536999812) |
+| Smartsheet: project plan | none (project plans closed) |
+| Dev Tracker value | CommSell |
 | Lucid folder | Process Flows / [Client] |
 
 ## NetSuite footprint

@@ -15,11 +15,12 @@
 ## Tool IDs
 | Tool | ID / Name |
 |---|---|
-| Email domain(s) | |
+| Email domain(s) | cerio.biz (partner riveron.com) |
 | Repo | ../Repos/ |
-| Read AI folder | |
-| Smartsheet: RAIDE | |
-| Smartsheet: project plan | |
+| Read AI folder | Cerio |
+| Smartsheet: RAIDE | Cerio - MS RAIDE (3969348344696708) |
+| Smartsheet: project plan | none |
+| Dev Tracker value | Cerio |
 | Lucid folder | Process Flows / [Client] |
 
 ## NetSuite footprint

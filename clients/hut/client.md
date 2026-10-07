@@ -17,11 +17,12 @@
 ## Tool IDs
 | Tool | ID / Name |
 |---|---|
-| Email domain(s) | |
+| Email domain(s) | heads-up.com, stgaerospace.com |
 | Repo | ../Repos/ |
-| Read AI folder | |
-| Smartsheet: RAIDE | |
-| Smartsheet: project plan | |
+| Read AI folder | Heads Up Technologies |
+| Smartsheet: RAIDE | Heads Up - RAIDE Thrive (6220027817578372) |
+| Smartsheet: project plan | HUT WRM Project Plan (1150015132094340); Assembly Unbuild Project Plan (978236958789508); Shipping Solution Phase Zero Project Plan (7291532238344068) |
+| Dev Tracker value | Heads Up |
 | Lucid folder | Process Flows / [Client] |
 
 ## NetSuite footprint
