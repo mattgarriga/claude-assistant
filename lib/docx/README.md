@@ -24,6 +24,7 @@ PNG paths in data.json resolve relative to the data.json file. PNGs must be real
 | Placeholders | `PRICING-PROVIDE-BEFORE-SENDING`, `TBD`, `Owner TBD` pass through untouched. Missing SOW/CO money fields default to `PRICING-PROVIDE-BEFORE-SENDING` |
 | Diagram titles | Bold added to a cloned body run, plus keepNext so a title stays with its image |
 | Images | Inline PNG; width in inches, height from PNG aspect. Media, relationship and content type added |
+| Pagination | The only formatting beyond the template: `w:keepNext` on section headings on label paragraphs immediately before a table, and on the caption paragraph immediately before a diagram image; `w:cantSplit` on rows and `keepNext` on all but the last row for tables of 6 rows or fewer (`paginate` in engine.js, all builders) |
 | One-Pager formatting | Only the named Filled content snippets in `build-onepager.js` (Calibri 262626, real bullets numId 2) |
 
 ## SDD (`sdd`)
@@ -45,7 +46,7 @@ PNG paths in data.json resolve relative to the data.json file. PNGs must be real
 | approvers | {name, organization, role, date?, decision?}[] | Matthew Garriga, Technical Lead is added first if absent |
 | conditions | string[] | Conditions bullets |
 | documentControl | {date, author, version, change}[] | Required |
-| lucidLinks | (string or {label,url})[] | Paragraphs after the Document Control table |
+| lucidLinks | (string or {url})[] | One line "Edit in Lucid: <url>" each, directly under the 4.1 process flow images |
 
 The TOC is rewritten from the real Heading 1 and Heading 2 paragraphs (cached page numbers blank) and `w:updateFields` is set in settings.xml so Word fills page numbers on open.
 
@@ -69,9 +70,9 @@ Template chosen by `kind` ("sow" or "co") and `pricing` ("ff" or "tm").
 | assumptions | string[] | The skill supplies the 5 standard assumptions plus client ones; engine only fills. CO assumption 4 says "this CO" |
 | diagrams | {title, png, width?}[] | Process Overview, 6.9in; empty gives the not-applicable line. Template INCLUDEPICTURE field removed |
 | scope.configuration, scope.development | node[] | node = string or {text, children: node[]}. Nests to 3 levels total (the standard bullet is level 1). Leaf text "Type: description" |
-| scope.outOfScope | node[] | Appended as a final numbered item "Out of Scope:" with sub-bullets |
+| scope.outOfScope | node[] | Optional. Not included by default; rendered only when non-empty, as a final numbered item "Out of Scope:" with sub-bullets |
 | fees (FF) | {total, deposit, balance} | Each defaults to PRICING-PROVIDE-BEFORE-SENDING |
-| fees (T&M) | {estimatedFees, hours: {design, configuration, development, uat, training, cutover, support, oversight, total}} | Native table cells; each defaults to the placeholder |
+| fees (T&M) | {estimatedFees, hours: {design, configuration, development, uat, training, cutover, support, oversight, total}} | Native table cells; a missing value or the pricing placeholder shows `TBD`. If any cell is TBD, the paragraph above the table gets "Hours and fees: PRICING-PROVIDE-BEFORE-SENDING." appended unless it already contains the marker. Real numbers pass through |
 | clientSigner | string | Required. Name under the client "By:" line |
 | clientLegalName | string | Optional party name, defaults to client |
 | ethosSigner | string | Defaults to "Cedric Carter" |

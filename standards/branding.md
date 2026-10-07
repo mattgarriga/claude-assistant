@@ -199,7 +199,7 @@ Working copies are byte-identical to the originals. Page, header, footer, docDef
 
 These rules apply to text Claude writes into a template. Everything else stays exactly as the template ships it. Template boilerplate is exempt from the voice dash rule; only Claude-written content is linted (decisions log 2026-10-07).
 
-- Pagination only: the engine adds `w:keepNext` to section headings and to the label paragraph before a table, and `w:cantSplit` on rows (with `keepNext` on all but the last row) for tables of 6 rows or fewer. No other formatting is added.
+- Pagination only: the engine adds `w:keepNext` to section headings (and blank lines after them), the label paragraph before a table, the caption paragraph before a diagram image, and `w:cantSplit` on rows (with `keepNext` on all but the last row) for tables of 6 rows or fewer. No other formatting is added.
 
 ### One-Pager
 | Element | Rule | Src |

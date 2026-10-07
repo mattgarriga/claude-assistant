@@ -23,3 +23,10 @@ Gathered by scout 2026-10-07, IDs cross-checked by the senior engineer against d
 - EVgo has no RAIDE: is there one elsewhere, or none?
 - Email domains for CommSell, Boxes 4 U, EVgo, LSN, ConcertAI, Hammitt.
 - Dev Tracker picklist typos "Core Transfomers" and "Hammit": fix in Smartsheet (your call; the skills match them as-is).
+
+## Matt's answers (2026-10-07)
+- CLOSED, skip in bootstrap (history only, no active sheet IDs recorded): HUT Phase 2 RAIDE, ALTO Go-Live RAIDE, Heads Up Phase One plan, HUT Phase Two plan; all CommSell project RAIDEs and plans (CommSell = MS RAIDE only); CORE Phase Zero RAIDE and plan; Cala Future State O2C RAIDE, O2C Phase Two UAT RAIDE and plan.
+- ACTIVE project sheets: HUT WRM plan, Assembly Unbuild plan, Shipping Solution Phase Zero plan; Cala O2C Phase 3 RAIDE and plan, Financial Reporting & Rental Reversal RAIDE and plan, RMA Receiving plan; CORE Phase One plan, CORE Smartsheet RAIDE; Boxes 4 U Warehouse plan and MEC plans; Hammitt O2C Discovery plan.
+- EVgo: no RAIDE; seed context from Read AI, email and Dev Tracker only; RAIDE proposals skipped for EVgo.
+- Missing domains: find in Outlook during bootstrap, confirm in per-client review.
+- Bootstrap gathering runs now (2026-10-07), core 7 first, then the other 6.

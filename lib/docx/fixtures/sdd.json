@@ -106,5 +106,5 @@
   "documentControl": [
     { "date": "10/07/2026", "author": "Matthew Garriga", "version": "1.0", "change": "Initial Draft" }
   ],
-  "lucidLinks": [ { "label": "Lucid edit link", "url": "https://lucid.app/lucidchart/example-northwind-return" } ]
+  "lucidLinks": [ { "url": "https://lucid.app/lucidchart/example-northwind-return" } ]
 }
