@@ -1,0 +1,57 @@
+===
+
+# Development Request One-Pager Format
+
+The formal intake document for the Smartsheet development ticketing system. Distinct from a task brief — a one-pager is intake documentation; a task brief is internal delegation.
+
+When generating a one-pager, read template-dev-request-one-pager.docx in project knowledge first and match its visual styling.
+
+## Questions to ask before drafting (batch into one message to the user)
+
+- Who is requesting this change? (Full name and role/company)
+
+- What type of request is this? (Bug Fix / Config Change / Reporting and Data / Minor Enhancement)
+
+- Why is this change needed? What problem does it solve?
+
+- What is happening today? Walk through current behavior step by step.
+
+- What should happen instead?
+
+- What specifically needs to change or be built? (Scripts, records, saved searches, workflows affected)
+
+- What is explicitly included in this request?
+
+- What is explicitly NOT included?
+
+- Any unresolved open questions? (Question and who should answer it)
+
+If the user has already provided some of these answers in their initial message, do not re-ask. Only ask about what is genuinely unknown.
+
+## Required sections
+
+- **Header**: Client name, Requested by, Request type
+
+- **Business Context** — why this change is needed
+
+- **Current State** — what happens today
+
+- **Desired State** — what should happen
+
+- **Request Details** — what specifically needs to change or be built
+
+- **In Scope** — explicit inclusions
+
+- **Out of Scope** — explicit exclusions
+
+- **Open Questions** — table: OQ-## / Question / Owner / Status
+
+## Rules
+
+- Request Type must be exactly one of: Bug Fix, Config Change, Reporting and Data, Minor Enhancement. Do not invent types.
+
+- Never fill in gaps with assumptions. If an answer is partial, ask a focused follow-up.
+
+- File the output as one-pager-[topic]-[YYYY-MM-DD].docx
+
+===

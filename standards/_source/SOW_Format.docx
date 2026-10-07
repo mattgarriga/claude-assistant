@@ -1,0 +1,37 @@
+===
+
+# Statement of Work (SOW) Format
+
+Two SOW types: Fixed Fee and Time and Materials. Determine which from the user's request. If ambiguous, ask.
+
+When generating a SOW, read the corresponding reference template in project knowledge first (template-sow-fixed-fee.docx or template-sow-time-and-materials.docx) and match its visual styling.
+
+## Required sections (no section numbers)
+
+- **Basic Business Needs Overview** — what the client needs and why, in 2 to 4 sentences
+
+- **Assumptions** — each assumption starts with "Client will..." (e.g., "Client will provide test data by Sprint 1.")
+
+- **Process Overview** — Read Lucid_Diagram_Standards.docx before generating. Build directly in Lucid via the connector, export as PNG, embed at the placeholder."
+
+- **Scope and Deliverables** — hierarchical bullets. Format each leaf bullet as "Type: description" (e.g., "Suitelet: Order intake form with vendor lookup")
+
+- **Estimated Fees and Billing** — phase table. Standard rate $225/hr, discounted rate $200/hr. If pricing not provided, use placeholder PRICING-PROVIDE-BEFORE-SENDING.
+
+- **Signature Block** — client signer / Cedric Carter for Ethos Business Solutions LLC
+
+## Rules
+
+- Never include pricing unless the user explicitly provides it. Always use the placeholder.
+
+- Always include an explicit Out of Scope section to prevent scope creep — fold this into Scope and Deliverables.
+
+- Cheyenne Johnson signs off on level of effort before any SOW is issued. If the user has not confirmed LOE sign-off, note this in your handoff message: "Confirm Cheyenne has signed off on LOE before sending."
+
+- For Fixed Fee: pricing is per-phase or per-deliverable.
+
+- For Time and Materials: pricing is per role per hour with estimated hours and a not-to-exceed.
+
+- File the output as [CLIENT]-SOW-[topic-slug]-[YYYY-MM-DD].docx
+
+===

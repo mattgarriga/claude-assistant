@@ -1,0 +1,213 @@
+| **Client Solution Design Document** |
+| --- |
+| **Client Name** | Client Name (or “Client”) |
+| **Project Name** | NetSuite Support – [Insert Project Number] |
+| **Customization Name** | [Insert Customization Name] |
+
+| **Basic Business Overview** | **Problem:**** **[1-2 sentence problem statement] **Solution:** [1-2 sentence solution statement] **Business Impact:**** **[1-2 sentence business impact statement] |
+| --- | --- |
+| **Assumptions** | [Assumption 1] [Assumption 2] |
+
+Table of Contents
+
+	1 Business Context	3
+
+	1.1 Current State	3
+
+	1.2 Desired State	3
+
+	1.3 Open Questions	3
+
+	2. Scope	3
+
+	2.1 In Scope	3
+
+	2.2 Out of Scope	3
+
+	3. Functional Requirements	3
+
+	FR-01 Functional Requirement 1	3
+
+	FR-02 Functional Requirement 2	3
+
+	4. Solution Design	4
+
+	4.1 Process Flow	4
+
+	4.2 Technical Approach	4
+
+	4.3 Integrations and Dependencies	5
+
+	4.4 Script Outlines	5
+
+	5. Data Model	5
+
+	5.1 New Custom Records	5
+
+	5.2 Key Custom Fields	5
+
+	6. Approval and Sign-Off	6
+
+	7. Document Control	6
+
+# 1 Business Context
+
+## 1.1 Current State
+
+- Current state flow
+
+## 1.2 Desired State
+
+- Desired state flow
+
+## 1.3 Open Questions
+
+| **#** | **Question** | **Owner** | **Status** |
+| --- | --- | --- | --- |
+| 1 | N/A | N/A | N/A |
+
+# 2. Scope
+
+## 2.1 In Scope
+
+- Deliverable 1
+
+## 2.2 Out of Scope
+
+- Out of Scope 1
+
+# 3. Functional Requirements
+
+## FR-01 Functional Requirement 1
+
+| **ID** | **Requirement** |
+| --- | --- |
+| FR-01.1 |  |
+| FR-01.2 |  |
+| FR-01.3 |  |
+| FR-01.4 |  |
+
+## FR-02 Functional Requirement 2
+
+| **ID** | **Requirement** |
+| --- | --- |
+| FR-02.1 |  |
+| FR-02.2 |  |
+| FR-02.3 |  |
+| FR-02.4 |  |
+
+# 4. Solution Design
+
+## 4.1 Process Flow
+
+The following depicts a complete process flow.
+
+[Insert Lucid Chart Process Flow Diagram, required]
+
+## 4.2 Technical Approach
+
+**Technical Approach Title**
+
+Technical approach details
+
+**Component Table**
+
+| **Component** | **Type** | **Purpose** |
+| --- | --- | --- |
+| Script 1 | Script Type |  |
+| Saved Search 1 | Search Type |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+
+**Key Logic Notes**
+
+- Key logic 1
+
+## 4.3 Integrations and Dependencies
+
+| **System** | **Relationship** | **Notes** |
+| --- | --- | --- |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+
+## 4.4 Script Outlines
+
+**EBS | [Script Name]**
+
+**Filename: **ebs_[scriptType]_[scriptName].js
+
+**Script ID: **customscript_ebs_[scriptType]_[scriptName]
+
+**Script Type: **[Script Type]
+
+**Script Parameters:**
+
+**Script Outline:**
+
+- Function 1:
+
+- Function 1 step 1
+
+- Function 1 step 2
+
+- Function 2
+
+- Function 2 step 1
+
+- Function 2 step 2
+
+# 5. Data Model
+
+## 5.1 New Custom Records
+
+Insert custom record details here, if applicable.
+
+## 5.2 Key Custom Fields
+
+The following custom fields must be added to support this solution.
+
+**[Insert Record Type 1]**
+
+| **Field Label** | **Field ID** | **Type** | **Purpose** |
+| --- | --- | --- | --- |
+|  |  |  |  |
+|  |  |  |  |
+
+**[Insert Record Type 2]**
+
+| **Field Label** | **Field ID** | **Type** | **Purpose** |
+| --- | --- | --- | --- |
+|  |  |  |  |
+|  |  |  |  |
+
+# 6. Approval and Sign-Off
+
+By signing below, the approving party confirms they have reviewed this Solution Design Document and authorize Ethos Business Solutions to proceed with development based on the design described herein, subject to resolution of the open questions in Section 6 before the corresponding components are built.
+
+| **Name** | **Organization** | **Role** | **Date** | **Decision** |
+| --- | --- | --- | --- | --- |
+| Ethos Name 1 | Ethos Business Solutions | Role |  |  |
+| Client Name 1 | Client | Role |  |  |
+
+**Conditions:**
+
+- Condition of Acceptance 1
+
+# 7. Document Control
+
+| **Date** | **Author** | **Version** | **Change Reference** |
+| --- | --- | --- | --- |
+| MM/DD/YYYY | Author Name | 1.0 | Initial Draft |
+| MM/DD/YYYY | Author Name | 1.1 | Short Change Reference Note |
+
+1 of 2

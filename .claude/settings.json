@@ -1,0 +1,91 @@
+{
+  "permissions": {
+    "deny": [
+      "mcp__m365__outlook_send_mail",
+      "mcp__m365__outlook_send_draft",
+      "mcp__m365__outlook_forward_mail",
+      "mcp__m365__teams_send_chat_message",
+      "mcp__m365__teams_send_channel_message",
+      "mcp__m365__teams_reply_channel_message",
+      "mcp__m365__outlook_create_filter",
+      "mcp__m365__outlook_delete_filter",
+      "mcp__netsuite",
+      "mcp__smartsheet__delete_rows",
+      "mcp__smartsheet__delete_column",
+      "mcp__smartsheet__delete_attachment",
+      "Bash(git push:*)",
+      "Bash(git merge:*)",
+      "Bash(git rebase:*)",
+      "Bash(git reset --hard:*)",
+      "Bash(suitecloud:*)",
+      "mcp__m365__outlook_create_event",
+      "mcp__d921cb44-54d6-4a58-8a0e-c34b9edb58ed__outlook_send_mail",
+      "mcp__d921cb44-54d6-4a58-8a0e-c34b9edb58ed__outlook_send_draft",
+      "mcp__d921cb44-54d6-4a58-8a0e-c34b9edb58ed__outlook_forward_mail",
+      "mcp__d921cb44-54d6-4a58-8a0e-c34b9edb58ed__outlook_delete_draft",
+      "mcp__d921cb44-54d6-4a58-8a0e-c34b9edb58ed__outlook_create_filter",
+      "mcp__d921cb44-54d6-4a58-8a0e-c34b9edb58ed__outlook_delete_filter",
+      "mcp__d921cb44-54d6-4a58-8a0e-c34b9edb58ed__outlook_create_event",
+      "mcp__d921cb44-54d6-4a58-8a0e-c34b9edb58ed__outlook_delete_event",
+      "mcp__d921cb44-54d6-4a58-8a0e-c34b9edb58ed__outlook_respond_to_event",
+      "mcp__d921cb44-54d6-4a58-8a0e-c34b9edb58ed__teams_send_chat_message",
+      "mcp__d921cb44-54d6-4a58-8a0e-c34b9edb58ed__teams_send_channel_message",
+      "mcp__d921cb44-54d6-4a58-8a0e-c34b9edb58ed__teams_reply_channel_message",
+      "mcp__d921cb44-54d6-4a58-8a0e-c34b9edb58ed__teams_create_chat",
+      "mcp__192da3ad-8ab5-42dd-b80a-9bae8541dbc4__delete_rows",
+      "mcp__192da3ad-8ab5-42dd-b80a-9bae8541dbc4__delete_column",
+      "mcp__192da3ad-8ab5-42dd-b80a-9bae8541dbc4__delete_attachment",
+      "mcp__d38a919a-deb8-4d78-a23e-9d6ea3700779__delete_folder"
+    ],
+    "ask": [
+      "mcp__smartsheet__add_rows",
+      "mcp__smartsheet__update_rows",
+      "mcp__smartsheet__add_columns",
+      "mcp__smartsheet__update_column",
+      "mcp__smartsheet__execute_discussions_write",
+      "mcp__lucid__share_document_with_collaborators",
+      "mcp__lucid__lucid_create_document_share_link",
+      "mcp__d921cb44-54d6-4a58-8a0e-c34b9edb58ed__outlook_create_label",
+      "mcp__d921cb44-54d6-4a58-8a0e-c34b9edb58ed__outlook_delete_label",
+      "mcp__192da3ad-8ab5-42dd-b80a-9bae8541dbc4__add_rows",
+      "mcp__192da3ad-8ab5-42dd-b80a-9bae8541dbc4__update_rows",
+      "mcp__192da3ad-8ab5-42dd-b80a-9bae8541dbc4__add_columns",
+      "mcp__192da3ad-8ab5-42dd-b80a-9bae8541dbc4__update_column",
+      "mcp__192da3ad-8ab5-42dd-b80a-9bae8541dbc4__attach_url",
+      "mcp__192da3ad-8ab5-42dd-b80a-9bae8541dbc4__create_sheet",
+      "mcp__192da3ad-8ab5-42dd-b80a-9bae8541dbc4__create_folder",
+      "mcp__192da3ad-8ab5-42dd-b80a-9bae8541dbc4__create_workspace",
+      "mcp__192da3ad-8ab5-42dd-b80a-9bae8541dbc4__create_dashboard",
+      "mcp__192da3ad-8ab5-42dd-b80a-9bae8541dbc4__add_chart_to_dashboard",
+      "mcp__192da3ad-8ab5-42dd-b80a-9bae8541dbc4__execute_discussions_write",
+      "mcp__192da3ad-8ab5-42dd-b80a-9bae8541dbc4__execute_automations_write",
+      "mcp__192da3ad-8ab5-42dd-b80a-9bae8541dbc4__execute_sharing_write",
+      "mcp__192da3ad-8ab5-42dd-b80a-9bae8541dbc4__execute_portfolio_write",
+      "mcp__192da3ad-8ab5-42dd-b80a-9bae8541dbc4__execute_reports_write",
+      "mcp__192da3ad-8ab5-42dd-b80a-9bae8541dbc4__execute_scenario_planning_write",
+      "mcp__192da3ad-8ab5-42dd-b80a-9bae8541dbc4__execute_ai_solutions_write",
+      "mcp__af86b291-e490-4948-ba29-12a22473cb35__share_document_with_collaborators",
+      "mcp__af86b291-e490-4948-ba29-12a22473cb35__lucid_create_document_share_link",
+      "mcp__af86b291-e490-4948-ba29-12a22473cb35__post_document_thread_comment",
+      "mcp__d38a919a-deb8-4d78-a23e-9d6ea3700779__share_folder",
+      "mcp__d38a919a-deb8-4d78-a23e-9d6ea3700779__share_meeting_report",
+      "mcp__d38a919a-deb8-4d78-a23e-9d6ea3700779__create_meeting_agent"
+    ],
+    "additionalDirectories": [
+      "../Repos"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR/scripts/guard_git.py\""
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+===
+
+# Meeting Recap Format
+
+Use this exact structure for every meeting recap.
+
+## Subject line
+
+[Client Name] — Meeting Recap | [Topic] | [Date]
+
+## Body structure
+
+Hello [Client Name] Team,
+
+Thanks again for your time in today's status meeting. Below is a brief recap of key updates and action items for any open projects and ad-hoc support tasks along with their budgets. Please don't hesitate to reach out directly to the Ethos team if you have any questions or comments.
+
+**Budget Metrics** (As of EOD [Last Business Date DD.MM.YYYY):
+
+| **Project** | **Budgeted Hours** | **Actual Hours** | **Hours Remaining** |
+| --- | --- | --- | --- |
+| Ad-Hoc Support |  |  |  |
+| Project 1 |  |  |  |
+| Project 2 |  |  |  |
+
+**Decisions Made**
+
+- Bulleted list, past tense, client-ready language
+
+- Each bullet is a complete thought on a topic discussed with decision made, not a fragment
+
+**Action Items**
+
+*Ethos:*
+
+- Action text only — no owner names, no due dates inside the bullet itself
+
+- One bullet per action
+
+*[Client Name]:*
+
+- Same format
+
+**Risks & Open Items**
+
+- [Risk or open item] — [context and impact]
+
+- Omit this section entirely if there are none
+
+## Rules
+
+- First section is "Topics Covered" — never "Decisions Made" or "Summary"
+
+- No "Next Steps" section — recap ends after Risks & Open Items (or Action Items if no risks)
+
+- No internal Ethos commentary in client-facing recaps
+
+- If the user wants an Outlook draft of the recap, use the Microsoft 365 connector to identify the meeting and pull the attendee list. Draft the email addressed to those attendees. Do not send.
+
+- For internal team meetings (Ethos only, dev huddles, etc.), use the same format but address the draft to the user themselves.
+
+- Flag ambiguous action item owners with "Owner TBD" rather than guessing.
+
+- When the user asks for a recap to paste into an email, output the recap as plain formatted text in the chat — no .docx file. Only generate a .docx when the user explicitly requests a file or document download.
+
+===

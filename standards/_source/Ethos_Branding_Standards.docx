@@ -1,0 +1,91 @@
+===
+
+# Ethos Branding Standards for .docx Output
+
+Every Word document you produce uses these styling rules and matches the corresponding reference template. The goal is consistent, professional, client-ready output that requires minimal editing before sending.
+
+# Reference templates and assets
+
+The following files are uploaded to this project's knowledge base. Use them as the visual source of truth for every document you generate. Match their fonts, colors, heading styles, table styles, spacing, logo placement, and overall layout.
+
+- ethos-logo.png — embed at top-left of first page header on every branded .docx
+
+- template-sdd.docx — reference for Solution Design Documents
+
+- template-sow-fixed-fee.docx — reference for Fixed Fee Statements of Work
+
+- template-sow-time-and-materials.docx — reference for T&M Statements of Work
+
+- template-dev-request-one-pager.docx — reference for Development Request One-Pagers
+
+- template-meeting-recap.docx — reference for meeting recap document exports (if used)
+
+When generating any of these document types, read the corresponding reference template first to confirm current branding. If a template is updated in project knowledge, the generated output should reflect those changes automatically — no instruction updates needed.
+
+Ethos logo render size: 130×91 pixels (aspect ratio 1316×924 — do not distort)
+
+# Default styling (used when reference template is unavailable or for document types without a template)
+
+## Colors
+
+- Primary navy: dark navy blue, used for top-level headings and table header rows
+
+- Accent blue: medium blue, used for sub-headings and emphasis
+
+- Body text: near-black, never pure black
+
+- Backgrounds: white only — no shading on data rows, no alternating fills on body tables
+
+- Callout boxes: light gray background with navy border for "Note" and "Warning" callouts
+
+## Typography
+
+- Headings: clean sans-serif (Calibri or Arial), bold
+
+- Body text: clean sans-serif (Calibri or Arial), regular weight, 11pt
+
+- Tables: same body font, 10pt for table content
+
+## Layout
+
+- Letter size paper, standard margins (1 inch all sides) for client-facing docs
+
+- Single column
+
+- Page numbers in footer for documents over 3 pages
+
+- Document title on first page as a top-level heading
+
+- Ethos logo in top-left of first page header
+
+- Paragraph spacing: 0 pt before, 0 pt after, for all body text and headings, unless the reference template specifies otherwise.
+
+## Tables
+
+- Header row: navy fill, white text, bold
+
+- Data rows: white background, no shading (alternating fills break manual edits and look cluttered)
+
+- Borders: thin gray, all sides
+
+- Column widths: sized to content, not stretched edge to edge
+
+## Callout boxes (when used)
+
+- "Note" callout: light gray background, navy left border, "NOTE:" label in bold navy
+
+- "Warning" callout: light gray background, dark red left border, "WARNING:" label in bold dark red
+
+## What not to do
+
+- No emojis. Anywhere. Ever.
+
+- No clip art, decorative graphics, or stock imagery beyond the Ethos logo.
+
+- No colored body text — body text is always near-black.
+
+- No shaded data rows in tables.
+
+- No filler page elements (decorative dividers, ornamental flourishes).
+
+===

@@ -1,0 +1,86 @@
+**Lucid Process Flow Diagram Standards**
+
+*Governs every process flow diagram Claude generates in Lucid on behalf of Ethos. Applies to SDDs, SOWs, and any standalone process flow request.*
+
+# **1. When This Applies**
+
+- SDD Section 4.1 Process Flow (required for every SDD).
+
+- SOW / Change Order Process Overview section.
+
+- Standalone process flow requests not tied to a specific document.
+
+- Not applicable to Development Request One-Pagers.
+
+# **2. Structure**
+
+Every diagram is built as horizontal swim lanes, one per actor or system. Two lanes is the default (End User / NetSuite Automation, or the equivalent system name). Use a third or fourth lane only when a distinct actor or system genuinely owns a separate set of steps (e.g., a middleware/integration layer).
+
+| **Rule** | **Standard** |
+| --- | --- |
+| Lane count | 2 to 4. Default to 2 unless a distinct actor/system requires its own lane. |
+| Lane naming | Actor or system name only (e.g., "End User", "NetSuite Automation", "Celigo Integration"). No verbs. |
+| Lane shading | All lanes shaded Lunar (see Section 4 palette). No lane is left white. |
+| Lane sizing | Lane spans only as long as its flow requires, not the full page width. |
+| Lane margin | 40pt between the start of the lane and the first box; 40pt between the last box and the end of the lane. |
+| Box spacing | 60pt between adjacent boxes, in both the horizontal flow direction and between rows within a lane. |
+| Flow direction | Left to right. Vertical movement only to cross between lanes. |
+| Terminator | Every flow ends in a Terminator shape labeled "End Process". No exceptions. |
+
+# **3. Shapes**
+
+| **Shape** | **Use** | **Size (w × h)** | **Fill / Border** |
+| --- | --- | --- | --- |
+| Process | A standard action or step | 160 × 120 pt | White fill, dark slate border |
+| Predefined Process | A step that is itself a documented sub-process (e.g., a native NetSuite transaction flow) | 160 × 120 pt | White fill, dark slate border |
+| Decision | A branch point | 160 × 120 pt | White fill, dark slate border |
+| Terminator | Start / End Process only | 160 × 80 pt | White fill, dark slate border |
+
+# **4. Color Palette**
+
+| **Element** | **Color** | **Hex** |
+| --- | --- | --- |
+| Swim lane shading (Lunar) | Light slate blue | #DFE3E8 |
+| Lane border / connector lines | Dark slate | #3A414A |
+| Shape fill | White | #FFFFFF |
+| Decision label text ("Yes" / "No") | Dark gray, bold | #333333 |
+
+# **5. Typography**
+
+| **Text** | **Spec** |
+| --- | --- |
+| Lane label | 10pt, Inter or Calibri |
+| Shape label | 8pt. Drop to 7pt only if the label does not fit at 8pt. |
+| Decision branch label | 8pt, bold, #333333 |
+
+# **6. Connectors**
+
+- Elbow line shape with 12pt corner rounding. No straight diagonal lines.
+
+- Arrowhead at the target end only; no arrowhead at the source end.
+
+- Line color #3A414A.
+
+- Decision branches always labeled "Yes" / "No" (or the equivalent binary outcome), never left unlabeled.
+
+# **7. Filing and Naming in Lucid**
+
+| **Item** | **Convention** |
+| --- | --- |
+| Folder | Shared "Process Flows" folder, with a subfolder per client. |
+| Document title | [Client] - [Feature] Process Flow |
+| Page title (within the doc) | Match the scenario being depicted, e.g., "Invoice Single Fulfillment", "New Solution". Use separate pages for current-state vs. proposed-state when both exist. |
+
+# **8. Generation Workflow**
+
+- Build the diagram directly in Lucid via the Lucid connector, matching Sections 2 through 6 above.
+
+- Export the diagram page as a PNG.
+
+- Embed the PNG in the SDD or SOW at the "[Insert Lucid Chart Diagram Here]" placeholder.
+
+- Include the Lucid edit link in the document (Document Control section for SDDs) so the diagram stays editable and is not a dead image.
+
+- File the Lucid document per Section 7 before or immediately after export.
+
+Page  of

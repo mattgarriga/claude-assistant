@@ -1,0 +1,51 @@
+| **ETHOS BUSINESS SOLUTIONS** **Development Request One-Pager** *For simple and minor development requests — attach to intake form submission* |
+| --- |
+
+**REQUEST OVERVIEW**
+
+| **Client / Project** | *e.g. Core Transformers — NetSuite Phase 1* |
+| --- | --- |
+| **Requested By** | *Full name* |
+| **Request Type** | *Bug **Fix  │**  Config **Change  │**  Reporting/**Data  │**  Minor Enhancement* |
+
+**BUSINESS CONTEXT**
+
+*Briefly explain the business need or problem this request addresses. Why is this needed? What is the impact if it is not resolved?*
+
+| *Describe the business need here...* |
+| --- |
+
+**CURRENT STATE VS. DESIRED STATE**
+
+*Describe what is happening today and what you would like to happen after this request is completed.*
+
+| **Current State** | **Desired State** |
+| --- | --- |
+| *What is happening today?* | *What should happen instead?* |
+
+**REQUEST DETAILS**
+
+*Describe the specific change or fix being requested. Include any relevant steps to reproduce (for bugs), affected records, fields, scripts, or workflows. Attach screenshots if helpful.*
+
+| *Describe the specific request, impacted areas, and any known guardrails or constraints from the client...* |
+| --- |
+
+**SCOPE ****&**** CLIENT GUARDRAILS**
+
+*List anything that is explicitly in scope, out of scope, or any client constraints that must be respected during development.*
+
+| **In Scope** | **Out of Scope / Constraints** |
+| --- | --- |
+| *e.g. Update field logic on Sales Order record* | *e.g. Changes to Invoice record not included* |
+
+**OPEN QUESTIONS**
+
+*List any unresolved questions that need to be answered before or during development. Identify the owner for each.*
+
+| **#** | **Question** | **Owner** | **Status** |
+| --- | --- | --- | --- |
+| OQ-01 |  |  | Open |
+| OQ-02 |  |  | Open |
+| OQ-03 |  |  | Open |
+
+*Ethos Business **Solutions  |**  Development Request One-**Pager  |**  Attach to Smartsheet Intake Form*

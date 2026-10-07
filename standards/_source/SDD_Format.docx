@@ -1,0 +1,221 @@
+===
+
+# Solution Design Document (SDD) Format
+
+The SDD is the primary client-facing design artifact. It must be readable by both technical and non-technical stakeholders. No code or code snippets — function names and plain-language descriptions only.
+
+When generating an SDD, read template-sdd.docx in project knowledge first and match its visual styling, table treatment, and section layout.
+
+## Before you draft anything
+
+An SDD is not a transcription of what the requester told you. It is a design that
+
+has been stress tested. Do not produce a draft until the design holds up.
+
+Run a design interview first. Ask questions in batches, across as many turns as it
+
+takes. Do not stop at one round. Do not offer to "draft something to get started."
+
+There is no partial draft.
+
+Cover at minimum:
+
+- Trigger and timing: what starts the process, how often, what volume per run
+
+- Source of truth: which system owns each field, what happens when they disagree
+
+- Record and state model: what records are touched, what statuses exist, what
+
+  transitions are legal
+
+- Failure behavior: error, partial success, timeout, duplicate submission,
+
+  governance limit
+
+- Idempotency: what happens if the process runs twice on the same record
+
+- Permissions: which roles execute this, which roles see the output
+
+- Existing footprint: what already exists in the account that this touches or duplicates
+
+- Rollback: how this is turned off if it misbehaves in production
+
+- Manual fallback: what the business does if the automation is unavailable
+
+Then poke holes. For every proposed approach, name at least two alternatives you
+
+considered and state why they lose. If the requester cannot answer a question, that
+
+is an open question with a named owner, not something you fill in.
+
+Push back when the design is wrong. If a User Event is being used where a Map/Reduce
+
+is needed, say so. If a custom record is being invented where a native one exists,
+
+say so. If the requirement is really a saved search and not a script, say so.
+
+Deferring to the requester because they are the requester produces documents that
+
+fail in build.
+
+Begin drafting only when all of the following are true:
+
+- Every functional requirement can be written as a testable statement
+
+- Every script has a named type and a stated justification
+
+- Every integration has a named direction, trigger, and payload owner
+
+- Every open question has an owner and does not block the sections being written
+
+## Required sections in this order
+
+1. **Basic Business Needs Overview** — callout box summarizing what the client needs and why, plus an Assumptions sub-section
+
+2. **Business Context**
+
+   - 1.1 Current State
+
+   - 1.2 Desired State
+
+   - 1.3 Open Questions
+
+3. **Scope**
+
+   - 2.1 In Scope
+
+   - 2.2 Out of Scope
+
+   - 2.3 Assumptions
+
+4. **Functional Requirements** — table per requirement group, exactly two columns (# / Requirement). Numbered FR-01, FR-02, etc. Never add a Notes column.
+
+5. **Solution Design**
+
+   - 4.1 Process Flow: Read Lucid_Diagram_Standards.docx before generating. Build directly in Lucid via the connector, export as PNG, embed at the placeholder.
+
+   - 4.2 Technical Approach
+
+   - 4.3 Integrations and Dependencies
+
+   - 4.4 Script Outlines (one subsection per script — see format below)
+
+6. **Data Model**
+
+   - 5.1 New Custom Records
+
+   - 5.2 Key Custom Fields
+
+8. **Approval and Sign-Off** — always include Matthew Garriga as Technical Lead in the approval table
+
+9. **Document Control**
+
+## Section 4 gating (Solution Design)
+
+Do not write Section 4 until the user can name every script the solution requires,
+
+with your help, and justify each one.
+
+For each script the user must land on:
+
+- Script type (User Event, Client, Map/Reduce, Scheduled, Suitelet, RESTlet,
+
+  Workflow Action, Portlet, Mass Update)
+
+- What triggers it
+
+- Why that type beats the alternatives, in one sentence a client can read
+
+Help them get there. Do not guess for them. Propose candidates, then argue against
+
+your own proposal. Run these challenges every time:
+
+- User Event doing work that exceeds governance or touches many records: should be
+
+  Map/Reduce
+
+- Scheduled script polling for changes a User Event could catch at the source
+
+- Suitelet built where a saved search, custom form, or workflow would do
+
+- Client script carrying validation that must also hold for CSV import, web services,
+
+  and integrations, which means it belongs server side
+
+- RESTlet built where an existing SuiteTalk or REST record endpoint already covers it
+
+- Workflow chosen for logic that will outgrow it within a release or two
+
+If the user cannot justify a script, that script does not go in the document. Write
+
+the requirement in Section 3, log the design decision as an open question with an
+
+owner, and leave 4.5 out for that component. An SDD with an honest gap beats an SDD
+
+with an invented architecture.
+
+## Section 4.5 Script Outline format (one subsection per script)
+
+**Filename:** [ebs_type_feature.js]
+
+**Script ID:** [customscript_ebs_type_feature]
+
+**Script Type:** [RESTlet / User Event / Map-Reduce / Suitelet / Scheduled]
+
+**Script Parameters:** (omit this if there are none)
+
+- [Label] (custscript_ebs_param_name) — [Type]: [Value or TBD]
+
+**Script Outline:**
+
+- **functionName(params)** — One-sentence description of what this function does
+
+- **functionName(params)** — One-sentence description
+
+## Rules
+
+- No code or code snippets of any kind. Function names plus plain-language descriptions only.
+
+- Functional requirements must be in table format. No prose lists.
+
+- FR tables: exactly two columns. Never add a Notes or Status column.
+
+- Data tables: navy header row, white body rows. No alternating fills.
+
+- Section 4.5: function names in bold. Never use backticks.
+
+- Script names with pipe characters: use a dash in the doc ("EBS - Script Name") — pipes break table rendering.
+
+- No emojis. No filler.
+
+- File the output as [CLIENT]-[Feature] SDD v1.docx
+
+- Shortest document a client can approve and a developer can build. Nothing else
+
+  earns a place.
+
+- No restating. If it is in the FR table, it is not repeated as prose in Section 4.
+
+- Cut every "This section describes" and "In order to" opener.
+
+- One idea per sentence.
+
+- Current State and Desired State are bullets, not narrative. Five bullets each is
+
+  usually enough.
+
+- Technical Approach is what gets built. Justification is one sentence per script,
+
+  no more.
+
+- Assumptions are testable statements the client can agree or disagree with, not hedges.
+
+- If a section has nothing real in it, write "Not applicable to this solution."
+
+  Do not pad it.
+
+- Banned words: robust, seamless, leverage, utilize, ensure, streamline,
+
+  comprehensive, as needed, where appropriate.
+
+===
