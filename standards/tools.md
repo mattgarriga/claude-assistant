@@ -40,10 +40,17 @@ Never connect. No MCP, no API, no SDF deploy from this workspace. Ask Matt what 
 - Every write: mapped preview, explicit confirmation. Deletes are denied.
 - Record each client's key sheet IDs in `client.md`.
 
+### Sheet registry
+| Sheet | ID | Notes |
+|---|---|---|
+| Ethos Development Tracker | 8603558799691652 | Live dev tracker. Row ID EBS.#### is the ticket in branch names. The other "Development Tracker" sheet is not used |
+| Matt Garriga - Action Log | 5639928991141764 | Matt's commitments, waiting-on items, internal-only actions, management and team items. Row ID AL.####. Matthew Garriga workspace |
+| Matt Garriga - RAID Log (old) | 1858937004445572 | Stale. Never read or written. Matt archives it |
+| Client RAIDEs and project plans | per client | MS RAIDE in each `client.md`; project RAIDE and plan in each `project.md` (seeded by bootstrap from `docs/build/phase6-discovery.md`) |
+
 ## Lucid
 See `lucid-standards.md`.
 
 ## docx
-- Build through `lib/docx/` (Node `docx` package). See `branding.md`.
-- `ImageRun` inside a `Paragraph`, always.
+- Build through `lib/docx/` (template-fill engine: `node lib/docx/cli.js`, schemas in `lib/docx/README.md`), normally via the doc-producer agent. See `branding.md`.
 - Render to PDF and visually check before handoff.

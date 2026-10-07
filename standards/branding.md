@@ -199,6 +199,8 @@ Working copies are byte-identical to the originals. Page, header, footer, docDef
 
 These rules apply to text Claude writes into a template. Everything else stays exactly as the template ships it. Template boilerplate is exempt from the voice dash rule; only Claude-written content is linted (decisions log 2026-10-07).
 
+- Pagination only: the engine adds `w:keepNext` to section headings and to the label paragraph before a table, and `w:cantSplit` on rows (with `keepNext` on all but the last row) for tables of 6 rows or fewer. No other formatting is added.
+
 ### One-Pager
 | Element | Rule | Src |
 |---|---|---|
@@ -221,7 +223,7 @@ These rules apply to text Claude writes into a template. Everything else stays e
 | Tables | 10pt where the template sets sz 20; use the template's cells as prototypes | Template, decisions log |
 | 4.4 Script Outlines heading | "EBS - [Name]" (the template pipe text is replaced on fill) | Decisions log |
 | 4.4 detail lines | Filename, Folder, Script Type, Script ID lines, in that order, then Script Parameters as a navy-header (1F3864) Name / Type / Value table using the content table treatment, then Script Outline | Decisions log, 3D Flight SDD |
-| Process flows | Lucid PNG at content width; Lucid edit link in Document Control; the INCLUDEPICTURE link is removed | Decisions log |
+| Process flows | Lucid PNG at content width; Lucid edit link as one line "Edit in Lucid: <url>" under the 4.1 image; the INCLUDEPICTURE link is removed | Decisions log |
 | TOC | Entries rewritten from real headings; field flagged to update on open | Decisions log |
 | Empty tables and sections | Rows trimmed to content count; an empty section reads "Not applicable to this solution." | Decisions log |
 | Heading numbering | Template typing kept (see SDD Heading styles note) | Decisions log |
@@ -232,7 +234,7 @@ These rules apply to text Claude writes into a template. Everything else stays e
 | Layout | 2026 template layout: cover table, Business Overview, Process Overview, Scope and Deliverables, Estimated Fees and Billing, signatures. No Document Control table and no address header | Decisions log |
 | CO | Uses the CO template's own wording | Decisions log |
 | Money | Total Fee, 50% invoice amount, balance, and T&M hours and fees all stay `PRICING-PROVIDE-BEFORE-SENDING` until Matt supplies them | Decisions log |
-| T&M | Native Estimated Hours and Fees table filled with the template cells; numbers stay as placeholders until supplied | Decisions log |
+| T&M | Native Estimated Hours and Fees table filled with the template cells; cells read `TBD` until supplied, and the fees paragraph above carries `PRICING-PROVIDE-BEFORE-SENDING` | Decisions log |
 | Process Overview | Lucid diagrams only, 6.9in wide, no narrative | Decisions log |
 | Assumptions | The 5 standard assumptions are on by default and editable per document (wording in `sow-format.md`) | Decisions log |
 | Signatures | Client signer from `client.md`; Ethos signer Cedric Carter; acceptance date left blank | Decisions log |
