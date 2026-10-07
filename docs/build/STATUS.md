@@ -2,29 +2,24 @@
 
 If a session restarts, read this file, then `plan.md` and `decisions-log.md`, then continue from "Next".
 
-## Done
-- Phase 0 complete (connectors, deny rules, guard_git, guard_auth, toolchain, decisions)
-- Plan reviewed end to end with Matt (Phases 0 to 7 plus added scope S1 to S11)
-
-## In progress (2026-10-07, Matt away; build-all-you-can mode)
-| Stream | Owner | Scope |
+## Done (2026-10-07)
+| Phase | State | Commit |
 |---|---|---|
-| A | app-builder | Phase 1.1 to 1.3: templates into repo, cleaned SDD/One-Pager copies, branding.md per-template spec, renders |
-| B | done, committed e056965 | Phase 1.4 format and skill files, S1 merge commands into skills (tester PASS) |
-| C | done, committed e056965 | Day-to-day agents (S2), secret scan (7.2), lint hooks registered (7.1), /health-check (7.3) (tester PASS) |
-| D | app-builder | Phase 4 and 5 skill text, new /agenda /invitra /sow-review /wrap, Phase 6 bootstrap rewrite |
+| 0 Environment, connectors, deny rules, guard_git, guard_auth | Built, tested | 3cb84ea, 87e1b4f |
+| 1.1 to 1.3 Templates in repo, cleaned SDD (Letter) and One-Pager (white fills), branding.md | Built, tested; awaiting Matt render approval | c55e47d |
+| 1.4, S1 Format files, skills merged to short names | Built, tested | e056965 |
+| 1.6 Standards diff table | Built; 20 rows need Matt | dcc910a |
+| 2 lib/docx template-fill engine, 6 types, check.js, renders | Built; tester running; awaiting Matt render approval | pending |
+| 4, 5 Dev and PM skills, agent routing, /agenda /invitra /sow-review /wrap | Built | 3356c6e |
+| S2 Day-to-day agents (scout, meeting-analyst, doc-producer, qa-gate, code-reviewer) | Built, tested | e056965 |
+| 6 bootstrap skill rewrite; 6.1 discovery table | Built; table awaiting Matt | 3356c6e, 4e2d566 |
+| 7.1 to 7.3, 7.5, S10 Lint hooks, secret scan, /health-check, README, root tidy | Built, tested | e056965, dcc910a |
 
-## Next
-1. Tester pass on A, B, C. Senior review. Commit per stream.
-2. Phase 2 engine (needs A's templates).
-3. Phase 4 and 5 skill work (needs B's rename).
-4. Phase 6.1 discovery table (read-only).
-
-## Blocked on Matt (collect into one grouped question list)
-- Phase 1.6 standards diff sign-off
-- Phase 1.2 / Phase 2 render approvals
-- 3a: confirm HUT client meeting, pick email thread
-- Action Log columns before creating the sheet
-- Weekly /client-update scheduled task creation
-- Phase 6 discovery table and per-client approvals
-- Run sudo managed-settings command; install migrator plugin
+## Next (all need Matt)
+1. Matt answers `docs/build/QUESTIONS.md`.
+2. Phase 3a skill tests with Matt judging quality: internal recap (HUT 10/06), client recap, /review-design on 3D Flight SDD, /flow rebuild, /email.
+3. Phase 3b: /onepager, /sdd, /sow on real examples.
+4. Phase 4 tests on cerio and imi; Phase 5 tests incl. creating the Action Log.
+5. Phase 6.2 overnight bootstrap drafting after discovery is confirmed; 6.3 per-client reviews.
+6. Phase 7.4 weekly /client-update scheduled task after Matt approves it.
+7. Final commit and summary.
