@@ -54,3 +54,8 @@ See `lucid-standards.md`.
 ## docx
 - Build through `lib/docx/` (template-fill engine: `node lib/docx/cli.js`, schemas in `lib/docx/README.md`), normally via the doc-producer agent. See `branding.md`.
 - Render to PDF and visually check before handoff.
+
+## Action Log schema cache
+Column plan: Row ID (AL.####), Type (Commitment / Waiting On / Internal Action / Management), Subject, Client, Date Identified, Due Date, Assigned To, Priority, Status, Done, Details, Source, Comments. Not yet read from the sheet: the first `/log` write runs one `get_columns` and replaces this paragraph with the real column names and picklist values.
+
+**Auto-approved writes:** `add_rows` to the Action Log only, by `scripts/guard_actionlog.py` (PreToolUse hook). Every other sheet and every other Smartsheet write still asks.

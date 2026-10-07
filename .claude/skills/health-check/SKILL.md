@@ -16,7 +16,7 @@ Read-only except for the denial tests, which use fake IDs and must be refused. N
    - Smartsheet `delete_rows` with sheet_id `1` and row_ids `[1]`
 
    Use the current live ID prefix for each. A permission refusal is a pass. Any other result (API error, not found, validation error, success) means the rule is missing or mismatched: report **CRITICAL**, and do not retry.
-3. **Hooks registered.** In `settings.json`, confirm hooks for `guard_git.py`, `guard_auth.py`, and `hook_lint_outputs.py` (PostToolUse on Write|Edit, PreToolUse on the three M365 draft tools).
+3. **Hooks registered.** In `settings.json`, confirm hooks for `guard_git.py`, `guard_auth.py`, `guard_actionlog.py` (PreToolUse on the Smartsheet `add_rows` tool; it must auto-approve only sheet 5639928991141764), and `hook_lint_outputs.py` (PostToolUse on Write|Edit, PreToolUse on the three M365 draft tools).
 4. **Auth.** Confirm `ANTHROPIC_API_KEY` and `ANTHROPIC_AUTH_TOKEN` are blank (check the `env` block and the shell with `[ -z "$VAR" ]`; never echo values). Confirm `/Library/Application Support/ClaudeCode/managed-settings.json` exists and contains `forceLoginMethod` set to `claudeai` (read only, do not edit).
 5. **Conventions file.** Confirm the ethos-dev conventions file exists at the path named in `standards/coding-standards.md`.
 

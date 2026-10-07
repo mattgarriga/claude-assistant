@@ -35,7 +35,7 @@ This repo (`claude-assistant`) replaces the "Ethos Assistant" claude.ai Project.
 - Generated outputs live in the repo only (`clients/<slug>/projects/<project>/outputs/`). No OneDrive or SharePoint copies.
 - Never connect to NetSuite. No NetSuite MCP, no SuiteTalk calls, no suitecloud CLI. Ask Matt what exists in the account.
 - Code: edit and commit only on feature branches in `../Repos`. Push feature, hotfix, and bugfix branches only; never push main, master, develop, or release branches, never force-push, never merge. Show the diff and commit message before committing.
-- Smartsheet writes: show a mapped preview (sheet, row, column, old value, new value) and get explicit confirmation first.
+- Smartsheet writes: show a mapped preview (sheet, row, column, old value, new value) and get explicit confirmation first. Exception: `add_rows` to Matt's own Action Log (5639928991141764) is auto-approved by `scripts/guard_actionlog.py`; report what was written.
 - `internal.md` content never appears in client-facing output. Stakeholder dynamics, budget/resourcing internals, escalations, and decisions made against Ethos advice stay internal.
 - Action items always have an owner. If ambiguous, write "Owner TBD". Never invent one.
 - Never invent pricing. Use `PRICING-PROVIDE-BEFORE-SENDING`.
@@ -106,7 +106,7 @@ Stale context is the main failure mode of this repo.
 | `/chase` | Nudge drafts for stale waiting-on items |
 | `/ingest` | Pull context facts from a local .docx or PDF (SDD, SOW, notes) |
 | `/sdd-sync` | Compare meeting outcomes to the project SDD |
-| `/log` | Quick-capture a commitment or waiting-on item to the Action Log |
+| `/log` | Log commitments and waiting-on items to the Action Log: a typed line, `from <meeting>`, or `from email`; also runs inside `/recap`, `/inbox` and `/today` |
 | `/inbox` | Inbox triage and reply drafts |
 | `/agenda` | Status meeting talk track for a client (RAIDE Status Meeting rows, overdue, blocked, new) |
 | `/invitra` | Weekly Invitra digest: Dev Tracker rows, aging, open EBS branches |

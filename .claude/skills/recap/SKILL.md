@@ -64,8 +64,8 @@ Send the meeting ID to `meeting-analyst`. It pulls the meeting (transcript only 
 4. Both sheets are client-visible. Apply the client-facing rules from step 4 to every proposal, even for internal meetings. An item that only makes sense with internal context is proposed for Matt's Action Log instead (sheet in `standards/tools.md`), and any stakeholder or budget dynamics go to the `internal.md` write-back.
 5. Match against existing rows. Update a matching row rather than adding a duplicate. Keep the proposal concise: fewest rows that capture the meeting (normally 1 to 3); merge actions with the same owner and workstream into one row with steps in Details; fold dependencies into the action; skip assumptions, events, and target dates unless they block a deadline; if more than 3 seem needed, show the 3 most important and list the rest in one line.
 6. Owner TBD stays TBD. Never assign an owner or a due date that wasn't stated.
-7. Also propose Action Log rows for Matt's own commitments and for things he is waiting on from others, with Source = the meeting link.
-8. Show the preview: Sheet / Action (Add/Update) / Row / Column / Old / New. Nothing is written until Matt confirms. On confirm, write through the raide and tasks rules.
+7. Action Log (Matt's own sheet, auto-approved): write Matt's own commitments and the items he is waiting on from others, taken from `action_log_candidates`, using the `log` skill (dedupe on Source = the meeting link, concise, no invented owners or dates). No preview or confirmation. Report one line: "Logged N: AL.#### ...". This applies to client and internal meetings.
+8. Show the RAIDE and project plan preview only (client-visible sheets): Sheet / Action (Add/Update) / Row / Column / Old / New. Nothing on those sheets is written until Matt confirms. On confirm, write through the raide and tasks rules.
 
 ## 9. Context write-back
 Propose updates per the client-context skill: new decisions to `decisions.md`, status/budget/open items to `project.md`, sensitive dynamics to `internal.md`, new glossary corrections to `client.md`.

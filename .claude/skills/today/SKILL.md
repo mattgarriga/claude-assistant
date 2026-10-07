@@ -28,10 +28,10 @@ For each client meeting, resolve the client via the roster and read open items i
   1. **Day at a glance:** Time / Block / What.
   2. **Needs you:** emails, Teams asks, Smartsheet items (overdue first), Action Log items.
   3. **I can take a first pass at:** up to 3 numbered items (offer only; produce nothing until Matt picks), each with what Claude produces (reply draft, prep notes, recap of an unrecapped meeting, RAIDE update preview, one-pager draft). Only what Claude can do with its tools.
-- Ask which to start (AskUserQuestion, multi-select). Do them in the order picked.
+- Ask which to start (AskUserQuestion, multi-select). Do them in the order picked. Every email or Teams ask in Needs you also gets a "Log it" choice in this list; chosen ones go to the Action Log through the `log` skill (`from email` mode, auto-approved, deduped).
 
 ## 4. Write-back queue
-If `state/writeback-queue.md` has ask-first entries, show them grouped by client after the plan and ask which to apply (multi-select). Auto-applied changes are reviewed in `/eod`, not here. Include proposed Action Log adds in the same ask.
+If `state/writeback-queue.md` has ask-first entries, show them grouped by client after the plan and ask which to apply (multi-select). Auto-applied changes are reviewed in `/eod`, not here. 
 
 ## 5. Save the plan
 Write to `daily/YYYY-MM-DD.md` (gitignored): time blocks, every open item with its source, first-pass list with status (open / in progress / done). Update status as items finish.

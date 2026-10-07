@@ -110,6 +110,15 @@
             "command": "python3 \"$CLAUDE_PROJECT_DIR/scripts/hook_lint_outputs.py\""
           }
         ]
+      },
+      {
+        "matcher": "mcp__192da3ad-8ab5-42dd-b80a-9bae8541dbc4__add_rows",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR/scripts/guard_actionlog.py\""
+          }
+        ]
       }
     ],
     "SessionStart": [
