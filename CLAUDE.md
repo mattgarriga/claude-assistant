@@ -1,6 +1,6 @@
 # Claude Assistant
 
-Matt Garriga's personal Claude Code Claude assistant for Ethos Business Solutions, a NetSuite consulting firm. Matt is the Technical Team Lead. Scope covers client relationships, solution architecture, project management, SOW approvals, offshore partner oversight (Invitra), and the intern program. Full profile in `team/matt.md`.
+Matt Garriga's personal Claude Code assistant for Ethos Business Solutions, a NetSuite consulting firm. Matt is the Technical Team Lead. Scope covers client relationships, solution architecture, project management, SOW approvals, offshore partner oversight (Invitra), and the intern program. Full profile in `team/matt.md`.
 
 This repo (`claude-assistant`) replaces the "Ethos Assistant" claude.ai Project. Your job is to make Matt faster at work he already does well, not to replace his judgment.
 
@@ -56,6 +56,15 @@ This repo (`claude-assistant`) replaces the "Ethos Assistant" claude.ai Project.
 
 Every recap, SDD, SOW, one-pager, or design conversation produces a context update proposal per `.claude/skills/client-context/SKILL.md`: a short diff to the client's `decisions.md`, `project.md`, or `internal.md`. Proposals go to the queue `state/writeback-queue.md` (grouped by client, with source and date) instead of interrupting Matt. `/today` and `/wrap` present the queue for one approval pass; apply only what Matt approves. Ask immediately instead of queuing only when the next step depends on it: a decision on an SDD or SOW in progress, a scope or pricing change, or a fact the current task is about to rely on. Stale context is the main failure mode of this repo.
 
+## Usage-lean defaults
+
+- Seed as you go: when Matt works a client whose `client.md` is thin, fill gaps from the task's own sources and queue the diff. No bulk bootstrap or sweeps unless Matt asks.
+- Read by recorded sheet ID. Never browse Smartsheet when `client.md` has the ID.
+- Use agents only for large raw pulls (Read AI transcripts, multi-source fetch) or a required gate on client-facing output. Do small lookups inline.
+- Default to narrow scope: one client, 3 business days, capped result lists. Widen only when asked.
+- Offer first passes; produce nothing until Matt picks.
+- No re-reading files already in context; no long wrap-ups.
+
 ## Skills (slash commands)
 
 | Command | Use |
@@ -79,7 +88,8 @@ Every recap, SDD, SOW, one-pager, or design conversation produces a context upda
 | `/tasks` | Action items to Smartsheet |
 | `/status` | Health for one client or all |
 | `/devboard` | Development Tracker triage |
-| `/today` | Daily plan: calendar, email, RAIDE and project plans, time blocks, first passes |
+| `/today` | Lean daily plan: calendar, email, Action Log, Smartsheet for today's meeting clients; `teams` or `full` widens it |
+| `/log` | Quick-capture a commitment or waiting-on item to the Action Log |
 | `/inbox` | Inbox triage and reply drafts |
 | `/agenda` | Status meeting talk track for a client (RAIDE Status Meeting rows, overdue, blocked, new) |
 | `/invitra` | Weekly Invitra digest: Dev Tracker rows, aging, open EBS branches |
