@@ -54,7 +54,7 @@ Dev skills in scope: /review, /debug, /query, /test-plan, /handoff (scaffold and
 | # | Task | Owner | Acceptance |
 |---|---|---|---|
 | 6.1 | Discovery table for 13 active clients: email domains, Read AI folder, MS RAIDE, project RAIDEs and plans, Dev Tracker client value, Lucid folder, repo path | senior | Matt confirms the table |
-| 6.2 | Parallel read-only drafts per client (90 days Read AI, Outlook, Smartsheet) | app-builder x N | Every line source-tagged; claude.ai seed lines verified or replaced; conflicts and low-confidence items listed |
+| 6.2 | Parallel read-only drafts per client (90 days Read AI, Outlook, Smartsheet), run in an evening or overnight window | app-builder x N | Every line source-tagged; claude.ai seed lines verified or replaced; conflicts and low-confidence items listed |
 | 6.3 | Per-client review and write, core first | senior, Matt | Written only after approval; one commit per client |
 | 6.4 | Local repo CLAUDE.md for clients with a repo, excluded via .git/info/exclude | app-builder | Not in git status of the client repo |
 
@@ -79,5 +79,5 @@ Dev skills in scope: /review, /debug, /query, /test-plan, /handoff (scaffold and
 | S6 | Budget burn from RAIDE Estimated Hours / Case Total Hours / Case Total Hours this month for recap Budget Metrics and /status | 5 | Numbers sourced and cited; missing values noted, never invented |
 | S7 | /invitra: weekly digest of Dev Tracker rows assigned to Invitra, aging, open branches in local repos | 5 | Read-only; matches tracker |
 | S8 | /sow-review: read-only check of a SOW/CO (standard assumptions, placeholders left, scope creep risk, template version, LOE sign-off) | 3b | Findings table on a real SOW, no edits |
-| S9 | /wrap: Friday wrap from the week's daily/ files: done, slipped, next week, sendable update for Cedric and Cheyenne (draft only) | 5 | Lint clean, not sent |
+| S9 | /wrap: Friday wrap from the week's daily/ files: done, slipped, next week, sendable update for Cedric and Cheyenne (draft only), plus the write-back queue approval pass | 5 | Lint clean, not sent |
 | S10 | Move BUILD_BRIEF.md and KICKOFF.md into docs/build/ | 7 | Root holds only usage files |
