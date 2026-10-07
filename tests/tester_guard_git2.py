@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Cycle 2 adversarial + false-positive cases for guard_git.py, plus timing."""
 import json, os, subprocess, sys, tempfile, time, statistics
-GUARD = "/Users/mgarriga/executive-assistant/scripts/guard_git.py"
+GUARD = "/Users/mgarriga/claude-assistant/scripts/guard_git.py"
 PY = sys.argv[1] if len(sys.argv) > 1 else "/usr/bin/python3"
 root = os.path.realpath(tempfile.mkdtemp())
 ws = os.path.join(root, "ws"); repos = os.path.join(root, "Repos")

@@ -2,7 +2,7 @@
 """Independent tester harness for scripts/guard_git.py. Fresh temp repos."""
 import json, os, subprocess, sys, tempfile
 
-GUARD = "/Users/mgarriga/executive-assistant/scripts/guard_git.py"
+GUARD = "/Users/mgarriga/claude-assistant/scripts/guard_git.py"
 PY = sys.argv[1] if len(sys.argv) > 1 else "/usr/bin/python3"
 SC = "suite" + "cloud"
 GP = "git " + "push"

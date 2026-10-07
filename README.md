@@ -1,4 +1,4 @@
-# Executive Assistant
+# Claude Assistant
 
 Matt's Claude Code assistant for Ethos delivery work: recaps, SDDs, SOWs, change orders, one-pagers, process flows, email drafts, code review, and persistent per-client context. Run `claude` from this folder. Full rules live in `CLAUDE.md`.
 

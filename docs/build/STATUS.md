@@ -13,6 +13,12 @@ Paused 2026-10-07 at Matt's request (usage). On resume: read this file, then `pl
 | Phase 7: lint hooks, secret scan, /health-check, README, weekly Fri 3pm context sweep scheduled | Built |
 | Phase 6: discovery table confirmed; core 7 bootstrap drafts in `state/bootstrap/<slug>/` (gitignored, not yet written to clients/) | Drafted |
 
+## Changes 2026-10-07 (latest)
+- Repo renamed to claude-assistant.
+- .docx outputs approved (step 3 done).
+- Bulk bootstrap dropped (steps 4 and 5): seed each client as work happens via /client-update with SharePoint folders from Matt. Core 7 drafts stay in state/bootstrap/ as optional reference.
+- Remaining work runs only when Matt asks, favoring low-usage steps.
+
 ## Game plan for next window (in order)
 | # | Step | Who | Est. usage |
 |---|---|---|---|

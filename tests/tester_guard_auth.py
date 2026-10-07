@@ -123,7 +123,7 @@ rec("Write md with 'anthropic' skills text passes", tool("Write", ".claude/skill
 
 # 5 settings edit
 rec("Edit settings.json env empty block PASSES",
-    tool("Edit", "/Users/mgarriga/executive-assistant/.claude/settings.json", '"env": {\n    "ANTHROPIC_API_KEY": "",\n    "ANTHROPIC_AUTH_TOKEN": ""\n  },') == 0)
+    tool("Edit", "/Users/mgarriga/claude-assistant/.claude/settings.json", '"env": {\n    "ANTHROPIC_API_KEY": "",\n    "ANTHROPIC_AUTH_TOKEN": ""\n  },') == 0)
 rec("Edit settings.json env compact empty PASSES",
     tool("Edit", ".claude/settings.json", '"env": {"ANTHROPIC_API_KEY": "", "ANTHROPIC_AUTH_TOKEN": ""}') == 0)
 rec("Write settings.json full w/ hooks and empty env PASSES",

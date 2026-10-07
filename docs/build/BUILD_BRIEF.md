@@ -1,6 +1,6 @@
-# Build Brief: Executive Assistant
+# Build Brief: Claude Assistant
 
-You are building out Matt Garriga's personal Claude Code executive assistant (`executive-assistant` repo) for Ethos Business Solutions. The repo is already scaffolded with migrated standards, skills, commands, templates, and seed client context from his claude.ai Project. Your job is to finish it, wire it up, test it, and seed client context. Read `CLAUDE.md` first; it governs how you work with Matt for the whole build.
+You are building out Matt Garriga's personal Claude Code Claude assistant (`claude-assistant` repo) for Ethos Business Solutions. The repo is already scaffolded with migrated standards, skills, commands, templates, and seed client context from his claude.ai Project. Your job is to finish it, wire it up, test it, and seed client context. Read `CLAUDE.md` first; it governs how you work with Matt for the whole build.
 
 ## Build team
 | Agent | Model | Where defined | Role |
