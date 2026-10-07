@@ -8,4 +8,4 @@ Read-only. `scout` fetches RAIDE and plan rows and Development Tracker rows for 
 
 Budget burn comes from the RAIDE columns Estimated Hours, Case Total Hours, Case Total Hours this month. Cite the sheet and row for every figure. Missing values are noted as "not in RAIDE", never invented or back-filled from memory.
 
-Output per project: Phase / Budget (Estimated, Used, Used this month, % burn, source sheet) / Overdue items / Risks open / Next milestone / Flag (Green, Yellow, Red with one-line reason). Cross-client mode: one table, reds first. Flag any context file (`client.md`, `project.md`) last updated more than 30 days ago as stale and offer a `/client-update`.
+Output per project: Phase / Budget (Estimated, Used, Used this month, % burn, source sheet) / Overdue items / Risks open / Next milestone / Flag (Green, Yellow, Red with one-line reason). Cross-client mode: one table, reds first. Run `python3 scripts/stale_context.py` (local, no connectors) for the freshness and thin-context table and include its flags; offer a `/client-update` for anything stale. `/status stale` runs only that script, with no scout calls.
