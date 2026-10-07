@@ -49,7 +49,7 @@ Send the meeting ID to `meeting-analyst`. It pulls the meeting (transcript only 
 
 ## 8. RAIDE and project log proposals (client and internal meetings)
 1. Use the meeting-analyst JSON (`raide_candidates`, `action_log_candidates`, `internal_only`). Get sheet IDs: MS RAIDE from `client.md`, project RAIDE and project plan from the relevant `project.md`. Pick the RAIDE per the raide routing rule. Missing ID: say so and skip that sheet.
-2. Have `scout` pull the RAIDE rows. Rows created or modified between the meeting's start and end time mean the RAIDE was updated live. In that case, propose only items from this meeting that are still missing. If no rows changed in the window, propose every qualifying item.
+2. Have `scout` pull the RAIDE rows (use the cached schema in `client.md`; no `get_columns` unless missing). Rows created or modified between the meeting's start and end time mean the RAIDE was updated live. In that case, propose only items from this meeting that are still missing. If no rows changed in the window, propose every qualifying item.
 3. Route by type. Risks, Issues, Decisions, Escalations and client-facing Actions go to the RAIDE. Task-level work (build, configure, test, deploy) goes to the project plan sheet.
 4. Both sheets are client-visible. Apply the client-facing rules from step 4 to every proposal, even for internal meetings. An item that only makes sense with internal context is proposed for Matt's Action Log instead (sheet in `standards/tools.md`), and any stakeholder or budget dynamics go to the `internal.md` write-back.
 5. Match against existing rows. Update a matching row rather than adding a duplicate.

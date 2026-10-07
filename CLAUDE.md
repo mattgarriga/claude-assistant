@@ -59,7 +59,8 @@ Every recap, SDD, SOW, one-pager, or design conversation produces a context upda
 ## Usage-lean defaults
 
 - Seed as you go: when Matt works a client whose `client.md` is thin, fill gaps from the task's own sources and queue the diff. No bulk bootstrap or sweeps unless Matt asks.
-- Read by recorded sheet ID. Never browse Smartsheet when `client.md` has the ID.
+- Read by recorded sheet ID. Never browse Smartsheet when `client.md` has the ID. Use the cached sheet schema in `client.md`; skip `get_columns` when it is there.
+- Client source docs may be read from the OneDrive folder in `client.md`. Outputs are never written there.
 - Use agents only for large raw pulls (Read AI transcripts, multi-source fetch) or a required gate on client-facing output. Do small lookups inline.
 - Default to narrow scope: one client, 3 business days, capped result lists. Widen only when asked.
 - Offer first passes; produce nothing until Matt picks.
@@ -89,6 +90,12 @@ Every recap, SDD, SOW, one-pager, or design conversation produces a context upda
 | `/status` | Health for one client or all |
 | `/devboard` | Development Tracker triage |
 | `/today` | Lean daily plan: calendar, email, Action Log, Smartsheet for today's meeting clients; `teams` or `full` widens it |
+| `/usage` | Check quota and context; recommend lean or full mode |
+| `/eod` | Close the day: plan status, write-backs, Action Log rows, carryover |
+| `/prep` | Prep notes for any meeting |
+| `/chase` | Nudge drafts for stale waiting-on items |
+| `/ingest` | Pull context facts from a local .docx or PDF (SDD, SOW, notes) |
+| `/sdd-sync` | Compare meeting outcomes to the project SDD |
 | `/log` | Quick-capture a commitment or waiting-on item to the Action Log |
 | `/inbox` | Inbox triage and reply drafts |
 | `/agenda` | Status meeting talk track for a client (RAIDE Status Meeting rows, overdue, blocked, new) |

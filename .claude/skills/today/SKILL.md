@@ -16,6 +16,8 @@ One `scout` call, all sources in parallel, compact tables only. Default scope:
 
 Off by default, add by argument: `teams` (unanswered Teams asks), `full` (Smartsheet for every Active client, 5 business days of email, Teams, yesterday's sent mail and meetings for unlogged commitments), or a client name (that client only).
 
+Also read the `## Carry to tomorrow` section of the most recent prior `daily/` file (written by `/eod`) and fold those items in.
+
 ## 2. Meeting prep
 For each client meeting, resolve the client via the roster and read open items in `project.md` and the last 2 `decisions.md` entries. For client status meetings, offer `agenda` as a first pass; do not run it unprompted.
 

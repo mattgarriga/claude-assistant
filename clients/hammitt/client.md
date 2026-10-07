@@ -19,6 +19,12 @@
 | Smartsheet: project plan | Hammitt - O2C Discovery - Project Plan (924381418311556) |
 | Dev Tracker value | Hammit (sic, matches Smartsheet picklist) |
 | Lucid folder | Process Flows / [Client] |
+| OneDrive folder (read-only source docs; never write outputs here) | |
+
+## Sheet schemas (cache)
+Record once after the first `get_columns` on each sheet so later runs skip the read. Refresh only if a write fails or Matt says the sheet changed.
+| Sheet | Columns | Picklists |
+|---|---|---|
 
 ## NetSuite footprint
 | Area | Notes |
