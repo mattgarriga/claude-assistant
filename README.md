@@ -9,7 +9,6 @@ Matt's Claude Code assistant for Ethos delivery work: recaps, SDDs, SOWs, change
 | `/recap` | Meeting recap from Read AI (client or internal) |
 | `/inbox` | Inbox triage and reply drafts |
 | `/agenda` | Status meeting talk track |
-| `/wrap` | Friday wrap and batch approval of write-backs |
 | `/status` | Project health for one client or all |
 
 ## Document commands

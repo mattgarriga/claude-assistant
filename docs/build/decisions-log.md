@@ -87,3 +87,4 @@
 | 2026-10-07 | Docs without a template use SDD styling, no callouts (#19) | Matt approved | Y |
 | 2026-10-07 | Per-task override of defaults stays dropped; non-negotiables never bend (#20) | Matt approved | Y |
 | 2026-10-07 | Team roster additions confirmed as written, including Invitra contacts and personal notes (#22) | Matt approved | Y |
+| 2026-10-07 | /wrap skill removed; /eod covers the daily close and context review | Matt's call | Y |

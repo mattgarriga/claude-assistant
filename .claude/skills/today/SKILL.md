@@ -34,4 +34,4 @@ For each client meeting, resolve the client via the roster and read open items i
 If `state/writeback-queue.md` has ask-first entries, show them grouped by client after the plan and ask which to apply (multi-select). Auto-applied changes are reviewed in `/eod`, not here. Include proposed Action Log adds in the same ask.
 
 ## 5. Save the plan
-Write to `daily/YYYY-MM-DD.md` (gitignored): time blocks, every open item with its source, first-pass list with status (open / in progress / done). Update status as items finish. `/wrap` reads these files.
+Write to `daily/YYYY-MM-DD.md` (gitignored): time blocks, every open item with its source, first-pass list with status (open / in progress / done). Update status as items finish.

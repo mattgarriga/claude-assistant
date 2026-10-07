@@ -57,7 +57,7 @@ This repo (`claude-assistant`) replaces the "Ethos Assistant" claude.ai Project.
 After every recap, SDD, SOW, one-pager, email, ingest, or design conversation, write durable facts straight into the client's `client.md`, `decisions.md`, `project.md`, and `internal.md`. No approval needed. Rules are in `.claude/skills/client-context/SKILL.md`. In short:
 - Every line carries a source tag. Facts only, never inference.
 - Every write is logged in `state/context-log.md` with the old and new text, so it can be undone.
-- `/eod` and `/wrap` show the day's log as a digest for after-the-fact review. Matt does not approve before a write.
+- `/eod` shows the day's log as a digest for after-the-fact review. Matt does not approve before a write.
 - **Ask first, never auto-write:** pricing, SOW/CO scope or budget hours, a fact that conflicts with an existing sourced line, anything inferred or from an ambiguous source, and anything that would move `internal.md` content toward a client-facing file. Credentials are never recorded, only their location.
 - Ask-first items go to `state/writeback-queue.md` for one approval pass.
 Stale context is the main failure mode of this repo.
@@ -111,7 +111,6 @@ Stale context is the main failure mode of this repo.
 | `/agenda` | Status meeting talk track for a client (RAIDE Status Meeting rows, overdue, blocked, new) |
 | `/invitra` | Weekly Invitra digest: Dev Tracker rows, aging, open EBS branches |
 | `/sow-review` | Read-only review of a SOW or CO someone else drafted |
-| `/wrap` | Friday wrap, update draft for Cedric and Cheyenne, write-back approval |
 | `/health-check` | Verify connector deny rules, hooks, auth, conventions file |
 
 Build and maintenance of this workspace itself: see `docs/build/senior-engineer.md` (main session as senior engineer, `app-builder` and `tester` subagents).
