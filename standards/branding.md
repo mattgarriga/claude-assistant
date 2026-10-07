@@ -252,3 +252,6 @@ These rules apply to text Claude writes into a template. Everything else stays e
 2. Check the logo placement and size against the section for that template, the table fills, and page count.
 3. LibreOffice substitutes fonts (Calibri renders as Carlito, Arial as Liberation Sans, Aptos as a fallback). Judge spacing and layout, not glyph shapes. Word is the final authority for fonts.
 4. Run `python3 scripts/lint_voice.py` on the filled text before handoff.
+
+## Documents without a template
+Use the SDD template styling (`template-sdd.docx`) for any ad-hoc document with no template of its own (TDD, training doc, and similar). No callouts. Confirmed by Matt 2026-10-07. Note the format isn't standardized yet.

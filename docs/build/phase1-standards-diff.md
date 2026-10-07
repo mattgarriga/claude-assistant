@@ -4,7 +4,7 @@ Source: `standards/_source/*.docx` (the original claude.ai Project files; they a
 
 Status key: **Approved <date>** means a row in `docs/build/decisions-log.md` covers it. **Approved (standing rule)** means Matt's global or repo CLAUDE.md rule covers it, no log row. **NEEDS MATT** means no decision on record; confirm or reverse.
 
-## Summary: NEEDS MATT (22)
+## Summary: all rows approved 2026-10-07 (22)
 
 | # | File | Item | Source said | Now says | Suggested call |
 |---|---|---|---|---|---|
@@ -38,7 +38,7 @@ Status key: **Approved <date>** means a row in `docs/build/decisions-log.md` cov
 | Principles | 5 principles incl. "Action-oriented" | Same set minus "Action-oriented" as a label; folded into "end with a next step"; adds "Should not read as AI-written" | Matt's global instruction | Approved (standing rule) |
 | Open with point, specifics, active voice, acknowledge issues, end with ask | Present | Present | Carried over | Approved (carried over) |
 | Hedge and filler list | 7 items (just, stacked hedges, sorry to bother, hope you're well, as discussed, don't hesitate, thanks in advance) | All 7 present, plus "As mentioned", "I hope this helps", "It's worth noting", "Thank you for reaching out", "I trust this email finds you well" | Merged from Project_Instructions and Matt's global list | Approved (standing rule) |
-| "Let me know if you have questions" | Contradictory (avoid list, then "works fine") | Banned | Matt's global list bans it | NEEDS MATT (#1) |
+| "Let me know if you have questions" | Contradictory (avoid list, then "works fine") | Banned | Matt's global list bans it | Approved 2026-10-07 (#1) |
 | Em dashes | Used in examples and rules | Banned everywhere; examples rewritten | Matt's global rule | Approved (standing rule) |
 | Hyphens and semicolons sparingly | Not stated | Added | Matt's global rule | Approved (standing rule) |
 | Email length | In Project_Instructions: 2 to 5 sentences, three paragraphs too many | In voice.md hard rules | Moved | Approved (carried over) |
@@ -54,14 +54,14 @@ Status key: **Approved <date>** means a row in `docs/build/decisions-log.md` cov
 | Subject line | `[Client] (em dash) Meeting Recap, [Topic], [Date]` | Hyphen instead of em dash; date MM.DD.YYYY | No-dash rule; date | Dash: Approved (standing rule). Date: Approved 2026-10-06 |
 | Opening paragraph | Longer, ends with "don't hesitate to reach out" | Shorter, no banned phrase | Voice rules | Approved (standing rule) |
 | Budget line | "As of EOD [Last Business Date DD.MM.YYYY)" | "As of EOD [MM.DD.YYYY], last business day" | Fix of malformed source | Approved 2026-10-06 |
-| Budget rows | Fixed three rows | Only rows with real numbers; note if none; never invent | Never invent | NEEDS MATT (#4) |
-| First section | Rule says "Topics Covered" never "Decisions Made"; template shows Decisions Made | Decisions Made, actual decisions only, past tense | Resolves the source conflict | NEEDS MATT (#3) |
-| Workstream grouping | Not stated | Group by workstream | New | NEEDS MATT (#5) |
+| Budget rows | Fixed three rows | Only rows with real numbers; note if none; never invent | Never invent | Approved 2026-10-07 (#4) |
+| First section | Rule says "Topics Covered" never "Decisions Made"; template shows Decisions Made | Decisions Made, actual decisions only, past tense | Resolves the source conflict | Approved 2026-10-07 (#3) |
+| Workstream grouping | Not stated | Group by workstream | New | Approved 2026-10-07 (#5) |
 | Action items | Action text only, owner is the party heading, "Owner TBD" | Same | Carried over | Approved (carried over) |
 | Risks | Em dash separator; omit if none | Colon separator; omit if none | No-dash rule | Approved (standing rule) |
 | No Next Steps section | Present | Present | Carried over | Approved (carried over) |
 | No internal commentary | General | Lists budget internals, staffing, resourcing, politics, escalations | CLAUDE.md internal.md rule | Approved (standing rule) |
-| Internal variant | Same format, addressed to the user | Own section: "Team,", no budget table unless relevant, named owners | New detail | NEEDS MATT (#6); internal recap itself Approved 2026-10-07 (3a scope) |
+| Internal variant | Same format, addressed to the user | Own section: "Team,", no budget table unless relevant, named owners | New detail | Approved 2026-10-07 (#6); internal recap itself Approved 2026-10-07 (3a scope) |
 | Outlook draft | M365 connector, attendees from calendar, do not send | Attendees from the invite (not Read AI list); signature block; only when asked | Tools rules | Approved 2026-10-06 (connector decisions) |
 | Output | Plain text in chat; .docx only when requested | Text or Outlook draft only; recap .docx removed | Scope cut | Approved 2026-10-07 (recap .docx dropped) |
 | RAIDE and project-log proposals after a recap | Not stated | In the recap skill (step 8), not this file | Workflow | Approved 2026-10-07 |
@@ -85,7 +85,7 @@ Status key: **Approved <date>** means a row in `docs/build/decisions-log.md` cov
 | TOC | Not stated | Rewritten from real headings, update-on-open flag | New | Approved 2026-10-07 |
 | Matt in approvals | Always include as Technical Lead | Same | Carried over | Approved (carried over) |
 | Writing rules (no code, shortest doc, no restating, bullets for states, one sentence justification, testable assumptions, "Not applicable", banned words) | Present | Present; "Not applicable" adds "tables trimmed to content row count" | Carried over; trim rule | Approved 2026-10-07 |
-| Resolved questions | Not stated | Never reintroduced as open items | New | NEEDS MATT (#7) |
+| Resolved questions | Not stated | Never reintroduced as open items | New | Approved 2026-10-07 (#7) |
 | Filing | `[CLIENT]-[Feature] SDD v1.docx` | Same name, inside `clients/<slug>/projects/<project>/outputs/` | Repo-only outputs | Approved (standing rule) |
 | Emojis, filler | Listed in rules | In voice.md and CLAUDE.md | Single home | Approved (standing rule) |
 
@@ -99,8 +99,8 @@ Status key: **Approved <date>** means a row in `docs/build/decisions-log.md` cov
 | Process Overview | Build in Lucid, export, embed | Titled Lucid diagrams only, 6.9in, no narrative | Decision | Approved 2026-10-07 |
 | Scope and Deliverables | Hierarchical bullets, "Type: description" leaves | Same, nested to 3 levels, plus standard bullets (Project Management ... Cutover and Support) | Template | Approved 2026-10-07 (2026 layout) |
 | Fees (FF) | Per-phase or per-deliverable pricing | Fixed fee paragraph, 50% at execution, balance at UAT start, net 15 | Template | Approved 2026-10-07 (placeholders and layout) |
-| Fees (T&M) | Per role per hour, estimated hours, not-to-exceed | Native Estimated Hours and Fees phase table, Project Oversight 20%, invoicing paragraph | Template | Table: Approved 2026-10-07. NTE and per-role dropped: NEEDS MATT (#8) |
-| Rates | $225 standard, $200 discounted | $225 in template; $200 only if Matt says | Never invent | NEEDS MATT (#9) |
+| Fees (T&M) | Per role per hour, estimated hours, not-to-exceed | Native Estimated Hours and Fees phase table, Project Oversight 20%, invoicing paragraph | Template | Table: Approved 2026-10-07. NTE and per-role dropped: Approved 2026-10-07 (#8) |
+| Rates | $225 standard, $200 discounted | $225 in template; $200 only if Matt says | Never invent | Approved 2026-10-07 (#9) |
 | Pricing | Placeholder unless user provides | Every dollar and T&M hour figure is the placeholder until provided | Never invent pricing | Approved 2026-10-07 |
 | Signature | Client signer / Cedric Carter | Same; client signer from client.md; acceptance date blank | Decision | Approved 2026-10-07 |
 | Out of Scope | Fold into Scope and Deliverables | Same | Carried over | Approved (carried over) |
@@ -115,9 +115,9 @@ Status key: **Approved <date>** means a row in `docs/build/decisions-log.md` cov
 |---|---|---|---|---|
 | Questions before drafting | 9 questions, batch, do not re-ask | Moved to the onepager skill (step 2); same set, one batch, focused follow-ups | Skill text updated | Approved 2026-10-07 |
 | Sections | Header, Context, Current, Desired, Details, In Scope, Out of Scope, OQ | Template order: Overview table, Business Context, Current vs Desired table, Details, Scope and Client Guardrails (adds Constraints), OQ, footer line | Template | Approved 2026-10-07 |
-| Requested By | Full name and role/company | Format file says full name; skill asks role/company | Inconsistent | NEEDS MATT (#11) |
-| Request Type | Bug Fix, Config Change, Reporting and Data, Minor Enhancement | "Reporting/Data" | Template or typo? | NEEDS MATT (#10) |
-| OQ table | OQ-## / Question / Owner / Status | OQ-01 format; owner required; Status starts Open; none means one "N/A" row | CLAUDE.md owner rule; N/A new | Owner: Approved (standing rule). N/A row: NEEDS MATT (#12) |
+| Requested By | Full name and role/company | Format file says full name; skill asks role/company | Inconsistent | Approved 2026-10-07 (#11) |
+| Request Type | Bug Fix, Config Change, Reporting and Data, Minor Enhancement | "Reporting/Data" | Template or typo? | Approved 2026-10-07 (#10) |
+| OQ table | OQ-## / Question / Owner / Status | OQ-01 format; owner required; Status starts Open; none means one "N/A" row | CLAUDE.md owner rule; N/A new | Owner: Approved (standing rule). N/A row: Approved 2026-10-07 (#12) |
 | Helper lines, bullets, value-cell fill | Not stated | Helper lines removed, real bullets, footer kept | Decisions | Approved 2026-10-07 |
 | Never fill gaps | Present | Present | Carried over | Approved (carried over) |
 | Filing | `one-pager-[topic]-[date].docx` | Same in outputs/; ad-hoc under `projects/ad-hoc-support/` | Repo structure | Approved (standing rule) |
@@ -134,7 +134,7 @@ Status key: **Approved <date>** means a row in `docs/build/decisions-log.md` cov
 | Body, heading, table fonts | Calibri or Arial, 11pt body, 10pt tables, navy headings | Per template (One-Pager Arial 10pt, filled text Calibri 262626; SDD body 11pt, tables 10pt) | Decisions | Approved 2026-10-07 |
 | Spacing | 0 before, 0 after unless template says | Per template | Templates win | Approved 2026-10-07 |
 | Table rules | White data rows, no shading, thin gray borders | Template fills kept (label cells F2F2F2, status EBF5FB); value cells made uniform white | Template | Approved 2026-10-07 |
-| Default styling for docs without a template; callouts; page numbers over 3 pages; title as top heading | Defined | Removed; callouts forbidden | Not covered by a decision | NEEDS MATT (#19) |
+| Default styling for docs without a template; callouts; page numbers over 3 pages; title as top heading | Defined | Removed; callouts forbidden | Not covered by a decision | Approved 2026-10-07 (#19) |
 | No emojis, no clip art, no dividers | Present | Present | Carried over | Approved (carried over) |
 | Render check | Not in source (in tools.md) | Verify section: PDF render, compare to template render | Quality gate | Approved (standing rule) |
 
@@ -144,16 +144,16 @@ Status key: **Approved <date>** means a row in `docs/build/decisions-log.md` cov
 |---|---|---|---|---|
 | Scope | SDD 4.1, SOW/CO, standalone; not one-pagers | Same | Carried over | Approved (carried over) |
 | Lane count, naming, sizing, 40pt margin, 60pt spacing, left to right | Present | Present | Carried over | Approved (carried over) |
-| Lane shading | All lanes Lunar, none white | Title bar Lunar, body white | Real swimlane behavior | NEEDS MATT (#13) |
-| Lane type | Not stated | AdvancedSwimLaneBlock only | Build experience | NEEDS MATT (#14) |
-| Lane order | Not stated | Strict adjacency | New | NEEDS MATT (#15) |
-| Terminator | One per flow ending "End Process" | Exactly one, all branches route in | Tightened | NEEDS MATT (#16) |
+| Lane shading | All lanes Lunar, none white | Title bar Lunar, body white | Real swimlane behavior | Approved 2026-10-07 (#13) |
+| Lane type | Not stated | AdvancedSwimLaneBlock only | Build experience | Approved 2026-10-07 (#14) |
+| Lane order | Not stated | Strict adjacency | New | Approved 2026-10-07 (#15) |
+| Terminator | One per flow ending "End Process" | Exactly one, all branches route in | Tightened | Approved 2026-10-07 (#16) |
 | Shapes table sizes and styles | Present | Present (border #3A414A) | Carried over | Approved (carried over) |
 | Palette | Table of 4 colors incl. lane border | Inline values; lane border color not restated | Reorganized | Approved (carried over) |
 | Typography | Lane 10pt, shape 8pt (7 if needed), branch 8pt bold | Same | Carried over | Approved (carried over) |
 | Connectors | Elbow, 12pt, arrow at target, #3A414A, branches Yes/No or equivalent | Same; Yes/No bold 8pt #333333 attached to connector | Carried over | Approved (carried over) |
-| Label placement | Not stated | In shape text field only | New | NEEDS MATT (#17) |
-| Pre-export verification | Not stated | Mandatory checklist | New | NEEDS MATT (#18) |
+| Label placement | Not stated | In shape text field only | New | Approved 2026-10-07 (#17) |
+| Pre-export verification | Not stated | Mandatory checklist | New | Approved 2026-10-07 (#18) |
 | Filing | Folder, title, page titles, separate current and proposed pages | Same | Carried over | Approved (carried over) |
 | Export and edit link | PNG, embed, link in Document Control, file in Lucid | Same | Carried over | Approved 2026-10-07 |
 | Test | Not stated | /flow test goes to a "Claude Test" folder | Test plan | Approved 2026-10-07 |
@@ -176,7 +176,7 @@ Status key: **Approved <date>** means a row in `docs/build/decisions-log.md` cov
 | Document behavior | Read format, read template, branded .docx, tight postamble, SOW pricing and LOE | Format files, lib/docx, CLAUDE.md, verification checklist | Carried over | Approved 2026-10-07 |
 | Branded output and logo | docx matches template, logo top-left | branding.md and lib/docx | Carried over | Approved 2026-10-07 |
 | When unsure | Stop and ask | CLAUDE.md | Carried over | Approved (standing rule) |
-| Per-task override and trust user over knowledge file | Present | Not carried over | Conflicts with non-negotiable no-emoji rule | NEEDS MATT (#20) |
+| Per-task override and trust user over knowledge file | Present | Not carried over | Conflicts with non-negotiable no-emoji rule | Approved 2026-10-07 (#20) |
 | Trusted sources | Knowledge files, templates, M365 | standards/, templates/, connectors; tools.md adds Read AI, Smartsheet, Lucid, NetSuite sections | Connector setup | Approved 2026-10-06 |
 | Added rules not in source | None | Context write-back, never post to Teams, Smartsheet preview and confirm, git rules, 2 to 3 offers after each task | Workspace build | Approved 2026-10-07 |
 
@@ -199,7 +199,7 @@ Status key: **Approved <date>** means a row in `docs/build/decisions-log.md` cov
 |---|---|---|---|---|
 | People and roles | 14 listed in 3 groups | Same roles, flat table | Structure | Approved (carried over) |
 | Email format, roles overlap | Present | Present | Carried over | Approved (carried over) |
-| Notes column | None | Cedric SOW signer; Cheyenne signs off on LOE; Matt SDD Technical Lead; Gage "Joined full time Q2"; Tommy "Matt's brother, direct report"; Grayson "Direct report" | From team/matt.md | NEEDS MATT (#22) |
-| Name forms | Thomas Garriga | Thomas (Tommy) Garriga; Matthew (Matt) Garriga | Aliases | NEEDS MATT (#22) |
-| Gabe | Not listed | "(confirm role)", intern pipeline hire | Added | NEEDS MATT (#22) |
-| Invitra offshore partner | Not listed | Deepak Tilloo, Omkar, Supriya | Offshore oversight is in scope | NEEDS MATT (#22) |
+| Notes column | None | Cedric SOW signer; Cheyenne signs off on LOE; Matt SDD Technical Lead; Gage "Joined full time Q2"; Tommy "Matt's brother, direct report"; Grayson "Direct report" | From team/matt.md | Approved 2026-10-07 (#22) |
+| Name forms | Thomas Garriga | Thomas (Tommy) Garriga; Matthew (Matt) Garriga | Aliases | Approved 2026-10-07 (#22) |
+| Gabe | Not listed | "(confirm role)", intern pipeline hire | Added | Approved 2026-10-07 (#22) |
+| Invitra offshore partner | Not listed | Deepak Tilloo, Omkar, Supriya | Offshore oversight is in scope | Approved 2026-10-07 (#22) |

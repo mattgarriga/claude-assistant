@@ -8,12 +8,13 @@
 ## What Claude can do
 | Allowed | Not allowed |
 |---|---|
-| Read any client repo | Push, merge, rebase onto shared branches, force anything |
+| Read any client repo | Merge, rebase onto shared branches, force anything |
 | Create feature branches | Commit to main, master, develop, or release branches (hook-enforced) |
+| Push feature, hotfix, and bugfix branches to origin | Push main, master, develop, or release branches; force or delete pushes; `--all`/`--mirror` (hook-enforced) |
 | Edit files and commit on feature branches | `suitecloud` CLI of any kind (no deploys, no account connections) |
 | Run local lint, unit tests, static analysis | `git reset --hard`, deleting branches, rewriting history |
 
-Matt pushes and merges. Matt or Invitra deploys.
+Claude may push a feature branch once its commit is shown and approved. Matt merges and handles anything on protected branches. Matt or Invitra deploys. The workspace repo (`claude-assistant`) is never pushed by Claude.
 
 ## Conventions (confirmed by Matt 2026-10-06)
 - Branch: `feature/EBS-####` for new work, `hotfix/EBS-####`, `bugfix/<short-desc>` (coding standards decision 12). `INV-####` and `feature/cleanup` are legacy.

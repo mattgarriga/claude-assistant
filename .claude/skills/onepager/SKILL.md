@@ -12,7 +12,7 @@ Format: `standards/one-pager-format.md`. Template: `templates/template-dev-reque
 Client `client.md`, `projects/ad-hoc-support/project.md` (or the named project), `decisions.md`.
 
 ## 2. Gather (one batch, only what's genuinely unknown)
-- Requester full name and role/company
+- Requester full name (no role or company)
 - Request type (Bug Fix / Config Change / Reporting/Data / Minor Enhancement)
 - Why it's needed; impact if not done
 - Current behavior, step by step

@@ -7,6 +7,7 @@
 | 2026-10-06 | Calendar writes (create, delete, respond), teams_create_chat, outlook_delete_draft moved to deny | Invites and RSVPs send mail on Matt's behalf; draft-only rule | Y |
 | 2026-10-06 | Smartsheet create/sharing/automation writes and Read AI share/create_meeting_agent added to ask; Read AI delete_folder denied | Outward-facing or structural writes the original list did not cover | Y |
 | 2026-10-06 | guard_git.py protected-branch commit block scoped to ../Repos; push/merge/rewrite/CLI blocks stay global | Workspace repo commits on main. Matt approved | Y |
+| 2026-10-07 | guard_git.py allows git push of non-protected branches from repos under ../Repos; protected, force, delete, wildcard, --all/--mirror pushes and any push outside ../Repos stay blocked; merge unchanged | Matt: push to feature branches is fine, never main. settings.json `Bash(git push:*)` deny replaced by narrower denies | Y |
 | 2026-10-06 | guard_git.py matches only invoked commands, not words in heredocs or quoted text | False positive blocked a docs write | Y |
 | 2026-10-06 | Deleted empty stray `{.claude...` directory tree | Artifact of a failed brace-expansion mkdir, contained no files | N/A |
 | 2026-10-07 | Document engine: fill Matt's real .docx templates (clone template paragraphs/rows, replace text); builders never set formatting. SPEC.md rebuild-in-code approach dropped | Only way to match templates exactly. Matt approved | Y |
@@ -79,3 +80,10 @@
 | 2026-10-07 | Repo renamed executive-assistant to claude-assistant; all references updated | Matt's call | Y |
 | 2026-10-07 | Client seeding paused: no bulk bootstrap; seed per client as work happens (/client-update, Matt supplies SharePoint folders and fills gaps). Core 7 drafts kept locally in state/bootstrap/ as reference only | Bootstrap was the main usage cost. Matt's call | Y |
 | 2026-10-07 | Phase 2 .docx outputs approved by Matt | Matt approved | Y |
+| 2026-10-07 | Standards sign-off: 13 suggested-Keep rows approved as written (#1, 3, 4, 5, 6, 7, 9, 12, 14 to 18) | Matt approved | Y |
+| 2026-10-07 | SOW T&M: per-role pricing and NTE dropped; native phase table only (#8) | Matt approved | Y |
+| 2026-10-07 | One-Pager Request Type string is Reporting/Data (#10); Requested By is full name only (#11), skill updated | Matt approved | Y |
+| 2026-10-07 | Lucid lane shading: title bar Lunar, body white (#13) | Matt approved | Y |
+| 2026-10-07 | Docs without a template use SDD styling, no callouts (#19) | Matt approved | Y |
+| 2026-10-07 | Per-task override of defaults stays dropped; non-negotiables never bend (#20) | Matt approved | Y |
+| 2026-10-07 | Team roster additions confirmed as written, including Invitra contacts and personal notes (#22) | Matt approved | Y |

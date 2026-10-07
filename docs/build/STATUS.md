@@ -47,5 +47,5 @@ Paused 2026-10-07 at Matt's request (usage). On resume: read this file, then `pl
 | 5 | Nicholas (CommSell) | Loop Exchange Order Walkthrough | Confirm Thursday 2 to 4 PM CST |
 
 ## Still on Matt's list
-- Run the managed-settings sudo command (API key hard block); then /health-check.
+- DONE 2026-10-07: managed-settings.json installed; /health-check all PASS (restart app to apply).
 - Answer the engine and standards items as they come up in steps 2 and 3.
