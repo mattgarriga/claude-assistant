@@ -17,9 +17,9 @@ Never connect. No MCP, no API, no SDF deploy from this workspace. Ask Matt what 
 - Drafts use HTML with `<p>` tags.
 - Signature (canonical, confirmed by Matt 2026-10-06): every draft ends with the hard-coded block below. API-created drafts do not carry Matt's Outlook signature, so never rely on it. Do not add a second sign-off or name line above it.
   - Content: line 1 `Matthew Garriga`; line 2 `972.837.5259 | matt.garriga@ethosbusinesssolutions.com`; line 3 the text "Book time with Matthew Garriga" linked to `https://bookings.cloud.microsoft/book/MatthewGarrigasBookingPage@ethosbusiness.solutions/?ismsaljsauthenabled`.
-  - HTML (final `<p>` of the body; one paragraph with `<br>` so the lines sit tight):
+  - HTML (final `<p>` of the body; one paragraph with `<br>` so the lines sit tight). The whole block is bold and the email address is a `mailto:` link (confirmed by Matt 2026-10-07); never revert:
     ```
-    <p>Matthew Garriga<br>972.837.5259 | matt.garriga@ethosbusinesssolutions.com<br><a href="https://bookings.cloud.microsoft/book/MatthewGarrigasBookingPage@ethosbusiness.solutions/?ismsaljsauthenabled">Book time with Matthew Garriga</a></p>
+    <p><b>Matthew Garriga<br>972.837.5259 | <a href="mailto:matt.garriga@ethosbusinesssolutions.com">matt.garriga@ethosbusinesssolutions.com</a><br><a href="https://bookings.cloud.microsoft/book/MatthewGarrigasBookingPage@ethosbusiness.solutions/?ismsaljsauthenabled">Book time with Matthew Garriga</a></b></p>
     ```
   - Plain text (chat preview and fallback):
     ```
