@@ -94,6 +94,15 @@
             "command": "python3 \"$CLAUDE_PROJECT_DIR/scripts/guard_auth.py\""
           }
         ]
+      },
+      {
+        "matcher": "mcp__d921cb44-54d6-4a58-8a0e-c34b9edb58ed__outlook_create_draft|mcp__d921cb44-54d6-4a58-8a0e-c34b9edb58ed__outlook_create_reply_draft|mcp__d921cb44-54d6-4a58-8a0e-c34b9edb58ed__outlook_create_reply_all_draft",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR/scripts/hook_lint_outputs.py\""
+          }
+        ]
       }
     ],
     "SessionStart": [
@@ -102,6 +111,17 @@
           {
             "type": "command",
             "command": "python3 \"$CLAUDE_PROJECT_DIR/scripts/guard_auth.py\""
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR/scripts/hook_lint_outputs.py\""
           }
         ]
       }

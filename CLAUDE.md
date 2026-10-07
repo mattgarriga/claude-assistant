@@ -56,31 +56,32 @@ This repo (`executive-assistant`) replaces the "Ethos Assistant" claude.ai Proje
 
 Every recap, SDD, SOW, one-pager, or design conversation produces a context update proposal per `.claude/skills/client-context/SKILL.md`: a short diff to the client's `decisions.md`, `project.md`, or `internal.md`. Proposals go to the queue `state/writeback-queue.md` (grouped by client, with source and date) instead of interrupting Matt. `/today` and `/wrap` present the queue for one approval pass; apply only what Matt approves. Ask immediately instead of queuing only when the next step depends on it: a decision on an SDD or SOW in progress, a scope or pricing change, or a fact the current task is about to rely on. Stale context is the main failure mode of this repo.
 
-## Skills and commands
+## Skills (slash commands)
 
-| Command | Skill | Use |
-|---|---|---|
-| `/recap` | meeting-recap | Meeting recap from Read AI |
-| `/sdd` | sdd | Solution Design Document (design interview first, always) |
-| `/onepager` | dev-one-pager | Development Request One-Pager |
-| `/sow`, `/co` | sow | Statement of Work or Change Order |
-| `/flow` | lucid-flow | Lucid process flow diagram |
-| `/email` | email-draft | Outlook draft |
-| `/client-update` | client-context | Update a client's context from a source |
-| `/new-client` | client-context | Scaffold a new client |
-| `/bootstrap` | client-context | One-time seed of core clients from history |
-| `/review-design` | design-reviewer agent | Native-first, anti-overengineering pass |
-| `/review` | code-review | Review a script, branch, or diff |
-| `/debug` | debug | Root-cause an error or log |
-| `/query` | query-helper | SuiteQL and saved search formulas |
-| `/test-plan` | test-plan | Test cases for work outside ethos-dev (bug fixes, small changes) |
-| `/handoff` | invitra-handoff | Invitra brief for work outside ethos-dev |
-| `/raide` | raide-sync | Update a RAIDE log |
-| `/tasks` | action-items-sync | Action items to Smartsheet |
-| `/status` | project-health | Health for one client or all |
-| `/devboard` | dev-tracker-triage | Development Tracker triage |
-| `/today` | today | Daily plan: calendar, email, RAIDE and project plans, time blocks, first passes |
-| `/inbox` | inbox-triage | Inbox triage and reply drafts |
+| Command | Use |
+|---|---|
+| `/recap` | Meeting recap from Read AI |
+| `/sdd` | Solution Design Document (design interview first, always) |
+| `/onepager` | Development Request One-Pager |
+| `/sow`, `/co` | Statement of Work or Change Order |
+| `/flow` | Lucid process flow diagram |
+| `/email` | Outlook draft |
+| `/client-update` | Update a client's context from a source |
+| `/new-client` | Scaffold a new client |
+| `/bootstrap` | One-time seed of core clients from history |
+| `/review-design` | Native-first, anti-overengineering pass |
+| `/review` | Review a script, branch, or diff |
+| `/debug` | Root-cause an error or log |
+| `/query` | SuiteQL and saved search formulas |
+| `/test-plan` | Test cases for work outside ethos-dev (bug fixes, small changes) |
+| `/handoff` | Invitra brief for work outside ethos-dev |
+| `/raide` | Update a RAIDE log |
+| `/tasks` | Action items to Smartsheet |
+| `/status` | Health for one client or all |
+| `/devboard` | Development Tracker triage |
+| `/today` | Daily plan: calendar, email, RAIDE and project plans, time blocks, first passes |
+| `/inbox` | Inbox triage and reply drafts |
+| `/health-check` | Verify connector deny rules, hooks, auth, conventions file |
 
 Build and maintenance of this workspace itself: see `docs/build/senior-engineer.md` (main session as senior engineer, `app-builder` and `tester` subagents).
 

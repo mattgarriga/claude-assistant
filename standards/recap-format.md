@@ -1,6 +1,6 @@
 # Meeting Recap Format
 
-Reconciled from Meeting_Recap_Format.docx and template-meeting-recap.docx. Matt's standing rules win where they conflicted.
+Recaps are text or Outlook drafts only. There is no recap .docx or template. Matt's standing rules win over older formats.
 
 ## Subject line
 `[Client Name] - Meeting Recap | [Topic] | [MM.DD.YYYY]`
@@ -45,4 +45,3 @@ Thanks for your time in today's status meeting. Below is a recap of key updates,
 ## Output
 - Default: paste-ready subject + body in chat.
 - Outlook draft only when asked, addressed to the calendar invite's attendees (not Read AI's participant list). Drafts end with the signature block in `standards/tools.md`.
-- .docx only when explicitly asked, using `templates/template-meeting-recap.docx`.

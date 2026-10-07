@@ -1,6 +1,7 @@
 ---
 name: today
 description: Matt's daily plan. Pulls today's calendar, emails needing his attention, and RAIDE and project plan items from the Ethos Clients Smartsheet workspace, builds a time-blocked day, saves it, and offers first passes. Use for "today," "morning brief," "plan my day," or "what's on my plate."
+argument-hint: [client] [details]
 ---
 # Today
 

@@ -25,5 +25,5 @@ Matt pushes and merges. Matt or Invitra deploys.
 ## Every code task
 1. Read `standards/coding-standards.md`, the repo's `CLAUDE.md`, the client's `client.md`, and relevant `knowledge/`.
 2. Check `git status` and current branch. If on a protected branch, create a feature branch first.
-3. Work, then self-review with the code-review skill before showing Matt.
+3. Work, then self-review with the review skill before showing Matt.
 4. Never put credentials, account IDs, or tokens in code or commits.

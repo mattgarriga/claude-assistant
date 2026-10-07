@@ -1,11 +1,14 @@
 ---
 name: sdd
 description: Run the Ethos SDD design interview and produce a Solution Design Document. Use when Matt asks for an SDD, solution design, or design doc. Never draft before the interview gates pass.
+argument-hint: [client] [feature]
 ---
 
 # SDD
 
-Format: `standards/sdd-format.md`. Template: `templates/template-sdd.docx`.
+On invocation: load context and run the native-first pass. Do not draft until the gates pass.
+
+Format: `standards/sdd-format.md`. Template: `templates/template-sdd.docx` (filled, never rebuilt).
 
 An SDD is a stress-tested design, not a transcription. Matt (or the requester) owns the design; you find the holes before the client signs and before a developer builds. Multiple rounds of questions is correct behavior. Never offer a partial draft "to get started."
 
@@ -53,10 +56,10 @@ Draft only when all are true:
 Before drafting, show Matt the locked design summary (components table + open questions) and get a go.
 
 ## 6. Build
-- Process flow via the lucid-flow skill. Embed PNG, record edit link in Document Control.
-- Generate through `lib/docx/` (`buildSdd`). Run `python3 scripts/lint_voice.py --design` on the text content.
-- Render to PDF and inspect.
-- Save to `clients/<slug>/projects/<project>/outputs/`.
+- Process flow via the flow skill. Embed the Lucid PNG export in 4.1 and record the edit link in Document Control.
+- Write the content to `data.json` per the `lib/docx/` README schema (SDD). Section list and order: `standards/sdd-format.md`.
+- Hand off to the doc-producer agent: it fills `templates/template-sdd.docx`, renders to PNG, and runs `python3 scripts/lint_voice.py --design` on the filled content. Inspect the render.
+- Save to `clients/<slug>/projects/<project>/outputs/`. Drafts as `-draft.docx` (not committed).
 
 ## 7. Handoff
 Short summary, then the verification checklist (names, attribution gaps, sign-off table names, unresolved assumptions). Then context write-back: design decisions to `decisions.md`, reusable pattern candidates to `knowledge/` (propose, don't write without approval).
