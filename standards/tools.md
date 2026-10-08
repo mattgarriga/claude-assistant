@@ -44,9 +44,32 @@ Never connect. No MCP, no API, no SDF deploy from this workspace. Ask Matt what 
 | Sheet | ID | Notes |
 |---|---|---|
 | Ethos Development Tracker | 8603558799691652 | Live dev tracker. Row ID EBS.#### is the ticket in branch names. The other "Development Tracker" sheet is not used |
+| Invitra Project Tracker | 5200836480159620 | Where Invitra work lives (rows INV-####). Read by ID; skip `get_columns`. Schema below |
 | Matt Garriga - Action Log | 5639928991141764 | Not in use. Logic removed 2026-10-07; sheet and one row (AL.0001) remain. Never read or written unless Matt asks |
 | Matt Garriga - RAID Log (old) | 1858937004445572 | Stale. Never read or written. Matt archives it |
 | Client RAIDEs and project plans | per client | MS RAIDE in each `client.md`; project RAIDE and plan in each `project.md` (seeded by bootstrap from `docs/build/phase6-discovery.md`) |
+
+### Invitra Project Tracker schema (cached 2026-10-07)
+Permalink: https://app.smartsheet.com/sheets/GPRVmjpjPm5Jg6JFQF6vhxJWMCGRCCjVc2CXFX81
+
+| Column | Type | Notes |
+|---|---|---|
+| ID | Auto-number | INV-0000, read-only |
+| Project Name | Text (primary) | |
+| Client | Text | Free text; spellings vary (Cala, Cala Health) |
+| Status | Picklist | Backlog, LOE Requested, LOE Pending Approval, Queued, In Progress, Pending Ethos Review, Pending Client Review, Closed |
+| Supporting Documentation | Text | SharePoint link |
+| NS Project / Case Number | Text | Free text (Case ####, Project ###, or a URL) |
+| Invitra Ownership | Picklist | Technical & Functional, Technical Only, Functional Only |
+| Invitra LOE | Text | Hours |
+| Ethos PM | Contact | |
+| Ethos Assigned | Multi-contact | Ethos staff only |
+| Invitra Assigned | Multi-contact | No preset options; often blank |
+| Date Created | System date | |
+| Invitra Due Date | Date | |
+| Client UAT Date | Date | |
+| Client Go-Live Date | Date | |
+| Submitted By | Contact | |
 
 ## Lucid
 See `lucid-standards.md`.

@@ -49,6 +49,9 @@ Record once after the first `get_columns` on each sheet so later runs skip the r
 ## Integrations
 | System | Direction | Middleware | Notes |
 |---|---|---|---|
+| Shopify | to NetSuite (refunds) | Celigo (unconfirmed) | Refund staging record plus MapReduce script creates cash refund [src: ReadAI 2026-10-07] |
+| AfterShip | to Shopify (return notice) | | Returns intake [src: ReadAI 2026-10-07] |
+| Ryder (3PL) | NetSuite to Ryder | VSLEGO (unconfirmed) | Integrated with NetSuite, not Shopify; receipts booked as inventory adjustments today [src: ReadAI 2026-10-07] |
 
 ## Conventions
 -
@@ -56,9 +59,14 @@ Record once after the first `get_columns` on each sheet so later runs skip the r
 ## Glossary (Read AI corrections, internal terms)
 | Heard as | Correct |
 |---|---|
+| Saligo, writer | Celigo (spelling unconfirmed) [src: ReadAI 2026-10-07 4P RMA/Refund Flow Review] |
+| Rider | Ryder (3PL) [src: ReadAI 2026-10-07] |
+| aftership, after ship | AfterShip (returns intake) [src: ReadAI 2026-10-07] |
+| VSLEGO | Unknown; path to Ryder, spelling unconfirmed [src: ReadAI 2026-10-07] |
 
 ## Active projects
 | Project | Folder | Status |
 |---|---|---|
 | chargebacks | projects/chargebacks/ | (bootstrap) |
 | emagia-ar-integration | projects/emagia-ar-integration/ | (bootstrap) |
+| rma-shopify | projects/rma-shopify/ | Design |

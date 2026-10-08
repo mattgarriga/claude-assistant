@@ -24,12 +24,13 @@ Send the meeting ID to `meeting-analyst`. It pulls the meeting (transcript only 
 - Attendance and recipients come from the Outlook invite, not Read AI.
 
 ## 4. Internal vs client-facing
-- All attendees @ethosbusinesssolutions.com: internal variant, named owners in bullets.
+- All attendees @ethosbusinesssolutions.com: internal variant, named owners in bullets. Same Decisions Made, Action Items, Risks & Open Items format as every recap; only an external status meeting recap adds Budget Metrics.
 - Any external attendee: client-facing. Exclude everything in `internal.md` and anything about budget internals, staffing, politics, escalations.
 
 ## 5. Build
-- Group by workstream when the meeting covered several (use the project names in `projects/`).
+- Group Action Items by party (Ethos / client). Decisions Made and Risks & Open Items are always flat bullet lists with no sub-labels or nesting; name the workstream inside the bullet only where it helps.
 - Decisions Made: only real decisions, past tense, complete.
+- Outlook connector cannot style tables (see `standards/recap-format.md`). Create the Budget Metrics table plain and add "Apply table borders and header fill in Outlook" to the checklist.
 - Budget Metrics: include ONLY in an external status meeting recap (the client's recurring status meeting, e.g. "Weekly Status Meeting"). Leave the whole section out for working sessions, design sessions, internal meetings, and any other recap. When in doubt about the meeting type, ask.
   - Table is Project | Budgeted Hours | Actual Hours | Hours Remaining, one row per project or ad-hoc support line, built from the project RAIDE (or MS RAIDE) via `scout` (Estimated Hours, Case Total Hours, Case Total Hours this month); cite the sheet.
   - Fixed-fee rows: Budgeted Hours "N/A (fixed fee)", Actual and Remaining left blank.

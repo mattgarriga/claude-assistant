@@ -58,6 +58,8 @@ Record once after the first `get_columns` on each sheet so later runs skip the r
 |---|---|
 | SDG | STG (STG Aerospace) [src: Matt 2026-10-07] |
 | OS WO | Outsourced work order [src: OS SDD v1.0 08.28.2026] |
+| Flex Shop | A part of HUT's warehouse [src: Matt 2026-10-08] |
+| Manufacturing Mobile | NetSuite app HUT must use if they turn on manufacturing WIP and routings [src: Matt 2026-10-08] |
 
 ## Active projects
 | Project | Folder | Status |

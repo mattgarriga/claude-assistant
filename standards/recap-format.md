@@ -37,12 +37,17 @@ Thanks for your time in today's [status meeting / working session / meeting]. Be
 - Budget table: only rows with real numbers from the source. If a named project had no figures this week, say so in one line under the table. Never invent.
 - Fixed-fee rows: Budgeted Hours "N/A (fixed fee)", Actual Hours and Hours Remaining blank. Hourly rows (e.g. Ad-Hoc Support) show numbers only, such as 75 / 9 / 66.
 - Outlook HTML styling (matches the 10.06.2026 HUT recap): bold "Budget Metrics" label with the as-of text, then a 4-column table with 1px solid #ABABAB borders, collapsed, header row fill #CCE4F6 with bold black text, body cells plain, font Aptos 11pt, column widths about 210 / 124 / 113 / 159 px.
+- Every recap, internal or client-facing, uses the same three sections in this order: **Decisions Made**, **Action Items**, **Risks & Open Items**. Never substitute other headers (no "Other", no per-topic headers as top-level sections).
+- **Decisions Made is always one flat bullet list.** No sub-labels, no nested lists, no workstream headings (corrected by Matt 2026-10-07). When several workstreams were covered, start each bullet with the workstream name only where it helps clarity. Sub-labels are allowed only under Action Items (Ethos / client party headings) and are never used in Decisions Made or Risks & Open Items.
+- Action items carry no due dates, including relative ones such as "within a month" or a stated calendar date.
+- **Outlook table styling limit:** the Outlook connector's `outlook_create_draft` rejects every style, border, bgcolor or class attribute, so the Budget Metrics table is created plain (`table/tr/th/td`). Do not retry styled HTML. After creating the draft, tell Matt the borders (#ABABAB) and header fill (#CCE4F6) must be applied in Outlook, and put that line in the verification checklist. Never present the table as already styled.
+- Decisions Made: if none were reached, keep the section and write "No decisions were made in this meeting."
 - Risks & Open Items: omit the section entirely if none.
 - No "Next Steps" section. Recap ends after Risks (or Action Items).
 - No internal Ethos commentary: budget internals, staffing, resourcing, politics, escalations.
 
 ## Internal variant (all attendees @ethosbusinesssolutions.com)
-- Greeting "Team,". Same sections, never a budget table.
+- Greeting "Team,". Same three sections as every recap (Decisions Made, Action Items, Risks & Open Items), never a budget table.
 - Action items list named individual owners in the bullet.
 - Draft addressed to Matt.
 
